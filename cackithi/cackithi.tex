@@ -11,509 +11,492 @@
 \vspace*{182pt}
 
 \begin{multicols}{2}
-	Trong chuyên mục này, chúng tôi sẽ trình bày Lời giải của các bài toán trong vòng một kỳ thi toán học liên bang Đức năm $2023$, đăng trong số báo $9/2023$. 
+	Trong chuyên mục này, chúng tôi sẽ trình bày Lời giải của các bài toán trong vòng hai kỳ thi toán học liên bang Đức năm $2023$, đăng trong số báo $9/2023$. 
 	\vskip 0.1cm
-	\textbf{\color{cackithi}Câu $\pmb{1}$}: Ba bạn Tick, Trick và Track có $20$, $23$ và $25$ vé để đi vòng quay ngựa gỗ tại hội chợ hàng năm. Họ thống nhất rằng sẽ chỉ đi vòng quay nếu cả ba cùng đi và mỗi người nộp một vé của mình. Ngoài ra, trước mỗi lần đi, nếu muốn, họ có thể chia lại vé cho nhau bao nhiêu lần tùy thích theo quy tắc sau: Người nào có số vé chẵn thì có thể chia một nửa số vé của mình cho một trong hai người còn lại. Hỏi có thể xảy ra rằng sau một lần đi nào đó:
-	\vskip 0.1cm
-	$\bullet$ Đúng một người hết vé.
-	\vskip 0.1cm
-	$\bullet$ Đúng hai người hết vé.
-	\vskip 0.1cm
-	$\bullet$ Cả ba cùng hết vé. 
+	\textbf{Câu $\pmb{1}$:} Tìm ước chung lớn nhất của tất cả các số có dạng $p^6 - 7p^2 +6$ với $p$ chạy trên tập tất cả các số nguyên tố và $p \ge 11$.
 	\vskip 0.1cm
 	\textit{Lời giải.}
-	Để đơn giản ta sẽ biểu diễn phân bố vé bằng bộ ba số nguyên không âm, chẳng hạn ban đầu Tick, Trick và Track có $(20,23,25)$ vé.
+	Đặt $f(p) \colon =p^6 - 7p^2 +6$. Gọi $a$ là ước chung lớn nhất (ƯCLN) của tất cả các $f(p)$ với $p$ nguyên tố và $p \ge 11$. Ta sẽ chứng minh rằng $a = 2^5\times 3 \times 7$.
 	\vskip 0.1cm	
-	$a.$ Có thể xảy ra trường hợp đúng một người hết vé. Chẳng hạn, nếu không bạn nào đưa vé cho bạn khác thì sau $20$ lượt đi Tick hết vé, Trick còn $3$ vé và Track còn $5$ vé.
-	\vskip 0.1cm
-	$b.$ Có thể xảy ra trường hợp đúng hai bạn hết vé. Chẳng hạn, sau $17$ lần đi thì số vé còn lại sẽ là $(3,6,8)$. Khi đó, Trick sẽ đưa một nửa số vé của mình, tức $3$ vé, cho Track và phân bố vé trở thành $(3,3,11)$. Sau $3$ lần đi tiếp thì Tick và Trick cùng hết vé còn Track còn $8$ vé.
+	Thật vậy, theo định lý Fermat nhỏ thì $7|p^6 - 1$ với mọi số nguyên $7 \not | p$. Do đó, $7 |p^6 - 1  - 7p^2 + 7 = f(p)$ với mọi $p$ như trên và ta có $7 | a$.
 	\vskip 0.1cm	
-	$c.$ Không thể xảy ra trường hợp cả ba bạn hết vé đồng thời. Sau khi chuyển vé cho nhau thì tổng số vé của Tick, Trick và Track vẫn không đổi; tổng này chỉ giảm nếu cả ba đi cùng nhau và giảm đúng $3$ vé. Do vậy, để ba bạn cùng hết vé thì tổng số vé ban đầu phải là bội số của $3$. Tuy nhiên $20+23+25 = 68$ không chia hết cho $3$.
-	\vskip 0.1cm
-	\textbf{\color{cackithi}Câu $\pmb{2}$}: Tìm tất cả các bộ ba số nguyên $(x,y,z)$ thỏa mãn phương trình 
+	Mặt khác, 
+	$f(p) = (p^2-1)(p^2-2)(p^2+3) \equiv (p^2-1)(p^2-2)p^2 \mod 3 \equiv 0 \mod 3$ do $p^2, p^2-1, p^2-2$ là ba số nguyên liên tiếp. Như vậy, $3 | f(p)$ với mọi $p$ và ta thu được $3|a$.
+	\vskip 0.1cm	
+	Hơn nữa, do $p$ nguyên tố và $p \ge 11$ nên $p$ là số lẻ. Đặt $p= 2k+1$, ta có
 	\begin{align*}
-		x^2 + y^2 + z^2 -xy-yz-zx = 3. \tag{$1$}
+			f(p) = & (p^2-1)(p^2-2)(p^2+3) \\
+			= & (4k^2 + 4k) (4k^2 + 4k-1)(4k^2+4k+4) \\
+			= & 16k(k+1)(4k^2 + 4k-1)(k^2 + k + 1).
 	\end{align*}
+	Vì $2 |k(k+1)$ với mọi $k \in \mathbb{Z}$ nên $2\times 16 = 32 = 2^5 |f(p)$. Bởi vậy $2^5 |a$.
+	\vskip 0.1cm
+	Do $2^5, 3$ và $7$ đôi một nguyên tố cùng nhau nên
+	\begin{align*}
+		2^5 \times 3 \times 7 |a. \tag{$1$}
+	\end{align*}
+		Mặt khác, vì
+		$
+		f(11) = 1770720 = 2^5 \times 3 \times 5 \times 7 \times 17 \times 31
+		$
+		và
+		$
+		f(13) = 4825632 = 2^5 \times 3 \times 7 \times 43 \times 167
+		$
+		nên 
+		\begin{align*}
+			a |\text{ƯCLN}(f(11), f(13)) = 2^5\times 3 \times 7. \tag{$2$}
+		\end{align*}
+		Từ ($1$) và ($2$) ta thu được $a = 2^5\times 3 \times 7$.
+	\vskip 0.1cm
+	\textbf{Câu $\pmb{2}$:} Trên một hòn đảo địa hình đồi núi có 2023 điểm quan sát. Từ mỗi điểm quan sát có thể nhìn thấy ít nhất 42 điểm quan sát khác. Với hai điểm quan sát bất kỳ $X$ và $Y$, luôn tồn tại một số nguyên dương $n$ và các điểm quan sát $A_1,  A_2, \ldots, A_{n+1}$ sao cho $A_1 = X$, $A_{n+1} = Y$ và mỗi cặp điểm liền kề $A_i$ với $A_{i+1}$ có thể quan sát được lẫn nhau với $i = 1, 2, \ldots, n$. Số $n$ nhỏ nhất như vậy được gọi là khoảng cách quan sát (Sichtabstand). 
+	\vskip 0.1cm
+	Xác định khoảng cách quan sát lớn nhất có thể có giữa hai cặp điểm quan sát thỏa mãn những điều kiện ở trên.
+	\vskip 0.1cm
 	\textit{Lời giải.}
-	Nếu $(x,y,z)$ thỏa mãn phương trình ($1$) thì mọi hoán vị của bộ ba này cũng vậy. Do đó ta chỉ cần xét trường hợp $x \ge y \ge z$. Ta có
-		\begin{align*} 
-			&x^2 + y^2 + z^2 -xy-yz-zx  = 3 \\ 
-			\Leftrightarrow	\,&2x^2 + 2y^2 + 2z^2 -2xy-2yz-2zx  = 6 \\
-			\Leftrightarrow	\,&(x-y)^2 + (y-z)^2 + (x-z)^2  = 6. \tag{$2$}
-		\end{align*}
-		Với ba số nguyên không âm $a\ge b \ge c \ge 0$, phương trình $a^2 + b^2 + c^2 = 6$ có nghiệm khi và chỉ khi $a = 2$, $b = c = 1$. Từ giả sử ban đầu rằng $x \ge y \ge z$ ta có
-		\begin{align*} 
-			\Leftrightarrow
-			\begin{cases}
-				x - y = 1 \\
-				y - z = 1 \\
-				x - z = 2
-			\end{cases} \Leftrightarrow
-			\begin{cases}
-				y = z + 1 \\
-				x = z + 2.
-			\end{cases}
-		\end{align*}
-		Do vậy, các bộ ba số nguyên liền nhau $(x,y,z) = (k+2, k + 1, k)$ và các hoán vị của chúng, với $k \in \mathbb{Z}$, là tất cả nghiệm nguyên của phương trình ($1$).
-	\vskip 0.1cm
-	\textbf{\color{cackithi}Câu $\pmb{3}$}: Cho hai hình bình hành $ABCD$ và $AECF$ có chung đường chéo $AC$, trong đó $E$ và $F$ nằm bên trong $ABCD$. Chứng minh rằng đường tròn ngoại tiếp của các tam giác $AEB$, $BFC$, $CED$ và $DFA$ giao nhau tại một điểm. 
-	\vskip 0.1cm
-	\textit{Chứng minh.}
-	Gọi đường tròn ngoại tiếp các tam giác $AEB$, $BFC$, $CED$ và $DFA$ lần lượt là $k_1$, $k_2$, $k_3$ và $k_4$. Hai đường tròn $k_1$ và $k_3$ giao nhau tại $E$. Gọi giao điểm còn lại là $G$. Ta sẽ chứng minh rằng $G \in k_2$ và $G \in k_4$.
-	\vskip 0.1cm		
-	Gọi $S$ là trung điểm của đường chéo chung $AC$. Vì các hình bình hành đối xứng qua trung điểm của các đường chéo, điều kiện của bài toán có thể được mô tả đầy đủ thông qua các điểm $A$, $B$, $E$ và $S$. 
-	\vskip 0.1cm		
-	Giả sử có một đỉnh nào đó của $ABCD$ thuộc ba trong bốn đường tròn đã cho, chẳng hạn $B$ thuộc $k_1$, $k_2$ và $k_3$. Khi đó $G = B$. Vì $B$ nằm trên đường tròn $CED$ nên từ tính đối xứng tâm qua $S$ thì $D$ thuộc đường tròn $AFB$. Nói cách khác, $B \in k_4$ và bốn đường tròn $k_1$, $k_2$, $k_3$, $k_4$ đều đi qua $B$. Bởi vậy trong phần chứng minh dưới đây ta có thể giả sử rằng $G$ không trùng với đỉnh nào của $ABCD$.
+	Ta sẽ chứng minh rằng khoảng cách quan sát lớn nhất có thể là $140$.
 	\vskip 0.1cm	
-	\textit{Trường hợp $1$}: $G$ nằm ở phần trong hình bình hành $ABCD$. Khi đó $G$ và $E$ nằm cùng một phía với đường thẳng $AB$ cũng như cùng một phía với đường thẳng $CD$. Đặt
+	Với hai điểm quan sát $X,Y$ được mô tả như trên, ta nói $A_1, \ldots, A_{n+1}$ là các điểm thuộc \textit{chuỗi quan sát} độ dài $n$ nối $X$ và $Y$. Để tìm một chuỗi quan sát có độ dài nhỏ nhất, ta chỉ cần xét trường hợp mỗi điểm quan sát trong chuỗi xuất hiện đúng một lần. Vì chỉ có hữu hạn điểm quan sát nên độ dài các chuỗi quan sát là hữu hạn (bị chặn trên bởi $2022$). Như vậy giữa tất cả các chuỗi quan sát nối $X$ và $Y$ luôn tồn tại chuỗi quan sát có độ dài ngắn nhất, và độ dài này chính là khoảng cách quan sát được định nghĩa ở trên. Do chỉ có hữu hạn các cặp điểm quan sát, tồn tại một cặp điểm có khoảng cách quan sát lớn nhất.
+	\vskip 0.1cm	
+	Cho trước một hệ thống tùy ý $M$ gồm $2023$ điểm quan sát thỏa mãn yêu cầu của bài toán. Chọn $X \in M$ bất kỳ và gọi $M_i$ tập các điểm quan sát có khoảng cách quan sát $i$ tới $X$. Ta cũng sẽ đặt $M_0 = \{X\}$. Do với bất kỳ $Y \in M$ luôn tồn tại một chuỗi quan sát nối $X$ và $Y$ nên các tập $M_i$ lập nên một phân hoạch của $M$. Nói cách khác, $M = \cup_{i}M_i$ và $M_i \cap M_j = \emptyset$ nếu $i\neq j$.
+	\vskip 0.1cm
+	Gọi $n(X)$ là chỉ số sao cho $M_{n(X)} \neq \emptyset$ và $M_i = \emptyset$ với mọi $i \ge n(X)$. Bằng định nghĩa, với mỗi $Y \in M_{n(X)}$ luôn tồn tại chuỗi quan sát ngắn nhất $A_1, \ldots A_{n(X) + 1}$ với $A_1 = X$ và $A_{n(X)+1} = Y$. Rõ ràng $A_i, A_{i+1}, \ldots, A_{j}$ cũng là chuỗi quan sát ngắn nhất giữa $A_i$ và $A_j$ với mọi $1 \le i <j \le n(X) + 1$. Do đó $A_i \in M_{i-1}$ và ta có $M_i \neq \emptyset$ với mọi $i \le n(X)$.
+	\vskip 0.1cm	
+	Mặt khác, từ mỗi điểm trong $M_i$ chỉ có thể quan sát được các điểm trong $M_{i-1}, M_i$ và $M_{i+1}$. Thật vậy, nếu từ $V \in M_i$ quan sát được $W \in M_j$ với $j \le i-2$ thì $V \in M_{j+1}$. Do đó, $V \in M_i \cap M_{j+1}$. Điều này vô lý vì $M_i \cap M_{j+1} = \emptyset$ do $j+1 \neq i$. Tương tự, từ $V \in M_i$ quan sát được $W \in M_j$ với $j \ge i+2$ cũng dẫn đến mâu thuẫn. Như vậy, từ mỗi $V \in M_i$ có thể quan sát được ít nhất $42$ điểm khác, và các điểm này phải nằm trong $M_{i-1}, M_i, M_{i+1}$. Do đó 
 	\begin{align*}
-		&\alpha \colon = \angle AEB = \angle CFD,\\
-		&\beta \colon = \angle BEC = \angle DFA,\\
-		&\gamma \colon = \angle CED = \angle AFB,\\
-		&\delta \colon =  \angle DEA = \angle BFC.
+		|M_{i-1} \cup M_i \cup M_{i+1}| \ge 43.
 	\end{align*}
-	Do $E$ và $F$ nằm trong $ABCD$ nên $\alpha + \beta + \gamma + \delta = 360^{\circ}$.
-	\vskip 0.1cm	
-	Từ định lý về góc nội tiếp cho đường tròn $k_1$ với cung $AB$ ta có $\angle AGB = \angle AEB = \alpha$. Tương tự với đường tròn $k_3$ và cung $CD$ ta có $\angle CGD = \angle CED = \gamma$. Ta sẽ chứng minh rằng $\angle BGC = \delta = \angle BFC$. Vì $\alpha+ \beta + \gamma + \delta = \angle AGB + \angle DGA + \angle CGD + \angle BGC = 360^{\circ}$ nên từ đó suy ra $\angle DGA = \beta = \angle DFA$. Từ định lý về góc nội tiếp đường tròn $k_2$ với cung $BC$ và $k_4$ với cung $DA$ ta thu được $G \in k_2$ và $G \in k_4$. 
-	\vskip 0.1cm	
-	Xét ba trường hợp con có thể xảy ra:
-	\vskip 0.1cm	
-	\textit{Trường hợp $1a$}: Các điểm $A, G, E, B$ khác nhau đôi một và nằm trên đường tròn $k_1$ theo thứ tự kể trên. Khi đó, các điểm $D,G,E,C$ cũng nằm trên đường tròn $k_3$ theo thứ tự này và đoạn thẳng $GE$ nằm trong góc $\angle DEA$. Do đó, $\angle GED + \angle GEA = \angle DEA = \delta$.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{h1}
-		\caption{\small\textit{\color{cackithi}Hình $1$: Trường hợp $1a$.}}
-		\vspace*{-10pt}
-	\end{figure}	
-	Từ định lý góc nội tiếp cho đường tròn $k_1$ với cung $AG$ và $k_3$ với cung $DG$ ta có $\angle GEA = \angle GBA$ và  $\angle GED = \angle GCD$. Do đó, $\angle GCD + \angle GBA = \delta.$
-	\vskip 0.1cm	
-	Vì $ABCD$ là hình bình hành nên
-	$
-	\angle GCB + \angle GCD + \angle GBA + \angle GBC
-	= \angle DCB + \angle ABC
-	= 180^{\circ}.
-	$
-	Do đó $\angle GCB + \angle GBC =  180^{\circ} - (\angle GCD + \angle GBA) = 180^{\circ} - \delta$.
+	Từ $X \in M_0$ chỉ quan sát được các điểm trong $M_1$ và từ $Y \in M_{n(X)}$ chỉ quan sát được các điểm từ $M_{n(X)}$ và $M_{n(X)-1}$. Bởi vậy,
+	\begin{align*}
+		|M_0 \cup M_1| \ge 43 \text{ và } |M_{n(X)-1} \cup M_{n(X)}| \ge 43.
+	\end{align*}
+	\textbf{Khẳng định $\pmb{1}$:} \textit{Khoảng cách quan sát lớn nhất không thể lớn hơn $140$.} 
 	\vskip 0.1cm
-	Mặt khác, vì $BGC$ là tam giác nên
-	$
-	\angle BGC + \angle GCB + \angle GBC = 180^{\circ}.
-	$
-	Do đó 
-	$\angle BGC  = 180^{\circ} -(\angle GCB + \angle GBC)
-	= 180^{\circ} - (180^{\circ} - \delta)  
-	=  \delta
-	$
-	và ta có điều phải chứng minh.
+	Thật vậy, nếu $M_{141} \neq \emptyset$ thì 
+	\begin{align*}
+		& |M_0 \cup M_1| + |M_2 \cap M_3 \cap M_4| + |M_5 \cup M_6 \cup M7| + \\
+		& \ldots + |M_{137} \cup M_{138} \cup M_{139}| + |M_{140} \cup M_{141}| \\
+		& \ge 43 + 46.43 + 43 = 2064 > 2023
+	\end{align*}
+	dẫn đến mâu thuẫn.
 	\vskip 0.1cm
-	\textit{Trường hợp $1b$}: Các điểm $A, E, G, B$ khác nhau đôi một và nằm trên đường tròn $k_1$ theo đúng thứ tự kể trên. Khi đó lặp lại lý luận trong trường hợp 1a nhưng hoán đổi vị trí $A$ với $B$, $C$ với $D$ (do đó hoán đổi $\beta$ với $\delta$, $k_2$ với $k_4$, v.v...) ta thu được kết quả tương tự. 
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{h3}
-		\caption{\small\textit{\color{cackithi}Hình $2$: Trường hợp $1b$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	\textit{Trường hợp $1c$}: $E = G$. Khi đó hai đường tròn $k_1$ và $k_3$ sẽ tiếp xúc tại tại $G$. Đường tiếp tuyến chung của $k_1$ và $k_3$ đi qua $G$ sẽ chia góc $BGC$ thành hai phần, ký hiệu là $\beta_1$ và $\beta_2$ như trong hình. Ta có $\beta_1 + \beta_2 = \beta = \angle BGC$.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{h2}
-		\caption{\small\textit{\color{cackithi}Hình $3$: Trường hợp $1c$.}}
-		\vspace*{-10pt}
-	\end{figure}	
-	Bằng định lý về góc tạo bởi tia tiếp tuyến và dây cung ta có $\beta_1 = \angle EDC$ và $\beta_2 = \angle EAB$. Do 
-	$
-	\angle EDC + \angle EAD + \angle EAB + \angle EDA = \angle CDA + \angle DAB = 180^{\circ}
-	$
-	nên $\angle EDA + \angle EAD =  180^{\circ} - (\angle EDC + \angle EAB) =  180^{\circ} - (\beta_1 + \beta_2) = 180^{\circ} - \beta$. 
-	\vskip 0.1cm
-	Mặt khác, do $\angle DEA +  \angle EDA + \angle EAD =  180^{\circ}$ nên $\delta = \angle DEA = 180^{\circ} - (\angle EDA + \angle EAD) = 180^{\circ} - (180^{\circ} - \beta) = \beta$. Như vậy $ \angle BGC = \beta = \delta$ và ta có điều phải chứng minh.
-	\vskip 0.1cm
-	\textbf{\color{cackithi}Trường hợp $2$}: $G$ nằm ngoài $ABCD$. Có thể thấy rằng $G$ không nằm trong vùng tạo bởi hai đường thẳng $AB$ và $CD$, cũng như không nằm trong vùng tạo bởi hai đường thẳng $AD$ và $BC$. Không mất tính tổng quát ta có thể giả sử $G$ nằm gần $B$ như trong hình. Gọi $H$ là điểm đối xứng với $G$ qua tâm $S$. Khi đó hai hình bình hành $AGCH$ và $ABCD$ có chung đường chéo $AC$ với $B,D$ nằm bên trong $AGCH$. Hơn nữa, đường tròn ngoại tiếp của $GBA$ và $GDC$ giao nhau tại điểm $E$ nằm phần trong của $AGCH$.
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=1\linewidth]{h4}
-		\caption{\small\textit{\color{cackithi}Hình $4$: Trường hợp $2$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	Sử dụng kết quả của trường hợp $1$ với $AGCH$ thay cho $ABCD$, $ABCD$ cho $AECF$, $GBA$ cho $k_1$, $GDC$ cho $k_2$ ta chứng minh được rằng $E$ thuộc đường tròn $CBH$ và $HDA$. Do tính đối xứng tâm qua $S$ nên $F$ thuộc đường tròn $DAG$ và $GBC$. Do đó, $G$ cũng thuộc đường tròn $DFA$ và $BCF$. Nói cách khác, bốn đường tròn $AFD$, $BFC$, $CED$ và $DFA$ giao nhau tại $G$.
-	\vskip 0.1cm
-	\textbf{\color{cackithi}Câu $\pmb{4}$}: Cho số thực $\alpha$ với biểu diễn thập phân $\alpha = 0,a_1 a_2 a_3 \ldots$ trong đó mỗi chữ số $a_i$ là một số nguyên tố. Các chữ số sau dấu phẩy được sắp xếp dọc theo đường được tạo ra bởi các mũi tên như trong hình bên, được tưởng tượng là tiếp tục vô tận về bên phải và xuống dưới.
-	\vskip 0.1cm
-	Với mỗi $m \ge 1$, biểu diễn thập phân của số thực $z_m$ được cho bằng cách viết chữ số $0$ trước dấu phẩy và sau dấu phẩy là các chữ số của dòng thứ $m$ (tính từ trên xuống) theo thứ tự từ trái sang phải. Tương tự, với mọi $n \ge 1$, số thực $s_n$ được thiết lập với các chữ số của cột thứ $n$ (tính từ bên trái sang) theo thự tự từ trên xuống dưới. Chẳng hạn $z_3 = 0, a_5a_6a_7a_{12}a_{23}a_{28}\ldots$ và $s_2 = 0,a_2a_3a_6a_{15}a_{18}a_{35}\ldots$. Chứng minh rằng:
-	\vskip 0.1cm
-	$(a)$ Nếu $\alpha$ là số hữu tỷ, thì tất cả các số $z_m$ và $s_n$ đều hữu tỷ.
-	\vskip 0.1cm
-	$(b)$ Chiều ngược lại của khẳng định $(a)$ là sai.
-	\vskip 0.1cm
-	\textit{Chứng minh.}
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[cackithi]
-			\node (A1) at (0, 0) {$a_1$};
-			\node (A2) at (1, 0) {$a_2$};
-			\node (A3) at (1, -1) {$a_3$};
-			\node (A4) at (0, -1) {$a_4$};
-			\node (A5) at (0, -2) {$a_5$};
-			\node (A6) at (1, -2) {$a_6$};
-			\node (A7) at (2, -2) {$a_7$};
-			\node (A8) at (2, -1) {$a_8$};
-			\node (A9) at (2, 0) {$a_9$};
-			\node (A10) at (3, 0) {$a_{10}$};
-			\node (A11) at (3, -1) {$a_{11}$};
-			\node (A12) at (3, -2) {$a_{12}$};
-			\node (A13) at (3, -3) {$a_{13}$};
-			\node (A14) at (2, -3) {$a_{14}$};
-			\node (A15) at (1, -3) {$a_{15}$};
-			\node (A16) at (0, -3) {$a_{16}$};
-			\node (A17) at (0, -4) {$a_{17}$};
-			\node (A18) at (1, -4) {$a_{18}$};
-			\node (A19) at (2, -4) {$a_{19}$};
-			\node (A20) at (3, -4) {$a_{20}$};
-			\node (A21) at (4, -4) {$a_{21}$};
-			\node (A22) at (4, -3) {$a_{22}$};
-			\node (A23) at (4, -2) {$a_{23}$};
-			\node (A24) at (4, -1) {$a_{24}$};
-			\node (A25) at (4, 0) {$a_{25}$};
-			\node (A26) at (5, 0) {$a_{26}$};
-			\node (A27) at (5, -1) {$a_{27}$};
-			\node (A28) at (5, -2) {$a_{28}$};
-			
-			\tkzDefPoint(5,-3){A29}
-			\tkzDefPoint(5,-5){A31}
-			
-			% arrows
-			\draw[-stealth]
-			(A1) edge (A2) (A2) edge (A3) (A3) edge (A4)
-			(A4) edge (A5) (A5) edge (A6) (A6) edge (A7)
-			(A7) edge (A8) (A8) edge (A9) (A9) edge (A10)
-			(A10) edge (A11) (A11) edge (A12) (A12) edge (A13)
-			(A13) edge (A14) (A14) edge (A15) (A15) edge (A16)
-			(A16) edge (A17) (A17) edge (A18) (A18) edge (A19)
-			(A19) edge (A20) (A20) edge (A21) (A21) edge (A22)
-			(A22) edge (A23) (A23) edge (A24) (A24) edge (A25)
-			(A25) edge (A26) (A26) edge (A27) (A27) edge (A28);
-			
-			\draw[thick, dotted] (A28) -- (A29);
-		\end{tikzpicture}
-		\caption{\small\textit{\color{cackithi}Hình $5$:Biểu diễn thập phân của $\alpha$.}}
-		\vspace*{-10pt}
-	\end{figure}	
-	Một số thực với biểu diễn thập phân $\alpha = 0,a_1a_2a_3\ldots$ là hữu tỷ khi và chỉ khi biểu diễn này hữu hạn hoặc tuần hoàn, nghĩa là tồn tại các số nguyên dương $N, p$ sao cho với mọi $i \ge N$ thì $a_{i + p} = a_i$. Số $p$ nhỏ nhất thỏa mãn điều kiện trên được gọi là độ dài của chu kỳ. Mọi số $p$ thỏa mãn điều kiện trên đều là bội số của độ dài chu kỳ. Số $a_{i}$ với $i \ge N$ được gọi là nằm trong phần tuần hoàn (trong biểu diễn thập phân) của $\alpha$. Chẳng hạn, số $\frac{2}{9} = 0,22222 \ldots$ có độ dài chu kỳ là $1$ và phần tuần hoàn bắt đầu ngay sau dấu phẩy, trong khi đó $\frac{3227}{5550} = 0,58144144144 \ldots$ có độ dài chu kỳ $2$ và phần tuần hoàn bắt đầu từ vị trí thứ ba sau dấu phẩy. Vì $0$ và $9$ không xuất hiện trong các biểu diễn thập phân nên các số $\alpha$, $z_m$ và $s_n$ là vô tỷ hoặc tuần hoàn.
-	\vskip 0.1cm	
-	Gọi chỉ số của chữ số trong biểu diễn thập phân của $\alpha$ tại dòng $r$ cột $s$ như trong hình là $b(r,s)$, chẳng hạn $b(2,2) = 3$ và $b(3,5) = 23$. Như vậy,
-		\begin{align*}
-			z_m & = 0, a_{b(m,1)} a_{b(m,2)} a_{b(m,3)} a_{b(m,4)} \ldots \\
-			s_n & = 0, a_{b(1,n)} a_{b(2,n)} a_{b(3,n)} a_{b(4,n)} \ldots
-		\end{align*}
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[cackithi]
-			\node (R1) at (0, 1) {$s = 1$};
-			\node (R2) at (1, 1) {$2$};
-			\node (R3) at (2, 1) {$3$};
-			\node (R4) at (3, 1) {$4$};
-			\node (R5) at (4, 1) {$5$};
-			\node (R6) at (5, 1) {$6$};
-			\node (S1) at (-1, 0) {$r = 1$};
-			\node (S2) at (-1, -1) {$2$};
-			\node (S3) at (-1, -2) {$3$};
-			\node (S4) at (-1, -3) {$4$};
-			\node (S5) at (-1, -4) {$5$};
-			\node (A1) at (0, 0) {$a_1$};
-			\node (A2) at (1, 0) {$a_2$};
-			\node (A3) at (1, -1) {$\textcolor{red}{a_3}$};
-			\node (A4) at (0, -1) {$a_4$};
-			\node (A5) at (0, -2) {$a_5$};
-			\node (A6) at (1, -2) {$a_6$};
-			\node (A7) at (2, -2) {$a_7$};
-			\node (A8) at (2, -1) {$a_8$};
-			\node (A9) at (2, 0) {$a_9$};
-			\node (A10) at (3, 0) {$a_{10}$};
-			\node (A11) at (3, -1) {$a_{11}$};
-			\node (A12) at (3, -2) {$a_{12}$};
-			\node (A13) at (3, -3) {$a_{13}$};
-			\node (A14) at (2, -3) {$a_{14}$};
-			\node (A15) at (1, -3) {$a_{15}$};
-			\node (A16) at (0, -3) {$a_{16}$};
-			\node (A17) at (0, -4) {$a_{17}$};
-			\node (A18) at (1, -4) {$a_{18}$};
-			\node (A19) at (2, -4) {$a_{19}$};
-			\node (A20) at (3, -4) {$a_{20}$};
-			\node (A21) at (4, -4) {$a_{21}$};
-			\node (A22) at (4, -3) {$a_{22}$};
-			\node (A23) at (4, -2) {$\textcolor{red}{a_{23}}$};
-			\node (A24) at (4, -1) {$a_{24}$};
-			\node (A25) at (4, 0) {$a_{25}$};
-			\node (A26) at (5, 0) {$a_{26}$};
-			\node (A27) at (5, -1) {$a_{27}$};
-			\node (A28) at (5, -2) {$a_{28}$};
-			
-			\tkzDefPoint(5,-3){A29}
-			\tkzDefPoint(5,-5){A31}
-			
-			% arrows
-			\draw[-stealth]
-			(A1) edge (A2) (A2) edge (A3) (A3) edge (A4)
-			(A4) edge (A5) (A5) edge (A6) (A6) edge (A7)
-			(A7) edge (A8) (A8) edge (A9) (A9) edge (A10)
-			(A10) edge (A11) (A11) edge (A12) (A12) edge (A13)
-			(A13) edge (A14) (A14) edge (A15) (A15) edge (A16)
-			(A16) edge (A17) (A17) edge (A18) (A18) edge (A19)
-			(A19) edge (A20) (A20) edge (A21) (A21) edge (A22)
-			(A22) edge (A23) (A23) edge (A24) (A24) edge (A25)
-			(A25) edge (A26) (A26) edge (A27) (A27) edge (A28);
-			
-			\draw[dashed, red] (A1) -- (A3) --(A7) -- (A13) --(A21) --  node {r = s} (A31);
-			\draw[thick, dotted] (A28) -- (A29);
-		\end{tikzpicture}
-		\caption{\small\textit{\color{cackithi}Hình $6$: Hàng và cột trong biểu diễn của $\alpha$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	Không khó để thấy
-		\begin{align*}
-			b(1,s) = 
-			\begin{cases}
-				s^2 & \text{ nếu } s \text{ lẻ,} \\
-				(s-1)^2 + 1 & \text{ nếu } s \text{ chẵn}.
-			\end{cases}
-		\end{align*}
-		Từ đó ta có
-		\begin{align*} 
-			&b(r,s)\\
-			 =& 
-			\begin{cases}
-				\!\!s^2 \!-\! (r\!-\!1) &\!\!\! \text{ nếu } s \text{ lẻ và } s \ge r, \\
-				\!\!(s\!-\!1)^2 \!+\! r &\!\!\! \text{ nếu } s \text{ chẵn và } s \ge r.
-			\end{cases}\tag{$3$}
-		\end{align*}
-		Tương tự,
-		\begin{align*}
-			b(r,1) = 
-			\begin{cases}
-				(r-1)^2 + 1 & \text{ nếu } r \text{ lẻ,} \\
-				r^2 & \text{ nếu } r \text{ chẵn}
-			\end{cases}
-		\end{align*}
-		và 
-		\begin{align*}
-			&b(r,s) \\
-			= 
-			&\begin{cases}
-				\!\!(r\!-\!1)^2 \!+\! s &\!\!\! \text{ nếu } r \text{ lẻ và } r \ge s, \\
-				\!\!r^2 \!-\! (s\!-\!1) &\!\!\!\text{ nếu } r \text{ chẵn và } r \ge s.
-			\end{cases}\tag{$4$}
-		\end{align*}
-		Như vậy, nếu cố định $r$ thì $b(r,s)$ là hàm tăng chặt theo $s$ khi $s \ge r$. Tương tự, nếu $s$ cố định thì $b(r,s)$ là hàm tăng chặt theo $r$ khi $r \ge s$.
+		\textbf{Khẳng định $\pmb{2}$:} \textit{Tồn tại một hệ thống điểm quan sát sao cho khoảng cách quan sát lớn nhất là $140$.} 
 		\vskip 0.1cm
-		$a.$ Giả sử rằng $\alpha$ là số hữu tỷ. Khi đó, tồn tại cặp số $(N,p)$ sao cho với mọi $i \ge N$ và $K \in \mathbb{N}$ ta có $a_{i + K.p} = a_i$. Ta sẽ chứng minh rằng $z_m$ và $s_n$ là các số tuần hoàn với độ dài chu kỳ là ước số của $2p$.
+		Thật vậy, ta phân chia $2023$ điểm quan sát thành $141$ tập không rỗng $M_i$ với $i = 0, \ldots, 140$ như sau:
 		\vskip 0.1cm
-		Thật vậy, với dòng thứ $m$, gọi $s(m)$ là chỉ số của cột nằm bên phải cột thứ $m$ (do đó $s(m) \ge m$) sao cho $a_{b(m,s(m))}$ nằm trong phần tuần hoàn của $\alpha$. Số $s(m)$ như vậy tồn tại bởi tính tăng chặt của hàm $b(r,s)$ theo $s$ khi $r$ cố định và $s \ge r$. Vì $s$ và $s + 2p$ có cùng tính chẵn lẻ nên từ ($3$) ta có với mọi $s \ge s(m)$: 
-		\begin{align*}
-			&b(m,s + 2p) - b(m,s) \\
-			=& 
-			\begin{cases}
-				(s + 2p)^2 - s^2 & \text{ nếu } s \text{ lẻ,} \\
-				(s +2p -1)^2 - (s-1)^2 & \text{ nếu } s \text{ chẵn}.
-			\end{cases} \\
-			=&
-			\begin{cases}
-				2p.(2s + 2p)& \text{ nếu } s \text{ lẻ,} \\
-				2p.(2s+2p-2) & \text{ nếu } s \text{ chẵn.}
-			\end{cases}
-		\end{align*}
-		Hiệu số này luôn dương và là bội của $p$, do đó $a_{b(m,s + 2p)} = a_{b(m,s)}$ với mọi $s \ge s(m)$. Vậy ta đã chứng minh rằng tồn tại cặp số nguyên dương $(s(m), 2p)$ sao cho $a_{b(m,s + 2p)} = a_{b(m,s)}$ với mọi $s \ge s(m)$. Nói cách khác, $z_m$ là số tuần hoàn với độ dài chu kỳ là ước của $2p$ với mọi số nguyên dương $m$. 
+		\begin{figure}[H]
+				\vspace*{-5pt}
+				\centering
+				\captionsetup{labelformat= empty, justification=centering}
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}[node distance={15mm}, thick, main/.style = {draw, circle}] 
+				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (1) {$A_0$}; 
+				\node[main, fill= teal!50] (2) [above right of=1] {$A_1^1$}; 
+				\node (3) [right = 5mm of 1] {$\vdots$};
+				
+				\node[main, fill= teal!50] (4) [below right of=1] {$A_1^{42}$}; 
+				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (5) [below right of=2] {$A_2$}; 
+				\node[main,fill=gray!50] (6) [above right of=5] {$A_3^1$}; 
+				\node (7) [right = 5mm of 5] {$\vdots$};
+				\node[main, fill=gray!50] (8) [below right of=5] {$A_3^{41}$}; 
+				\draw (1) -- (2); 
+				\draw (1) -- (3); 
+				\draw (1) -- (4); 
+				\draw (2) -- (3);
+				\draw (3) -- (4);
+				\draw (2) -- (5); 
+				\draw (3) -- (5); 
+				\draw (4) -- (5); 
+				\draw (5) -- (6);
+				\draw (5) -- (7);
+				\draw (5) -- (8);   
+				\draw (6) -- (7);
+				\draw (7) -- (8);
+				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (9) [below right of=6] {$A_4$};
+				\draw (6) -- (9);
+				\draw (7) -- (9); 
+				\draw (8) -- (9);  
+				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (10) [right = 5mm of 9] {$A_{138}$};
+				\draw[dashed] (9) -- (10);  
+				\node[main, fill= teal!50] (11) [above right of=10] {$A_{139}^1$}; 
+				\node (12) [right = 4mm of 10] {$\vdots$}; 
+				\node[main, fill= teal!50] (13) [below right of=10] {$A_{139}^{42}$}; 
+				\draw (10) -- (11);
+				\draw (10) -- (12);
+				\draw (10) -- (13);
+				\draw (11) -- (12);
+				\draw (12) -- (13);
+				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (14) [below right of=11] {$A_{140}$};
+				\draw (11) -- (14);
+				\draw (12) -- (14);
+				\draw (13) -- (14);
+			\end{tikzpicture}}
+			\caption{Hệ thống điểm quan sát với khoảng cách quan sát lớn nhất $140$. Mỗi điểm $A_i^{\bullet}$ thuộc tập $M_i$ có thể quan sát được tất cả điểm trong $M_{i-1}, M_{i+1}$ cũng như các điểm còn lại trong $M_i$.}
+			\vspace*{-10pt}
+		\end{figure}
+		\vskip 0.1cm		
+		$\bullet$ Mỗi tập $M_{3k}$ và $M_{3k+2}$ với $k = 0, \ldots, 46$ chỉ chứa một điểm quan sát.
 		\vskip 0.1cm
-		Bằng lập luận tương tự, với mỗi $n$, tồn tại số nguyên dương $r(n) \ge n$ sao cho với mọi $r \ge r(n)$ thì hiệu số $b(r + 2p,n) - b(r, n)$ luôn là một bội số dương của $2p$. Do đó, $a_{b(r + 2p,n)} = a_{b(r,n)}$. Vậy $s_n$ là số hữu tỷ với chu kỳ tuần hoàn có độ dài là một ước của $2p$ với mọi số nguyên dương $n$.
+		$\bullet$ Mỗi tập $M_{1}$ và $M_{139}$ chứa $42$ điểm quan sát.
 		\vskip 0.1cm
-		$b.$ Để chứng minh chiều ngược lại của khẳng định $(a)$ là sai, ta chỉ cần chỉ ra một số vô tỷ $\alpha$ sao cho tất cả các số $z_m$ và $s_n$ là hữu tỷ. Thật vậy, chọn 
+		$\bullet$ Mỗi tập $M_{3k+1}$ với $k = 1, \ldots, 45$ có $41$ điểm quan sát.
+		\vskip 0.1cm
+		Hệ thống này thỏa mãn điều kiện rằng mọi điểm quan sát trong $M_i$ với $i = 1, \ldots, 139$ quan sát được tât cả điểm còn lại trong $M_{i}$ cũng như tất cả các điểm trong tập đứng trước $M_{i-1}$ và tất cả các điểm trong tập đứng sau $M_{i+1}$. Điểm quan sát duy nhất trong $M_0$ quan sát được $42$ điểm trong $M_1$ và điểm quan sát duy nhất trong $M_{140}$ quan sát được $42$ điểm trong $M_{139}$ (Hình $1$).
+		\vskip 0.1cm
+		Rõ ràng $M_i \neq \emptyset$ với mọi $i = 0, \ldots, 140$ và tổng số điểm quan sát là
 		\begin{align*}
-			&\alpha = \alpha_0 \\
-			= &0,22 \ 3 \ 22 \ 333 \ 22 \ 33333 \ 22 \ 33333333 \ 22 \ \ldots
+			47.2 + 2.42 + 45.41 = 2023.
 		\end{align*}
-		với số $2$ nằm trên hàng và cột đầu tiên còn số $3$ nằm ở các vị trí còn lại như trong Hình $7$. Nói cách khác,
-		\begin{align*}
-			a_i = 
-			\begin{cases}
-				2 & \text{ khi }  i = k^2, k^2 + 1, \text{ với } k \in \mathbb{N}, \\
-				3 & \text{ ở các vị trí còn lại}.
-			\end{cases}
-		\end{align*}
-		Dễ thấy rằng $z_1 = s_1 = 0,222222 \ldots = \frac{2}{9}$ và $z_m = s_n = 0,233333 \ldots = \frac{7}{30}$ là các số hữu tỷ với mọi $m, n \ge 2$. Mặt khác, nằm giữa $a_{k^2 + 1} = 2$ và $a_{(k+1)^2} = 2$ có đúng $2k-1$ số $3$. Vì $k$ có thể lớn tùy ý, không tồn tại cặp $(N,p)$ sao cho $a_{i + p} = a_i$ với mọi $i \ge N$. Do đó $\alpha$ là số vô tỷ.
+		Từ mỗi điểm trong $M_1$ và $M_{139}$ quan sát được $43$ điểm quan sát khác và từ mỗi điểm quan sát còn lại nhìn được đúng $42$ điểm quan sát khác. Nói cách khác, từ mỗi điểm quan sát nhìn được ít nhất $42$ điểm quan sát khác. Từ cách xây dựng thì mỗi chuỗi $A_0, A_1, \ldots, A_k$ với $i = 0, \ldots, k$ và $A_i \in M_i$ tùy ý là một chuỗi quan sát độ dài $k$ từ $A_0$ đến $A_k$. Đây rõ ràng là chuỗi quan sát ngắn nhất từ $A_0$ đến $A_k$. Tương tự, mỗi chuỗi con $A_i, A_{i+1}, \ldots, A_j$ là chuỗi quan sát ngắn nhất nối $A_i$ và $A_j$. Do $A_i$ và $A_j$ tùy ý nên với mỗi cặp điểm quan sát đều tồn tại một chuỗi quan sát liên kết chúng. Như vậy, hệ thống điểm quan sát vừa xây dựng thỏa mãn yêu cầu của bài toán. Ở đó, điểm quan sát duy nhất trong $M_{140}$ có khoảng cách quan sát $140$ tới điểm quan sát duy nhất trong $M_0$.
+		\vskip 0.1cm
+	\textbf{Câu $\pmb{3}$:} Cho tam giác $AB$C với tâm đường tròn nội tiếp $I$. Gọi trung điểm của các cạnh $AC$ và $BC$ lần lượt là $M_b$ và $M_a$. Gọi giao điểm của đường thẳng $M_bI$ với đường thẳng $BC$ là $B'$ và giao điểm của đường thẳng $M_aI$ với đường thẳng $AC$ là $A'$. Biết rằng hai tam giác $ABC$ và $A'B'C$ có cùng diện tích. 
+	\vskip 0.1cm
+	Tìm giá trị có thể của góc $ACB$.\footnote{Trong số $09/2023$ chúng tôi đã sai sót khi yêu cầu tìm giá trị \textbf{lớn nhất} có thể của góc $ACB$. Thành thật xin lỗi quý độc giả.}	
 		\begin{figure}[H]
 			\vspace*{-5pt}
 			\centering
 			\captionsetup{labelformat= empty, justification=centering}
-			\begin{tikzpicture}[cackithi]
-				\node (A1) at (0, 0) {$2$};
-				\node (A2) at (1, 0) {$2$};
-				\node (A3) at (1, -1) {$3$};
-				\node (A4) at (0, -1) {$2$};
-				\node (A5) at (0, -2) {$2$};
-				\node (A6) at (1, -2) {$3$};
-				\node (A7) at (2, -2) {$3$};
-				\node (A8) at (2, -1) {$3$};
-				\node (A9) at (2, 0) {$2$};
-				\node (A10) at (3, 0) {$2$};
-				\node (A11) at (3, -1) {$3$};
-				\node (A12) at (3, -2) {$3$};
-				\node (A13) at (3, -3) {$3$};
-				\node (A14) at (2, -3) {$3$};
-				\node (A15) at (1, -3) {$3$};
-				\node (A16) at (0, -3) {$2$};
-				\node (A17) at (0, -4) {$2$};
-				\node (A18) at (1, -4) {$3$};
-				\node (A19) at (2, -4) {$3$};
-				\node (A20) at (3, -4) {$3$};
-				\node (A21) at (4, -4) {$3$};
-				\node (A22) at (4, -3) {$3$};
-				\node (A23) at (4, -2) {$3$};
-				\node (A24) at (4, -1) {$3$};
-				\node (A25) at (4, 0) {$2$};
-				\node (A26) at (5, 0) {$2$};
-				\node (A27) at (5, -1) {$3$};
-				\node (A28) at (5, -2) {$3$};
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+				\tkzSetUpPoint[size=4,circle, fill= teal!50]
+				\tkzDefPoints{0/0/A,6/0/B,0.8/4/C}
 				
-				\tkzDefPoint(5,-3){A29}
+				\tkzDefTriangleCenter[centroid](A,B,C)
+				\tkzGetPoint{G}
+				\tkzDefSpcTriangle[medial](A,B,C){Ma,Mb,Mc}
+				%\tkzLabelPoints(A,B,C)
+				\tkzDefTriangleCenter[in](A,B,C)
+				\tkzGetPoint{I}
 				
+				\tkzDefCircle[in](A,B,C) 
+				\tkzGetPoints{I}{i}
 				
-				% arrows
-				\draw[-stealth]
-				(A1) edge (A2) (A2) edge (A3) (A3) edge (A4)
-				(A4) edge (A5) (A5) edge (A6) (A6) edge (A7)
-				(A7) edge (A8) (A8) edge (A9) (A9) edge (A10)
-				(A10) edge (A11) (A11) edge (A12) (A12) edge (A13)
-				(A13) edge (A14) (A14) edge (A15) (A15) edge (A16)
-				(A16) edge (A17) (A17) edge (A18) (A18) edge (A19)
-				(A19) edge (A20) (A20) edge (A21) (A21) edge (A22)
-				(A22) edge (A23) (A23) edge (A24) (A24) edge (A25)
-				(A25) edge (A26) (A26) edge (A27) (A27) edge (A28);
+				\tkzInterLL(Mb,I)(B,C)
+				\tkzGetPoint{B1}
+				\tkzInterLL(Ma,I)(A,C)
+				\tkzGetPoint{A1}
+				\tkzDrawSegments(A,B B,C C,A)
+				\tkzDrawPoints(A1,B1)
+				\tkzLabelPoint[above left](A1){$A'$}
+				\tkzLabelPoint(B1){$B'$}
+				\tkzDrawLines[dashed](B1,Mb A1,Ma)
+				\tkzDrawSegments(B1,B A1,B1)
+				\tkzDrawCircle(I,i)
+				\tkzDrawPoints(I, Mb, Ma)
 				
-				\draw[thick, dotted] (A28) -- (A29);
+				\tkzDrawPoints(A,B,C)
 				
-			\end{tikzpicture}
-			\caption{\small\textit{\color{cackithi}Hình $7$: Biểu diễn thập phân của $\alpha_0$.}}
-			\vspace*{-5pt}
+				\tkzLabelPoint(I){$I$}
+				
+				\tkzLabelPoints[below left](A,Mb)
+				\tkzLabelPoints[above right](B,Ma)
+				\tkzLabelPoint[above](C){$C$}
+			\end{tikzpicture}}
+		\vspace*{-10pt}
 		\end{figure}
-\end{multicols}
-\newpage
-\begingroup
-\AddToShipoutPicture*{\put(150,700){\includegraphics[scale=1]{../tieude1.pdf}}}
-\centering
-\endgroup
-\vspace*{5pt}
-
-\begin{multicols}{2}
-	Trong phần đầu chuyên mục, chúng tôi sẽ trình bày lời giải của các bài toán trong kỳ thi Olympic Toán học trẻ của Áo năm $2022$ đăng trong số báo $6/2022$. 
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.85\linewidth]{gocolympic}
-%		\caption{\small\textit{\color{}}}
-		\vspace*{-10pt}
-	\end{figure}
-	{\bf\color{cackithi} OC$\pmb{43.}$} Người ta muốn lát kín một bảng ô vuông kích thước $2\times 13$ ($2$ hàng, $13$ cột) bằng các tấm bìa kích thước $1\times 2$ và $1\times 3$ sao cho các tấm bìa không được chồng lên nhau hay phủ ra ngoài bảng. Có bao nhiêu cách lát nếu ta được phép xoay các tấm bìa nhưng cạnh dài của tất cả các tấm đều phải song song với nhau? (số lượng mỗi tấm không hạn chế).   
+		Đặt $\gamma \colon = \angle BCA$. Gọi độ dài các cạnh $AB$, $BC$ và $CA$ lần lượt là $c$, $a$, $b$. 
+		Do hai tam giác $ACB$ và $A'CB'$ chung góc $BCA$ và có cùng diện tích nên 
+		\begin{align*}
+			CA' . CB' = CA . CB = ba. 
+		\end{align*}
+		Sử dụng kết quả sau (chứng minh bên dưới):
+		\begin{align*}
+			CA' = \frac{ab}{a+c-b} \text{ và } CB' = \frac{ab}{b+c-a}
+		\end{align*}
+		ta thu được
+		\begin{align*}
+			(3) \Leftrightarrow & ab  = \frac{a^2b^2}{(a+c-b)(b+c-a)} \\
+			\Leftrightarrow & ab = c^2 - (a-b)^2 \\
+			\Leftrightarrow & c^2 = a^2 + b^2 - ab.
+		\end{align*}
+		Từ hệ thức $c^2 = a^2 + b^2 - 2 ab \cos(\gamma)$ ta có $\cos(\gamma) = \frac{1}{2}$. Do đó $\angle ACB = \gamma = 60^{\circ}$.
+		\vskip 0.1cm
+		\textit{Chứng minh bổ đề $1$}:
+		\begin{figure}[H]
+			\vspace*{-5pt}
+			\centering
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+				\tkzSetUpPoint[size=4, fill= teal!50]
+				
+				\tkzDefPoints{0/0/A,6/0/B,0.8/4/C}
+				
+				\tkzDefTriangleCenter[centroid](A,B,C)
+				\tkzGetPoint{G}
+				\tkzDefSpcTriangle[medial](A,B,C){Ma,Mb,Mc}
+				%\tkzLabelPoints(A,B,C)
+				\tkzDefTriangleCenter[in](A,B,C)
+				\tkzGetPoint{I}
+				
+				\tkzDefCircle[in](A,B,C) 
+				\tkzGetPoints{I}{i}
+				
+				\tkzInterLL(Mb,I)(B,C)
+				\tkzGetPoint{B1}
+				\tkzInterLL(Ma,I)(A,C)
+				\tkzGetPoint{A1}
+				\tkzDrawSegments(A,B B,C C,A)
+				\tkzDrawPoint(A1)
+				\tkzLabelPoint[above left](A1){$A'$}
+				\tkzDrawLine[dashed](A1,Ma)
+				\tkzDrawCircle(I,i)
+				\tkzDrawPoints(I, Mb, Ma, Mc)
+				
+				\tkzDrawPoints(A,B,C)
+				
+				\tkzLabelPoint(I){$I$}
+				
+				\tkzAutoLabelPoints[center = G](A,B,C)
+				\tkzLabelPoint[below left](Mb){$M_b$}
+				\tkzLabelPoint[above right](Ma){$M_a$}
+				\tkzLabelPoint[below right](Mc){$M_c$}
+				\tkzInterLL(C,I)(Ma,Mc)
+				\tkzGetPoint{P}
+				\tkzDrawSegments(C,P P,B Ma,P)
+				\tkzDrawPoint(P)
+				\tkzLabelPoint(P){$P$}
+				\tkzDefPointBy[projection = onto C--B](I)
+				\tkzGetPoint{Ta}
+				\tkzDrawPoint(Ta)
+				\tkzLabelPoint[above](Ta){$T_a$}
+				\tkzDrawSegment(Ta,I)
+				\tkzMarkRightAngles(C,Ta,I C,P,B)
+				\tkzMarkAngle[size = 0.6,
+				arc=l](P,C,B)
+				\tkzLabelAngle[pos=0.95](P,C,B){$\gamma/2$}
+			\end{tikzpicture}}
+			\vspace*{-10pt}
+		\end{figure}
+		Ta chỉ cần chỉ ra $CA' = \frac{ab}{a+c-b}$. Hoán đổi vai trò của $A$ với $B$ (do đó $M_a$ với $M_b$, $a$ với $b$ cũng như $A'$ với $B'$) ta thu được kết quả tương tự cho $CB'$. 
+		\vskip 0.1cm
+		Gọi trung điểm của $AB$ là $M_c$ và giao điểm của $CI$ và $M_aM_c$ là $P$. Do $CA' \parallel M_aP$ nên theo định lý Thales thì $CA' = M_aP. \frac{CI}{IP}$. Mặt khác, vì $\angle CPM_a = \angle A'CI = \gamma/2$ nên $CM_aP$ là tam giác cân tại $M_a$ và ta thu được $M_aP = M_aC = a/2 = M_aB$. Như vậy, $P$ nằm trên đường tròn tâm $M_a$ bán kính $a/2$. Từ đó suy ra $\angle CPB = 90^{\circ}$ và ta có 
+		\begin{align*}
+			CP = CB \cos (\gamma /2) = a \cos(\gamma/2).
+		\end{align*}
+		Gọi $T_a$ là điểm tiếp xúc của đường tròn nội tiếp tam giác $ABC$ với cạnh $BC$. Vì $CT_a = \frac{a+b-c}{2}$ nên 
+		\begin{align*}
+			CI = \frac{CT_a}{\cos(\gamma/2)} = \frac{a+b-c}{2 \cos(\gamma/2)}
+		\end{align*} 
+		Do đó,
+		\begin{align*}
+			IP = CP -CI & = a \cos(\gamma/2) - \frac{a+b-c}{2 \cos(\gamma/2)} \\
+			& = \frac{2a \cos^2(\gamma/2) - a-b+c}{2 \cos (\gamma/2)} \\
+			& = \frac{a[1+\cos (\gamma)] - a -b +c}{2 \cos (\gamma/2)} \\
+			& = \frac{a\cos(\gamma) - b +c}{2 \cos (\gamma/2)}.
+		\end{align*}
+		Ở trên ta đã sử dụng đẳng thức $2 \cos^2(\gamma/2) = 1 + \cos (\gamma)$. Mặt khác, từ hệ thức $\cos(\gamma) = \frac{a^2 + b^2 - c^2}{2ab}$ ta thu được
+		\begin{align*}
+			IP & = \frac{a \frac{a^2 + b^2 - c^2}{2ab} -b+c}{2 \cos (\gamma/2)} \\
+			& = \frac{a^2 + b^2 - c^2 - 2b^2 + 2bc}{4b \cos (\gamma / 2)} \\
+			& = \frac{a^2 - b^2 - c^2 + 2bc}{4b \cos (\gamma / 2)} \\
+			& = \frac{{a^2 -(b-c)^2}}{4b \cos (\gamma / 2)} \\
+			& = \frac{(a -b+c)(a+b-c)}{4b \cos (\gamma / 2)}
+		\end{align*}
+		Như vậy,
+		\begin{align*}
+			CA' & = M_aP \frac{CI}{IP}  \\
+			& = \frac{a}{2} . \frac{a+b-c}{2 \cos(\gamma/2)} . \frac{4b \cos (\gamma/2)}{(a -b+c)(a+b-c)} \\
+			& = \frac{ab}{a-b+c}.
+		\end{align*}
+	\textbf{Câu $\pmb{4}$}: Cho một đa diện đều $2n$ cạnh. Từ các đoạn thẳng nối các đỉnh của đa diện (cạnh biên hoặc đường chéo) ta tô $n$ cạnh màu đỏ sao cho:
 	\vskip 0.1cm
-	\textit{Lời giải.} Theo giả thiết trong đầu bài, ta chỉ cần xét $2$ trường hợp:
+	$1.$ Các điểm cuối của các cạnh màu đỏ chính là $2n$ đỉnh của đa diện.
 	\vskip 0.1cm
-	Trường hợp $1$: các tấm bìa đều xếp thẳng đứng. Như vậy chỉ có thể dùng các tấm $1\times 2$  và trường hợp này chỉ có đúng $1$ cách lát.
+	$2.$ Không có $2$ cạnh màu đỏ nào có độ dài bằng nhau.
 	\vskip 0.1cm
-	Trường hợp $2$: các tấm bìa đều xếp nằm ngang. Trước tiên ta đếm số cách lát một hàng ngang gồm $13$ ô vuông. Gọi $x$ là số tấm độ dài $2$ và $y$ là số tấm độ dài $3$ thì $2x+3y=13.$ Ta dễ dàng thấy phương trình có $2$ nghiệm nguyên không âm là $(x,y)=(2,3)$ và $(x,y)=(5,1).$ Với trường hợp $(x,y)=(2,3)$ ta có $5$ tấm và một cách lát sẽ được xác định duy nhất bởi thứ tự các tấm trên hàng ngang. Như vậy trong trường hợp này, số cách lát bằng số cách chọn ra $2$ vị trí đặt các tấm $1\times 2$ trong số $5$ vị trí và bằng ${5 \choose 2}=10.$  Lý luận tương tự, trường hợp  $(x,y)=(5,1)$ có  ${6 \choose 5}=6$ cách lát. Tổng cộng ta có $16$ cách lát một hàng ngang. Do đó, theo quy tắc nhân, trong trường hợp $2$ ta có $16^2=256$ cách lát.
-	\vskip 0.1cm
-	Tổng cộng cả hai trường hợp, ta nhận được đáp số là $257$ cách lát thỏa mãn yêu cầu trong bài. 
-	\vskip 0.1cm
-	{\bf\color{cackithi} OC$\pmb{44.}$} Cho đoạn thẳng $AB$ với trung điểm $M.$ Dựng nửa đường tròn tâm $M$, đường kính $AB$. Cho $P$ là một điểm trên nửa đường tròn ($P$ khác với $A, B$)  và $Q$ là trung điểm của cung  $AP.$ Gọi  giao điểm của đường thẳng $BP$ với đường thẳng đi qua $M$ song song $PQ$ là  $S.$
-	Chứng minh rằng $PM = PS.$
-	\vskip 0.1cm
-	\textit{Lời giải.}
-	\begin{figure}[H]
-		\vspace*{-15pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[cackithi, scale=0.85]
-	\draw [shift={(3.,0.)}] (0,0) -- (109.18374269243076:0.4) arc (109.18374269243076:180.:0.4) -- cycle;
-	\draw [shift={(6.,0.)}] (0,0) -- (109.18374269243077:0.4) arc (109.18374269243077:180.:0.4) -- cycle;
-	\draw[] (2.5831269967609543,1.198190773075248) -- (2.3159906402340478,1.10524903314356) -- (2.408932380165736,0.8381126766166536) -- (2.6760687366926423,0.9310544165483414) -- cycle; 
-	\draw[] (5.085001116858378,1.7691670931649948) -- (5.177942856790066,1.5020307366380883) -- (5.445079213316973,1.5949724765697764) -- (5.352137473385285,1.8621088330966828) -- cycle; 
-	\draw [shift={(3.,0.)}] (0,0) -- (38.36748538486153:0.3) arc (38.36748538486153:109.18374269243076:0.3) -- cycle;
-	\draw [shift={(3.,0.)}] (0,0) -- (-16.22438596135386:0.54) arc (-16.22438596135386:38.36748538486152:0.54) -- cycle;
-	\draw [shift={(3.,0.)}]  plot[domain=0.:3.141592653589793,variable=\t]({1.*3.*cos(\t r)+0.*3.*sin(\t r)},{0.*3.*cos(\t r)+1.*3.*sin(\t r)});
-	\draw  (0.,0.)-- (6.,0.);
-	\draw  (5.352137473385285,1.8621088330966828)-- (0.,0.);
-	\draw  (2.0142039815854034,2.8334089380246414)-- (3.,0.);
-	\draw  (2.0142039815854034,2.8334089380246414)-- (5.352137473385285,1.8621088330966828);
-	\draw  (3.,0.)-- (6.337933491799883,-0.9713001049279592);
-	\draw  (6.337933491799883,-0.9713001049279592)-- (5.352137473385285,1.8621088330966828);
-	\draw [dashed] (3.,0.)-- (5.352137473385285,1.8621088330966828);
-	\draw [shift={(3.,0.)}] (-16.22438596135386:0.54) arc (-16.22438596135386:38.36748538486152:0.54);
-	\draw [shift={(3.,0.)}] (-16.22438596135386:0.41) arc (-16.22438596135386:38.36748538486152:0.41);
-		\draw [fill=white] (0.,0.) circle (1.6pt);
-		\draw (-0.28,-0.21) node {$A$};
-		\draw [fill=white] (6.,0.) circle (1.6pt);
-		\draw (6.28,0.25) node {$B$};
-		\draw [fill=white] (3.,0.) circle (1.6pt);
-		\draw (2.88,-0.43) node {$M$};
-		\draw [fill=white] (5.352137473385285,1.8621088330966828) circle (1.6pt);
-		\draw (5.58,2.27) node {$P$};
-		\draw [fill=white] (2.6760687366926423,0.9310544165483414) circle (1.6pt);
-		\draw [fill=white] (2.0142039815854034,2.8334089380246414) circle (1.6pt);
-		\draw (1.96,3.27) node {$Q$};
-		\draw [fill=white] (6.337933491799883,-0.9713001049279592) circle (1.6pt);
-		\draw (6.62,-0.95) node {$S$};
-\end{tikzpicture}
-		\vspace*{-10pt}
-	\end{figure} 
-	Vì $Q$ là trung điểm của cung $AP$ nên $MQ$ vuông góc với $AP.$ Vì đường thẳng $BP$ cũng vuông góc với $AP$, nên suy ra rằng hai đường thẳng $MQ$ và $BP$ song song với nhau. Hơn nữa, theo giả thiết $MS$ và $PQ$ song song với nhau nên tứ giác là $MSPQ$ là  hình bình hành. Do đó $PS = QM = PM$, vì $QM, PM$ là bán kính đường tròn. Ta nhận được điều phải chứng minh.
-	\vskip 0.1cm
-	{\bf\color{cackithi} OC$\pmb{45.}$} Tìm tất các các số nguyên tố $p, q$ và $r$ thỏa mãn $p +q^2=r^4.$
-	\vskip 0.1cm
-	\textit{Lời giải.} 
-	Ta có thể viết lại đẳng thức trong đầu bài dưới dạng $p = r^4 - q^2 = (r^2 - q)(r^2 + q).$
-	Vì $p$ là số nguyên tố nên từ đẳng thức trên ta suy ra $r^2 - q = 1$ và $r^2 + q = p.$ Từ $r^2 - q = 1$ ta có $q = r^2 - 1 = (r - 1)(r + 1).$
-	Vì $q$ là số nguyên tố nên ta  lại có $r - 1 = 1$ hay $r = 2$ và $q = 3.$ Do $r^2 + q = p$ ta có $p = 7.$
+	Tìm tất cả các số tự nhiên $n \ge 2$ thỏa mãn yêu cầu đã cho.
 	\vskip 0.1cm	
-	Trong phần cuối của chuyên mục kỳ này, chúng tôi sẽ giới thiệu với bạn đọc ba bài toán trong cuộc thi  Cúp Toán học Châu Âu năm $2022$. Đây là một cuộc thi toán dành cho học sinh THPT và cuối cấp THCS được tổ chức bởi Hiệp hội Tài năng Toán học Trẻ mang tên Marin Getaldić của Croatia.  
+	\textit{Lời giải.}
+	Ta sẽ chứng minh rằng một cách tô màu như vậy tồn tại khi và chỉ khi $n \equiv 0 \mod 4$ hoặc $n \equiv 1 \mod 4$.
 	\vskip 0.1cm
-	{\bf\color{cackithi} OC$\pmb{52.}$} Tìm tất cả các số nguyên dương $n$ thỏa mãn: tồn tại ba ước dương $a, b, c$ của $n,$ với $a > b > c,$ sao cho ba số $a^2-b^2, b^2-c^2, a^2-c^2$ 
-	cũng là các ước của $n.$
+	$``\Rightarrow":$ Giả sử tồn tại cách tô màu như vậy. Gọi $2n$ đỉnh của đa giác là $A_1, A_2, \ldots, A_{2n}$, được sắp xếp theo chiều kim đồng hồ. Ta định nghĩa \textit{khoảng cách $d(i,j)$ giữa hai đỉnh $A_i, A_j$} là số cạnh nằm trên đường đi ngắn nhất dọc theo các cạnh biên của đa diện nối hai đỉnh này. Khoảng cách này sẽ lấy một trong các giá trị trong tập $\{1,2\ldots,n\}$. Chẳng hạn, với $n=4$ như trong Hình $2$ thì $d(1,4) = 3$ và $d(1,7) = 2$. 
 	\vskip 0.1cm
-	{\bf\color{cackithi} OC$\pmb{53.}$} Cho tam giác nhọn $ABC$ với $BC < AC$. Giả sử đường tròn $\tau$ nội tiếp tam giác $ABC$ có tâm $I$ và tiếp xúc với $BC, AC$ lần lượt tại $D, E.$ Lấy điểm $M$ nằm trên đường tròn $\tau$  sao cho $BM$ song song với $DE$ và hai điểm $M, B$  nằm về cùng một phía của đường phân giác góc $BCA.$ Gọi $F$ và $H$ lần lượt là giao điểm (khác $M$) của $\tau$ với $BM$ và $CM.$  Gọi $J$ là một điểm trên đường thẳng $AC$ sao cho $JM$ song song với $EH$. Gọi $K$ là giao điểm (khác $F$) của $JF$ với $\tau.$ 
-	Chứng minh hai đường thẳng $ME$ và $KH$ song song.
-	\vskip 0.1cm
-	{\bf\color{cackithi} OC$\pmb{54.}$} Cho $n \ge 3$ là số nguyên dương. Alice và Bob  chơi một trò chơi trong đó họ thay phiên nhau tô màu các đỉnh của đa giác đều $n$ cạnh. Alice đi đầu tiên. Cả hai người chơi bắt đầu trò chơi với $0$ điểm. Trong mỗi lượt, người chơi chọn một đỉnh $V$ chưa được tô màu và tô màu nó. Sau đó, họ cộng $k$ điểm vào tổng số điểm của mình, trong đó $k$ là số đỉnh nằm cạnh  $V$ đã được tô màu. (Như vậy, $k$ sẽ có giá trị $0$, $1$ hoặc $2$.)
-	Trò chơi kết thúc khi tất cả các đỉnh đã được tô màu và người chơi nào có nhiều điểm hơn sẽ thắng. Xác định người chơi nào có chiến lược để luôn chiến thắng
-\end{multicols}
-\vspace*{-10pt}
-{\color{cackithi}\rule{1\linewidth}{1pt}}
-\vskip 0.2cm
-\centerline{\Large{\textbf{\color{cackithi}LỜI GIẢI, ĐÁP ÁN}}}
-\vskip 0.1cm
-\begin{multicols}{2}
-	\textit{Cách $2$}:
-	Ta sẽ dõi theo các Đối trọng -- đó là hiệu số giữa số lượng câu trả lời ``Có" và ``Không" tại từng thời điểm. Quy ước tại thời điểm $t=0$ là khi chưa có ai trả lời, $T=1$ khi người đứng đàu dãy trả lời, \ldots $t=500$ là thời điểm người cuối dãy trả lời.
-	\vskip 0.1cm
-	Do tổng cộng có $250$ câu trả lời ``Có", $250$ câu trả lời ``Không", tại thời điểm ban đầu và thời điểm cuối, các Đối trọng này đều bằng $0$. Với mỗi câu trả lời mới, Đối trọng sẽ thay đổi thêm hoặc bớt đúng $1$ đơn vị. Các Đối trọng bằng $0$ sẽ chia dãy $500$ thổ dân thành các nhóm. Trong mỗi nhóm các Đối trọng có dấu không đổi. 
+	Không khó để tính được
 	\begin{align*}
-		0 + + + + 0 - - &{\color{toanhocdoisong}0 - - - - - - 0} \ldots 0\\
-		&\text{\color{toanhocdoisong}một nhóm}
+		A_iA_j = 2r \sin\frac{d(i,j)\pi}{2n}
 	\end{align*}
-	Những người Phụ hoạ luôn làm tăng giá trị tuyệt đối của các Đối trọng. Như vậy, để làm Đối trọng quay về $0$, số các thổ dân sống theo nguyên tắc ở trong mỗi nhóm phải nhiều hơn hoặc bằng số những người Phụ hoạ. Điều này đúng cho mỗi nhóm, do đó cũng đúng cho toàn bộ cả $500$ thổ dân của bộ lạc.
-	\vskip 0.1cm
-	Sau đây ta đưa ra tình huống mà có đúng $250$ người Phụ hoạ. Giả sử bộ lạc có $250$ người theo nguyên tắc, gồm k người Thật thà và $250-k$ người Nói dối ($k$ tuỳ ý sao cho $125< k<250$), còn lại là $250$ người Phụ hoạ. 
-	\vskip 0.1cm
-	Ta xếp $k$ người Phụ hoạ đứng đầu tiên, với giả sử người đầu tiên trả lời ``Không", cả $k$ người này sẽ trả lời như nhau là ``Không". Tiếp theo ta xếp $k$ người Thật thà, họ đều trả lời là ``Có". Bây giờ số trả lời ``Không" và ``Có" bằng nhau, nên $250-k$ người Phụ hoạ sẽ được xếp tiếp theo đó với câu trả lời ``Có" như nhau (giả sử người đầu tiên trong số $250-k$ người này trả lời có). Còn lại là $250-k$ người Nói dối với trả lời ``Không" được xếp cuối hàng.
-	\vskip 0.1cm
-	Đáp số: $250$ người Phụ hoạ.
+	với $r$ là khoảng cách từ đỉnh đến tâm của đa giác. Do đó, $A_iA_j > A_rA_s \iff d(i,j) > d(r,s)$. Bởi vậy ta có thể thay yêu cầu rằng không có hai cạnh màu đỏ nào có cùng độ dài bằng yêu cầu không có hai cặp đỉnh nào có cùng khoảng cách.
+	\vskip 0.1cm	
+	Biểu diễn mỗi cặp đỉnh $(A_i, A_j)$ bởi cặp chỉ số $(i,j)$. Ta có thể giả sử $i <j$. Bài toán đã cho tương đương với việc phân hoạch tập $2n$ số tự nhiên $\{1,2,\ldots, 2n\}$ thành $n$ cặp $\{(i_k,j_k)\}_{k = 1}^n$ với $i_k<j_k$ sao cho tập các khoảng cách $\{d(i_k,j_k)\}_{k=1}^n$ là $\{1, \ldots, n\}$. Ta có
+	\begin{align*}
+		d(i_k,j_k) = 
+		\begin{cases}
+			j_k-i_k, \text{ nếu } j_k-i_k \le n \\
+			2n- j_k + i_k, \text{ nếu } j_k-i_k > n.
+		\end{cases} \tag{$4$}
+	\end{align*}
+	Bằng cách hoán đổi $i_k$ với $j_k$ trong trường hợp $j_k-i_k > n$ ta có 
+	\begin{align} 
+			\sum_{k=1}^{n}j_k - \sum_{k=1}^n i_k = & \sum_{k=1}^nd(i_k,j_k) + 2ns \nonumber \\
+			& = \sum_{k=1}^ni + 2ns \nonumber \\
+			& = n(n+1)/2 + 2ns.\tag{$5$}
+		\end{align}
+		với $s$ là số trường hợp $j_k-i_k > n$. Mặt khác,
+		\begin{align*}
+			sum_{k=1}^nj_k + \sum_{k=1}^ni_k = \sum_{k=1}^{2n}i = 2n(2n+1)/2. \tag{$6$}
+		\end{align*}
+		Từ các phương trình ($5$) và ($6$) ta thu được 
+		\begin{align*}
+			\sum_{k=1}^{n}j_k = \frac{n(5n+3)}{4} + ns.
+		\end{align*}
+		Vì $\sum_{k=1}^{n}j_k \in \mathbb{N}$ nên $\frac{n(5n+3)}{4} \in \mathbb{Z}$. Từ đó suy ra $n \equiv 0 \mod 4$ hoặc $n \equiv 1 \mod 4$.
+		\vskip 0.1cm
+%		$"\Leftarrow":$
+		\underline{\textit{Trường hợp $n \equiv 0 \mod 4$.}} Đặt $n = 4k$.
+		\vskip 0.1cm
+		$\bullet$ Với $k=1$ ($2n = 8$) ta có thể tô màu như Hình $2$.
+			\begin{figure}[H]
+				\vspace*{-5pt}
+				\centering
+				\captionsetup{labelformat= empty, justification=centering}
+				\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+					\tkzSetUpPoint[size=4, fill= teal!50]
+					\def\laenge{1.7}
+					\def\n{8}
+					\pgfmathtruncatemacro\w{360/\n}
+					\draw
+					(0:0) coordinate (A1)
+					foreach \i in {2,...,\n}
+					{--++(360+\w/2-\i*\w +\w:\laenge) coordinate (A\i)}
+					--cycle;
+					\tkzDrawPoints(A1,A...,A8)
+					\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
+					\tkzDrawSegment[red](A1,A8)
+					\tkzDrawSegment[red](A2,A6)
+					\tkzDrawSegment[red](A3,A5)
+					\tkzDrawSegment[red](A4,A7)
+				\end{tikzpicture}}
+				\caption{Đa giác đều $8$ cạnh.}
+				\vspace*{-10pt}
+			\end{figure}
+			$\bullet$ Với $k \ge 2$ thì danh sách các cạnh được tô màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($4$) với $2n = 8k$) được cho trong bảng dưới đây:
+		\begin{center}
+			\resizebox{\linewidth}{!}{%
+				\begin{tabular}{ |c|c|c| } 
+					\hline
+					Chỉ số & Cạnh & Khoảng cách \\ 
+					\hline
+					$1 \le i \le k$ & $(i, 8k+1-i)$ & $1,3, \ldots, 2k-1$ \\ 
+					\hline
+					$i = k+1$ & $(k+1, 5k+1)$ & $4k$ \\
+					\hline
+					$k+2 \le i \le 2k$ & $(i, 8k+2-i)$ & $2k+2, 2k+4, \ldots, 4k-2$ \\ 
+					\hline
+					$i = 2k+1$ & $(2k+1,4k+1)$ & $2k$ \\
+					\hline
+					$2k+2 \le i \le 3k+1$ & $(i, 8k+3-i)$ & $4k-1, 4k-3,\ldots, 2k+1$ \\
+					\hline
+					$3k+2 \le i \le 4k$ & $(i, 8k+2-i)$ & $2k-2, \ldots, 2$ \\
+					\hline
+			\end{tabular}}
+		\end{center}
+		\begin{figure}[H]
+			\vspace*{-5pt}
+			\centering
+			\captionsetup{labelformat= empty, justification=centering}
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+				\tkzSetUpPoint[size=4, fill= teal!50]
+				\def\laenge{1}
+				\def\n{16}
+				\pgfmathtruncatemacro\w{360/\n}
+				\draw
+				(0:0) coordinate (A1)
+				foreach \i in {2,...,\n}
+				{--++(360+\w/2-\i*\w +\w:\laenge) coordinate (A\i)}
+				--cycle;
+				\tkzDrawPoints(A1,A...,A16)
+				\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
+				\tkzDrawPoints(A1,A...,A16)
+				\tkzDrawSegment[red](A1,A16)
+				\tkzDrawSegment[red](A2,A15)
+				\tkzDrawSegment[red](A3,A11)
+				\tkzDrawSegment[red](A4,A14)
+				\tkzDrawSegment[red](A5,A9)
+				\tkzDrawSegment[red](A6,A13)
+				\tkzDrawSegment[red](A7,A12)
+				\tkzDrawSegment[red](A8,A10)
+			\end{tikzpicture}}
+			\caption{Đa giác đều $16$ cạnh.}
+			\vspace*{-10pt}
+		\end{figure}
+		\underline{\textit{Trường hợp $n \equiv 1 \mod 4$.}} Đặt $n = 4k+1$. 
+		\vskip 0.1cm
+		$\bullet$ Với $k=1$ ($2n = 10$) ta có thể tô màu như Hình $4$.
+		\begin{figure}[H]
+			\vspace*{-5pt}
+			\centering
+			\captionsetup{labelformat= empty, justification=centering}
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+				\tkzSetUpPoint[size=4, fill= teal!50]
+				\def\laenge{1.5}
+				\def\n{10}
+				\pgfmathtruncatemacro\w{360/\n}
+				\draw
+				(0:0) coordinate (A1)
+				foreach \i in {2,...,\n}
+				{--++(360+\w/2-\i*\w +\w:\laenge) coordinate (A\i)}
+				--cycle;
+				\tkzDrawPoints(A1,A...,A10)
+				\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
+				\tkzDrawPoints(A1,A...,A10)
+				\tkzDrawSegment[red](A1,A10)
+				\tkzDrawSegment[red](A2,A8)
+				\tkzDrawSegment[red](A3,A6)
+				\tkzDrawSegment[red](A4,A9)
+				\tkzDrawSegment[red](A5,A7)
+			\end{tikzpicture}}
+			\caption{Đa giác đều $10$ cạnh.}
+			\vspace*{-10pt}
+		\end{figure}
+		$\bullet$  Với $k \ge 2$ thì danh sách các cạnh được tô màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($4$) với $2n = 8k+2$) được cho trong bảng dưới đây:
+		\begin{center}
+			\resizebox{\linewidth}{!}{%
+				\begin{tabular}{ |c|c|c| } 
+					\hline
+					Chỉ số & Cạnh & Khoảng cách \\ 
+					\hline
+					$1 \le i \le k$ & $(i, 8k+3-i)$ & $1,3, \ldots, 2k-1$ \\ 
+					\hline
+					$i = k+1$ & $(k+1, 5k+3)$ & $4k$ \\
+					\hline
+					$k+2 \le i \le 2k$ & $(i, 8k+4-i)$ & $2k+2, 2k+4, \ldots, 4k-2$ \\ 
+					\hline
+					$i = 2k+1$ & $(2k+1, 4k+2)$ & $2k+1$ \\
+					\hline
+					$2k+2 \le i \le 3k+1$ & $(i, 8k+5-i)$ & $4k+1, 4k-1,\ldots, 2k+3$ \\
+					\hline
+					$3k+2 \le i \le 4k+1$ & $(i,8k+4-i)$ & $2k, \ldots, 2$ \\
+					\hline
+			\end{tabular}}
+		\end{center}
+		\begin{figure}[H]
+			\vspace*{-5pt}
+			\centering
+			\captionsetup{labelformat= empty, justification=centering}
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+				\tkzSetUpPoint[size=4, fill= teal!50]
+				\def\laenge{0.6}
+				\def\n{26}
+				\pgfmathtruncatemacro\w{360/\n}
+				\draw
+				(0:0) coordinate (A1)
+				foreach \i in {2,...,\n}
+				{--++(360+\w/2-\i*\w+\w:\laenge) coordinate (A\i)}
+				--cycle;
+				\tkzDrawPoints(A1,A...,A26)
+				\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
+				\tkzDrawSegment[red](A1,A26)
+				\tkzDrawSegment[red](A2,A25)
+				\tkzDrawSegment[red](A3,A24)
+				\tkzDrawSegment[red](A4,A18)
+				\tkzDrawSegment[red](A5,A23)
+				\tkzDrawSegment[red](A6,A22)
+				\tkzDrawSegment[red](A7,A14)
+				\tkzDrawSegment[red](A8,A21)
+				\tkzDrawSegment[red](A9,A20)
+				\tkzDrawSegment[red](A10,A19)
+				\tkzDrawSegment[red](A11,A17)
+				\tkzDrawSegment[red](A12,A16)
+				\tkzDrawSegment[red](A13,A15)
+			\end{tikzpicture}}
+			\caption{Đa giác đều $26$ cạnh.}
+			\vspace*{-10pt}
+		\end{figure}
 \end{multicols}
