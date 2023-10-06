@@ -13,7 +13,7 @@
 \begin{multicols}{2}
 	Trong chuyên mục này, chúng tôi sẽ trình bày Lời giải của các bài toán trong vòng hai kỳ thi toán học liên bang Đức năm $2023$, đăng trong số báo $9/2023$. 
 	\vskip 0.1cm
-	\textbf{Câu $\pmb{1}$:} Tìm ước chung lớn nhất của tất cả các số có dạng $p^6 - 7p^2 +6$ với $p$ chạy trên tập tất cả các số nguyên tố và $p \ge 11$.
+	\textbf{\color{cackithi}Câu $\pmb{1}$:} Tìm ước chung lớn nhất của tất cả các số có dạng $p^6 - 7p^2 +6$ với $p$ chạy trên tập tất cả các số nguyên tố và $p \ge 11$.
 	\vskip 0.1cm
 	\textit{Lời giải.}
 	Đặt $f(p) \colon =p^6 - 7p^2 +6$. Gọi $a$ là ước chung lớn nhất (ƯCLN) của tất cả các $f(p)$ với $p$ nguyên tố và $p \ge 11$. Ta sẽ chứng minh rằng $a = 2^5\times 3 \times 7$.
@@ -26,8 +26,8 @@
 	Hơn nữa, do $p$ nguyên tố và $p \ge 11$ nên $p$ là số lẻ. Đặt $p= 2k+1$, ta có
 	\begin{align*}
 			f(p) = & (p^2-1)(p^2-2)(p^2+3) \\
-			= & (4k^2 + 4k) (4k^2 + 4k-1)(4k^2+4k+4) \\
-			= & 16k(k+1)(4k^2 + 4k-1)(k^2 + k + 1).
+			= & (4k^2 \!+\! 4k) \!(4k^2 \!+\! 4k\!-\!1)(4k^2\!+\!4k\!+\!4) \\
+			= & 16k(k\!+\!1)(4k^2 \!+\! 4k\!-\!1)(k^2 \!+\! k \!+\! 1).
 	\end{align*}
 	Vì $2 |k(k+1)$ với mọi $k \in \mathbb{Z}$ nên $2\times 16 = 32 = 2^5 |f(p)$. Bởi vậy $2^5 |a$.
 	\vskip 0.1cm
@@ -45,11 +45,11 @@
 		$
 		nên 
 		\begin{align*}
-			a |\text{ƯCLN}(f(11), f(13)) = 2^5\times 3 \times 7. \tag{$2$}
+			a |\text{ƯCLN}(f(11), f(13)) \!=\! 2^5\!\times\! 3 \!\times\! 7. \tag{$2$}
 		\end{align*}
 		Từ ($1$) và ($2$) ta thu được $a = 2^5\times 3 \times 7$.
 	\vskip 0.1cm
-	\textbf{Câu $\pmb{2}$:} Trên một hòn đảo địa hình đồi núi có 2023 điểm quan sát. Từ mỗi điểm quan sát có thể nhìn thấy ít nhất 42 điểm quan sát khác. Với hai điểm quan sát bất kỳ $X$ và $Y$, luôn tồn tại một số nguyên dương $n$ và các điểm quan sát $A_1,  A_2, \ldots, A_{n+1}$ sao cho $A_1 = X$, $A_{n+1} = Y$ và mỗi cặp điểm liền kề $A_i$ với $A_{i+1}$ có thể quan sát được lẫn nhau với $i = 1, 2, \ldots, n$. Số $n$ nhỏ nhất như vậy được gọi là khoảng cách quan sát (Sichtabstand). 
+	\textbf{\color{cackithi}Câu $\pmb{2}$:} Trên một hòn đảo địa hình đồi núi có $2023$ điểm quan sát. Từ mỗi điểm quan sát có thể nhìn thấy ít nhất $42$ điểm quan sát khác. Với hai điểm quan sát bất kỳ $X$ và $Y$, luôn tồn tại một số nguyên dương $n$ và các điểm quan sát $A_1,  A_2, \ldots, A_{n+1}$ sao cho $A_1 = X$, $A_{n+1} = Y$ và mỗi cặp điểm liền kề $A_i$ với $A_{i+1}$ có thể quan sát được lẫn nhau với $i = 1, 2, \ldots, n$. Số $n$ nhỏ nhất như vậy được gọi là khoảng cách quan sát (Sichtabstand). 
 	\vskip 0.1cm
 	Xác định khoảng cách quan sát lớn nhất có thể có giữa hai cặp điểm quan sát thỏa mãn những điều kiện ở trên.
 	\vskip 0.1cm
@@ -70,17 +70,18 @@
 	\begin{align*}
 		|M_0 \cup M_1| \ge 43 \text{ và } |M_{n(X)-1} \cup M_{n(X)}| \ge 43.
 	\end{align*}
-	\textbf{Khẳng định $\pmb{1}$:} \textit{Khoảng cách quan sát lớn nhất không thể lớn hơn $140$.} 
+	\textbf{\color{cackithi}Khẳng định $\pmb{1}$:} \textit{Khoảng cách quan sát lớn nhất không thể lớn hơn $140$.} 
 	\vskip 0.1cm
 	Thật vậy, nếu $M_{141} \neq \emptyset$ thì 
 	\begin{align*}
-		& |M_0 \cup M_1| + |M_2 \cap M_3 \cap M_4| + |M_5 \cup M_6 \cup M7| + \\
-		& \ldots + |M_{137} \cup M_{138} \cup M_{139}| + |M_{140} \cup M_{141}| \\
-		& \ge 43 + 46.43 + 43 = 2064 > 2023
+		& |M_0 \cup M_1| + |M_2 \cap M_3 \cap M_4| \\
+		&+ |M_5 \cup M_6 \cup M7| + \ldots \\
+		&+ |M_{137} \cup M_{138} \cup M_{139}| + |M_{140} \cup M_{141}| \\
+		\ge \,&43 + 46.43 + 43 = 2064 > 2023
 	\end{align*}
 	dẫn đến mâu thuẫn.
 	\vskip 0.1cm
-		\textbf{Khẳng định $\pmb{2}$:} \textit{Tồn tại một hệ thống điểm quan sát sao cho khoảng cách quan sát lớn nhất là $140$.} 
+		\textbf{\color{cackithi}Khẳng định $\pmb{2}$:} \textit{Tồn tại một hệ thống điểm quan sát sao cho khoảng cách quan sát lớn nhất là $140$.} 
 		\vskip 0.1cm
 		Thật vậy, ta phân chia $2023$ điểm quan sát thành $141$ tập không rỗng $M_i$ với $i = 0, \ldots, 140$ như sau:
 		\vskip 0.1cm
@@ -88,7 +89,7 @@
 				\vspace*{-5pt}
 				\centering
 				\captionsetup{labelformat= empty, justification=centering}
-			\resizebox{\columnwidth}{!}{\begin{tikzpicture}[node distance={15mm}, thick, main/.style = {draw, circle}] 
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}[node distance={15mm}, thick, main/.style = {draw, circle}, cackithi] 
 				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (1) {$A_0$}; 
 				\node[main, fill= teal!50] (2) [above right of=1] {$A_1^1$}; 
 				\node (3) [right = 5mm of 1] {$\vdots$};
@@ -130,7 +131,7 @@
 				\draw (12) -- (14);
 				\draw (13) -- (14);
 			\end{tikzpicture}}
-			\caption{Hệ thống điểm quan sát với khoảng cách quan sát lớn nhất $140$. Mỗi điểm $A_i^{\bullet}$ thuộc tập $M_i$ có thể quan sát được tất cả điểm trong $M_{i-1}, M_{i+1}$ cũng như các điểm còn lại trong $M_i$.}
+			\caption{\small\textit{\color{cackithi}Hình $1$. Hệ thống điểm quan sát với khoảng cách quan sát lớn nhất $140$. Mỗi điểm $A_i^{\bullet}$ thuộc tập $M_i$ có thể quan sát được tất cả điểm trong $M_{i-1}, M_{i+1}$ cũng như các điểm còn lại trong $M_i$.}}
 			\vspace*{-10pt}
 		\end{figure}
 		\vskip 0.1cm		
@@ -148,11 +149,11 @@
 		\end{align*}
 		Từ mỗi điểm trong $M_1$ và $M_{139}$ quan sát được $43$ điểm quan sát khác và từ mỗi điểm quan sát còn lại nhìn được đúng $42$ điểm quan sát khác. Nói cách khác, từ mỗi điểm quan sát nhìn được ít nhất $42$ điểm quan sát khác. Từ cách xây dựng thì mỗi chuỗi $A_0, A_1, \ldots, A_k$ với $i = 0, \ldots, k$ và $A_i \in M_i$ tùy ý là một chuỗi quan sát độ dài $k$ từ $A_0$ đến $A_k$. Đây rõ ràng là chuỗi quan sát ngắn nhất từ $A_0$ đến $A_k$. Tương tự, mỗi chuỗi con $A_i, A_{i+1}, \ldots, A_j$ là chuỗi quan sát ngắn nhất nối $A_i$ và $A_j$. Do $A_i$ và $A_j$ tùy ý nên với mỗi cặp điểm quan sát đều tồn tại một chuỗi quan sát liên kết chúng. Như vậy, hệ thống điểm quan sát vừa xây dựng thỏa mãn yêu cầu của bài toán. Ở đó, điểm quan sát duy nhất trong $M_{140}$ có khoảng cách quan sát $140$ tới điểm quan sát duy nhất trong $M_0$.
 		\vskip 0.1cm
-	\textbf{Câu $\pmb{3}$:} Cho tam giác $AB$C với tâm đường tròn nội tiếp $I$. Gọi trung điểm của các cạnh $AC$ và $BC$ lần lượt là $M_b$ và $M_a$. Gọi giao điểm của đường thẳng $M_bI$ với đường thẳng $BC$ là $B'$ và giao điểm của đường thẳng $M_aI$ với đường thẳng $AC$ là $A'$. Biết rằng hai tam giác $ABC$ và $A'B'C$ có cùng diện tích. 
+	\textbf{\color{cackithi}Câu $\pmb{3}$:} Cho tam giác $AB$C với tâm đường tròn nội tiếp $I$. Gọi trung điểm của các cạnh $AC$ và $BC$ lần lượt là $M_b$ và $M_a$. Gọi giao điểm của đường thẳng $M_bI$ với đường thẳng $BC$ là $B'$ và giao điểm của đường thẳng $M_aI$ với đường thẳng $AC$ là $A'$. Biết rằng hai tam giác $ABC$ và $A'B'C$ có cùng diện tích. 
 	\vskip 0.1cm
-	Tìm giá trị có thể của góc $ACB$.\footnote{Trong số $09/2023$ chúng tôi đã sai sót khi yêu cầu tìm giá trị \textbf{lớn nhất} có thể của góc $ACB$. Thành thật xin lỗi quý độc giả.}	
+	Tìm giá trị có thể của góc $ACB$.\footnote{\color{cackithi}Trong số $09/2023$ chúng tôi đã sai sót khi yêu cầu tìm giá trị \textbf{\color{cackithi}lớn nhất} có thể của góc $ACB$. Thành thật xin lỗi quý độc giả.}	
 		\begin{figure}[H]
-			\vspace*{-5pt}
+			\vspace*{-10pt}
 			\centering
 			\captionsetup{labelformat= empty, justification=centering}
 			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
@@ -203,9 +204,9 @@
 		\end{align*}
 		ta thu được
 		\begin{align*}
-			(3) \Leftrightarrow & ab  = \frac{a^2b^2}{(a+c-b)(b+c-a)} \\
-			\Leftrightarrow & ab = c^2 - (a-b)^2 \\
-			\Leftrightarrow & c^2 = a^2 + b^2 - ab.
+			(3) \Leftrightarrow \,& ab  = \frac{a^2b^2}{(a+c-b)(b+c-a)} \\
+			\Leftrightarrow \,& ab = c^2 - (a-b)^2 \\
+			\Leftrightarrow \,& c^2 = a^2 + b^2 - ab.
 		\end{align*}
 		Từ hệ thức $c^2 = a^2 + b^2 - 2 ab \cos(\gamma)$ ta có $\cos(\gamma) = \frac{1}{2}$. Do đó $\angle ACB = \gamma = 60^{\circ}$.
 		\vskip 0.1cm
@@ -213,7 +214,7 @@
 		\begin{figure}[H]
 			\vspace*{-5pt}
 			\centering
-			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}[color= cackithi]
 				\tkzSetUpPoint[size=4, fill= teal!50]
 				
 				\tkzDefPoints{0/0/A,6/0/B,0.8/4/C}
@@ -276,7 +277,7 @@
 		\end{align*} 
 		Do đó,
 		\begin{align*}
-			IP = CP -CI & = a \cos(\gamma/2) - \frac{a+b-c}{2 \cos(\gamma/2)} \\
+			IP &= CP -CI  = a \cos(\gamma/2) - \frac{a+b-c}{2 \cos(\gamma/2)} \\
 			& = \frac{2a \cos^2(\gamma/2) - a-b+c}{2 \cos (\gamma/2)} \\
 			& = \frac{a[1+\cos (\gamma)] - a -b +c}{2 \cos (\gamma/2)} \\
 			& = \frac{a\cos(\gamma) - b +c}{2 \cos (\gamma/2)}.
@@ -295,7 +296,7 @@
 			& = \frac{a}{2} . \frac{a+b-c}{2 \cos(\gamma/2)} . \frac{4b \cos (\gamma/2)}{(a -b+c)(a+b-c)} \\
 			& = \frac{ab}{a-b+c}.
 		\end{align*}
-	\textbf{Câu $\pmb{4}$}: Cho một đa diện đều $2n$ cạnh. Từ các đoạn thẳng nối các đỉnh của đa diện (cạnh biên hoặc đường chéo) ta tô $n$ cạnh màu đỏ sao cho:
+	\textbf{\color{cackithi}Câu $\pmb{4}$}: Cho một đa diện đều $2n$ cạnh. Từ các đoạn thẳng nối các đỉnh của đa diện (cạnh biên hoặc đường chéo) ta tô $n$ cạnh màu đỏ sao cho:
 	\vskip 0.1cm
 	$1.$ Các điểm cuối của các cạnh màu đỏ chính là $2n$ đỉnh của đa diện.
 	\vskip 0.1cm
@@ -316,21 +317,22 @@
 	\vskip 0.1cm	
 	Biểu diễn mỗi cặp đỉnh $(A_i, A_j)$ bởi cặp chỉ số $(i,j)$. Ta có thể giả sử $i <j$. Bài toán đã cho tương đương với việc phân hoạch tập $2n$ số tự nhiên $\{1,2,\ldots, 2n\}$ thành $n$ cặp $\{(i_k,j_k)\}_{k = 1}^n$ với $i_k<j_k$ sao cho tập các khoảng cách $\{d(i_k,j_k)\}_{k=1}^n$ là $\{1, \ldots, n\}$. Ta có
 	\begin{align*}
-		d(i_k,j_k) = 
+		\hspace*{-10pt}d(i_k,j_k) \!\!=\!\! 
 		\begin{cases}
-			j_k-i_k, \text{ nếu } j_k-i_k \le n \\
-			2n- j_k + i_k, \text{ nếu } j_k-i_k > n.
-		\end{cases} \tag{$4$}
+			\!\!j_k\!-\!i_k, \text{ nếu } j_k\!-\!i_k \!\le\! n \\
+			\!\!2n\!-\! j_k \!+\! i_k, \text{ nếu } j_k\!-\!i_k \!>\! n.
+		\end{cases}\hspace*{-10pt} \tag{$4$}
 	\end{align*}
 	Bằng cách hoán đổi $i_k$ với $j_k$ trong trường hợp $j_k-i_k > n$ ta có 
-	\begin{align} 
-			\sum_{k=1}^{n}j_k - \sum_{k=1}^n i_k = & \sum_{k=1}^nd(i_k,j_k) + 2ns \nonumber \\
-			& = \sum_{k=1}^ni + 2ns \nonumber \\
-			& = n(n+1)/2 + 2ns.\tag{$5$}
-		\end{align}
+	\begin{align*} 
+			\sum_{k=1}^{n}j_k - \sum_{k=1}^n i_k = &\sum_{k=1}^nd(i_k,j_k) + 2ns\\
+			 = &\sum_{k=1}^ni + 2ns \\
+			 = &n(n+1)/2 + 2ns.\tag{$5$}
+		\end{align*}
 		với $s$ là số trường hợp $j_k-i_k > n$. Mặt khác,
 		\begin{align*}
-			sum_{k=1}^nj_k + \sum_{k=1}^ni_k = \sum_{k=1}^{2n}i = 2n(2n+1)/2. \tag{$6$}
+			\sum_{k=1}^nj_k + \sum_{k=1}^ni_k &= \sum_{k=1}^{2n}i \\
+			&= 2n(2n+1)/2. \tag{$6$}
 		\end{align*}
 		Từ các phương trình ($5$) và ($6$) ta thu được 
 		\begin{align*}
@@ -343,10 +345,10 @@
 		\vskip 0.1cm
 		$\bullet$ Với $k=1$ ($2n = 8$) ta có thể tô màu như Hình $2$.
 			\begin{figure}[H]
-				\vspace*{-5pt}
+				\vspace*{-10pt}
 				\centering
 				\captionsetup{labelformat= empty, justification=centering}
-				\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+				\begin{tikzpicture}[cackithi,scale = 0.75]
 					\tkzSetUpPoint[size=4, fill= teal!50]
 					\def\laenge{1.7}
 					\def\n{8}
@@ -362,8 +364,8 @@
 					\tkzDrawSegment[red](A2,A6)
 					\tkzDrawSegment[red](A3,A5)
 					\tkzDrawSegment[red](A4,A7)
-				\end{tikzpicture}}
-				\caption{Đa giác đều $8$ cạnh.}
+				\end{tikzpicture}
+				\caption{\small\textit{\color{cackithi}Hình $2$. Đa giác đều $8$ cạnh.}}
 				\vspace*{-10pt}
 			\end{figure}
 			$\bullet$ Với $k \ge 2$ thì danh sách các cạnh được tô màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($4$) với $2n = 8k$) được cho trong bảng dưới đây:
@@ -388,10 +390,10 @@
 			\end{tabular}}
 		\end{center}
 		\begin{figure}[H]
-			\vspace*{-5pt}
+%			\vspace*{-5pt}
 			\centering
 			\captionsetup{labelformat= empty, justification=centering}
-			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+			\begin{tikzpicture}[cackithi,scale = 0.95]
 				\tkzSetUpPoint[size=4, fill= teal!50]
 				\def\laenge{1}
 				\def\n{16}
@@ -412,18 +414,18 @@
 				\tkzDrawSegment[red](A6,A13)
 				\tkzDrawSegment[red](A7,A12)
 				\tkzDrawSegment[red](A8,A10)
-			\end{tikzpicture}}
-			\caption{Đa giác đều $16$ cạnh.}
-			\vspace*{-10pt}
+			\end{tikzpicture}
+			\caption{\small\textit{\color{cackithi}Hình $3$. Đa giác đều $16$ cạnh.}}
+			\vspace*{-15pt}
 		\end{figure}
 		\underline{\textit{Trường hợp $n \equiv 1 \mod 4$.}} Đặt $n = 4k+1$. 
 		\vskip 0.1cm
 		$\bullet$ Với $k=1$ ($2n = 10$) ta có thể tô màu như Hình $4$.
 		\begin{figure}[H]
-			\vspace*{-5pt}
+			\vspace*{-10pt}
 			\centering
 			\captionsetup{labelformat= empty, justification=centering}
-			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+			\begin{tikzpicture}[cackithi,scale = 0.95]
 				\tkzSetUpPoint[size=4, fill= teal!50]
 				\def\laenge{1.5}
 				\def\n{10}
@@ -441,9 +443,9 @@
 				\tkzDrawSegment[red](A3,A6)
 				\tkzDrawSegment[red](A4,A9)
 				\tkzDrawSegment[red](A5,A7)
-			\end{tikzpicture}}
-			\caption{Đa giác đều $10$ cạnh.}
-			\vspace*{-10pt}
+			\end{tikzpicture}
+			\caption{\small\textit{\color{cackithi}Hình $4$. Đa giác đều $10$ cạnh.}}
+			\vspace*{-15pt}
 		\end{figure}
 		$\bullet$  Với $k \ge 2$ thì danh sách các cạnh được tô màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($4$) với $2n = 8k+2$) được cho trong bảng dưới đây:
 		\begin{center}
@@ -466,37 +468,37 @@
 					\hline
 			\end{tabular}}
 		\end{center}
-		\begin{figure}[H]
-			\vspace*{-5pt}
-			\centering
-			\captionsetup{labelformat= empty, justification=centering}
-			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
-				\tkzSetUpPoint[size=4, fill= teal!50]
-				\def\laenge{0.6}
-				\def\n{26}
-				\pgfmathtruncatemacro\w{360/\n}
-				\draw
-				(0:0) coordinate (A1)
-				foreach \i in {2,...,\n}
-				{--++(360+\w/2-\i*\w+\w:\laenge) coordinate (A\i)}
-				--cycle;
-				\tkzDrawPoints(A1,A...,A26)
-				\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
-				\tkzDrawSegment[red](A1,A26)
-				\tkzDrawSegment[red](A2,A25)
-				\tkzDrawSegment[red](A3,A24)
-				\tkzDrawSegment[red](A4,A18)
-				\tkzDrawSegment[red](A5,A23)
-				\tkzDrawSegment[red](A6,A22)
-				\tkzDrawSegment[red](A7,A14)
-				\tkzDrawSegment[red](A8,A21)
-				\tkzDrawSegment[red](A9,A20)
-				\tkzDrawSegment[red](A10,A19)
-				\tkzDrawSegment[red](A11,A17)
-				\tkzDrawSegment[red](A12,A16)
-				\tkzDrawSegment[red](A13,A15)
-			\end{tikzpicture}}
-			\caption{Đa giác đều $26$ cạnh.}
-			\vspace*{-10pt}
-		\end{figure}
+%		\begin{figure}[H]
+%			\vspace*{-5pt}
+%			\centering
+%			\captionsetup{labelformat= empty, justification=centering}
+%			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+%				\tkzSetUpPoint[size=4, fill= teal!50]
+%				\def\laenge{0.6}
+%				\def\n{26}
+%				\pgfmathtruncatemacro\w{360/\n}
+%				\draw
+%				(0:0) coordinate (A1)
+%				foreach \i in {2,...,\n}
+%				{--++(360+\w/2-\i*\w+\w:\laenge) coordinate (A\i)}
+%				--cycle;
+%				\tkzDrawPoints(A1,A...,A26)
+%				\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
+%				\tkzDrawSegment[red](A1,A26)
+%				\tkzDrawSegment[red](A2,A25)
+%				\tkzDrawSegment[red](A3,A24)
+%				\tkzDrawSegment[red](A4,A18)
+%				\tkzDrawSegment[red](A5,A23)
+%				\tkzDrawSegment[red](A6,A22)
+%				\tkzDrawSegment[red](A7,A14)
+%				\tkzDrawSegment[red](A8,A21)
+%				\tkzDrawSegment[red](A9,A20)
+%				\tkzDrawSegment[red](A10,A19)
+%				\tkzDrawSegment[red](A11,A17)
+%				\tkzDrawSegment[red](A12,A16)
+%				\tkzDrawSegment[red](A13,A15)
+%			\end{tikzpicture}}
+%			\caption{Đa giác đều $26$ cạnh.}
+%			\vspace*{-10pt}
+%		\end{figure}
 \end{multicols}
