@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  10 OCT 2023 15:08
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  10 OCT 2023 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2890,7 +2890,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 84.
 
-(../duongvaotoanhoc/duongvaotoanhoc.tex
+(../lichsutoanhoc/lichsutoanhoc3.tex
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  5.
 
@@ -3048,27 +3048,20 @@ d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
-File: ../duongvaotoanhoc/pic2//1.png Graphic file (type bmp)
-<../duongvaotoanhoc/pic2//1.png>
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
-Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
-um;mapping=tex-text;" at 10.95pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Regular.otf
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 31.
-Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
-m;mapping=tex-text;" at 10.95pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Italic.otf
-Package microtype Info: Character `156' is missing
-(microtype)             in font `\TU/EBGaramond(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
 
+Underfull \hbox (badness 5446) in paragraph at lines 15--16
+\TU/EBGaramond(0)/m/n/12 với những cảm quan thường thức, thế
+ []
+
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 17.
+Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
+mapping=tex-text;" at 12.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Bold.otf
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 1 might be wrong on input line 33.
+(multicol)                Footnotes on page 1 might be wrong on input line 24.
 
 
 Overfull \vbox (11.62634pt too high) has occurred while \output is active []
@@ -3089,172 +3082,386 @@ Package microtype Info: Loading generic protrusion settings for font family
 Requested font "[lmsans8-regular]:mapping=tex-text;" at 8.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsans
 8-regular.otf
-File: ../duongvaotoanhoc/pic2//../bannerduongvao.jpg Graphic file (type bmp)
-<../duongvaotoanhoc/pic2//../bannerduongvao.jpg>
-File: ../duongvaotoanhoc/pic2//../tieude1.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic2//../tieude1.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
+File: ../lichsutoanhoc/pic2//../bannerlichsu.jpg Graphic file (type bmp)
+<../lichsutoanhoc/pic2//../bannerlichsu.jpg>
+File: ../lichsutoanhoc/pic2//../tieude3.pdf Graphic file (type pdf)
+<use ../lichsutoanhoc/pic2//../tieude3.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
 [1
 
 ]
-File: ../duongvaotoanhoc/pic2//2.png Graphic file (type bmp)
-<../duongvaotoanhoc/pic2//2.png>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
  [2]
-File: ../duongvaotoanhoc/pic2//3.png Graphic file (type bmp)
-<../duongvaotoanhoc/pic2//3.png>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
- [3]
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
- [4]
-File: ../duongvaotoanhoc/pic2//6.png Graphic file (type bmp)
-<../duongvaotoanhoc/pic2//6.png>
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 105.
-Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
-mapping=tex-text;" at 12.0pt
+Overfull \vbox (1.56143pt too high) has occurred while \output is active []
+
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+
+[3]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 56.
+Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
+m;mapping=tex-text;" at 12.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Bold.otf
-
-Overfull \hbox (0.57326pt too wide) in paragraph at lines 109--111
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 2$[]\TU/EBGaramond(0)/m/n/12 ]
- https://www.jaapsch.net/puzzles/polysol 
+d/EBGaramond-Italic.otf
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
+(microtype)             Ignoring protrusion settings for this character.
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+ [4]
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [5]
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+ [6]
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [7]
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+ [8]
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [9]
+File: ../lichsutoanhoc/pic2//Stereographic projection.png Graphic file (type bm
+p)
+<../lichsutoanhoc/pic2//Stereographic projection.png>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+ [10]
+File: ../lichsutoanhoc/pic2//Mặt phẳng xạ ảnh hữu hạn 1.pdf Graphic file (type 
+pdf)
+<use ../lichsutoanhoc/pic2//Mặt phẳng xạ ảnh hữu hạn 1.pdf>
+File: ../lichsutoanhoc/pic2//Mặt phẳng xạ ảnh hữu hạn 2.pdf Graphic file (type 
+pdf)
+<use ../lichsutoanhoc/pic2//Mặt phẳng xạ ảnh hữu hạn 2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [11]
+Overfull \hbox (15.18886pt too wide) detected at line 301
+[]
  []
 
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-[5]
-Overfull \hbox (0.41725pt too wide) in paragraph at lines 119--121
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 6$[]\TU/EBGaramond(0)/m/n/12 ]
- https://www.engineering.iastate.edu/peo 
+
+Overfull \hbox (5.83752pt too wide) detected at line 307
+[]
+ []
+
+File: ../lichsutoanhoc/pic2//Hơn một đường song song.pdf Graphic file (type pdf
+)
+<use ../lichsutoanhoc/pic2//Hơn một đường song song.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+[12]
+File: ../lichsutoanhoc/pic2//Đường song song giới hạn Klein.pdf Graphic file (t
+ype pdf)
+<use ../lichsutoanhoc/pic2//Đường song song giới hạn Klein.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [13]
+File: ../lichsutoanhoc/pic2//Đường song song giới hạn Poincare.pdf Graphic file
+ (type pdf)
+<use ../lichsutoanhoc/pic2//Đường song song giới hạn Poincare.pdf>
+File: ../lichsutoanhoc/pic2//Đường song song phân kỳ.pdf Graphic file (type pdf
+)
+<use ../lichsutoanhoc/pic2//Đường song song phân kỳ.pdf>
+File: ../lichsutoanhoc/pic2//Tứ giác Lambert.pdf Graphic file (type pdf)
+<use ../lichsutoanhoc/pic2//Tứ giác Lambert.pdf>
+File: ../lichsutoanhoc/pic2//Tứ giác Saccheri.pdf Graphic file (type pdf)
+<use ../lichsutoanhoc/pic2//Tứ giác Saccheri.pdf>
+File: ../lichsutoanhoc/pic2//Klein sang Poincare.png Graphic file (type bmp)
+<../lichsutoanhoc/pic2//Klein sang Poincare.png>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+ [14]
+File: ../lichsutoanhoc/pic2//Tiên đề NTĐQ 1.pdf Graphic file (type pdf)
+<use ../lichsutoanhoc/pic2//Tiên đề NTĐQ 1.pdf>
+
+Overfull \hbox (11.44965pt too wide) detected at line 403
+[]
+ []
+
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+[15]
+File: ../lichsutoanhoc/pic2//Dựng ảnh phép nghịch đảo.pdf Graphic file (type pd
+f)
+<use ../lichsutoanhoc/pic2//Dựng ảnh phép nghịch đảo.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+ [16]
+File: ../lichsutoanhoc/pic2//Định lý 1.pdf Graphic file (type pdf)
+<use ../lichsutoanhoc/pic2//Định lý 1.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [17]
+File: ../lichsutoanhoc/pic2//TH 3 định lý xây dựng.pdf Graphic file (type pdf)
+<use ../lichsutoanhoc/pic2//TH 3 định lý xây dựng.pdf>
+File: ../lichsutoanhoc/pic2//TH 4 định lý xây dựng.pdf Graphic file (type pdf)
+<use ../lichsutoanhoc/pic2//TH 4 định lý xây dựng.pdf>
+
+Missing character: There is no ó in font zptmcm7m!
+Missing character: There is no ó in font zptmcm7m!
+File: ../lichsutoanhoc/pic2//Trường hợp cgc.pdf Graphic file (type pdf)
+<use ../lichsutoanhoc/pic2//Trường hợp cgc.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 540--545
+[]\TU/EBGaramond(0)/m/it/12 Chứng minh. \TU/EBGaramond(0)/m/n/12 Gọi hai đầu củ
+a đường
+ []
+
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+[19]
+File: ../lichsutoanhoc/pic2//Vị trí điểm trong hình elliptic.pdf Graphic file (
+type pdf)
+<use ../lichsutoanhoc/pic2//Vị trí điểm trong hình elliptic.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+[]\TU/EBGaramond(0)/m/n/12 Nếu $[]\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 A; B\OM
+S/ztmcm/m/n/12 j\OML/ztmcm/m/it/12 C; D\OT1/ztmcm/m/n/12 )$[] \TU/EBGaramond(0)
+/m/n/12 thì $[]\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 C; D\OMS/ztmcm/m/n/12 j\OM
+L/ztmcm/m/it/12 A; B\OT1/ztmcm/m/n/12 )$[] \TU/EBGaramond(0)/m/n/12 và
  []
 
 
-Overfull \hbox (5.06125pt too wide) in paragraph at lines 122--124
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 7$[]\TU/EBGaramond(0)/m/n/12 ]
- https://link.springer.com/article/10.1007/ 
+Underfull \hbox (badness 5036) in paragraph at lines 590--592
+[]\TU/EBGaramond(0)/m/n/12 Với $[]\OT1/ztmcm/m/n/12 5$[] \TU/EBGaramond(0)/m/n/
+12 điểm $[]\OML/ztmcm/m/it/12 A; B; C; D; E$[] \TU/EBGaramond(0)/m/n/12 thẳng h
+àng và
+ []
+
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+[]\TU/EBGaramond(0)/m/n/12 – Men of Mathematics The Lives and
  []
 
 
-Overfull \hbox (4.37726pt too wide) in paragraph at lines 127--129
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 9$[]\TU/EBGaramond(0)/m/n/12 ]
- https://sfb701.math.uni-bielefeld.de/prep 
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
+[]\TU/EBGaramond(0)/m/n/12 – The History of Mathematics An
  []
 
 
-Overfull \hbox (7.23325pt too wide) in paragraph at lines 130--131
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 10$[]\TU/EBGaramond(0)/m/n/12 
-] https://scholars.duke.edu/person/socolar 
- []
-
-
-Overfull \hbox (2.22525pt too wide) in paragraph at lines 138--140
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 14$[]\TU/EBGaramond(0)/m/n/12 
-]https://www.quantamagazine.org/nasty-
- []
-
-
-Overfull \hbox (3.07724pt too wide) in paragraph at lines 138--140
-\TU/EBGaramond(0)/m/n/12 geometry-breaks-decades-old-tiling-conjectur 
- []
-
-
-Overfull \hbox (7.80125pt too wide) in paragraph at lines 141--142
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 15$[]\TU/EBGaramond(0)/m/n/12 
-] http://www.science.smith.edu/ senechal/ 
- []
-
-
-Overfull \hbox (6.27325pt too wide) in paragraph at lines 143--145
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 16$[]\TU/EBGaramond(0)/m/n/12 
-] https://link.springer.com/article/10.1007 
- []
-
-
-Overfull \hbox (4.94125pt too wide) in paragraph at lines 146--148
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 17$[]\TU/EBGaramond(0)/m/n/12 
-] https://www.quantamagazine.org/marjo 
- []
-
-
-Overfull \hbox (4.33725pt too wide) in paragraph at lines 149--151
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 18$[]\TU/EBGaramond(0)/m/n/12 
-]https://fulbright.uark.edu/departments/ 
- []
-
-
-Overfull \hbox (7.40924pt too wide) in paragraph at lines 149--151
-\TU/EBGaramond(0)/m/n/12 math/directory/index/uid/strauss/name/Chai 
- []
-
-
-Overfull \hbox (3.54926pt too wide) in paragraph at lines 154--156
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 20$[]\TU/EBGaramond(0)/m/n/12 
-] https://www.sciencedirect.com/science/ 
+Overfull \hbox (2.37727pt too wide) in paragraph at lines 615--616
+[]\TU/EBGaramond(0)/m/n/12 – https: //www.youtube.com/playlist?list=PL 
  []
 
 )
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
- [6] (_main.aux)
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+ [21] (_main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3265,12 +3472,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68677 strings out of 410939
- 1559942 string characters out of 2823530
- 2640447 words of memory out of 3000000
- 88193 multiletter control sequences out of 15000+600000
- 500710 words of font info for 118 fonts, out of 8000000 for 9000
+ 68746 strings out of 410939
+ 1565749 string characters out of 2823530
+ 2654449 words of memory out of 3000000
+ 88250 multiletter control sequences out of 15000+600000
+ 500702 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,12n,120p,1132b,680s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 104i,12n,120p,1405b,581s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on _main.pdf (6 pages).
+Output written on _main.pdf (21 pages).
