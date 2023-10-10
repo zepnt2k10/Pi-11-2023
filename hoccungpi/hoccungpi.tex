@@ -5,7 +5,7 @@
 \blfootnote{\color{hoccungpi}\color{hoccungpi}$^1$Giáo viên Toán trường THPT chuyên Lê Hồng Phong, Nam Định.}
 \begingroup
 \AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannerhoccungpi}}}
-\AddToShipoutPicture*{\put(58,520){\includegraphics[scale=1]{../tieude.pdf}}}
+\AddToShipoutPicture*{\put(56,518){\includegraphics[scale=1]{../tieude.pdf}}}
 \centering
 \endgroup
 \vspace*{190pt}
@@ -22,16 +22,16 @@
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\definecolor{qqqqff}{rgb}{0.,0.,1.}
-		\begin{tikzpicture}[scale=0.4, hoccungpi]
+		\begin{tikzpicture}[scale=0.45, hoccungpi]
 			\clip(3.52,0.5) rectangle (17.14,10.78);
-			\draw [line width=1.2pt] (9.,1.)-- (9.,4.);
-			\draw [line width=1.2pt] (9.,4.)-- (6.,7.);
-			\draw [line width=1.2pt] (6.,7.)-- (4.,10.);
-			\draw [line width=1.2pt] (6.,7.)-- (8.,10.);
-			\draw [line width=1.2pt] (9.,4.)-- (12.,10.);
-			\draw [line width=1.2pt] (9.,4.)-- (15.,7.);
-			\draw [line width=1.2pt] (15.,7.)-- (13.,10.);
-			\draw [line width=1.2pt] (15.,7.)-- (16.,10.);
+			\draw  (9.,1.)-- (9.,4.);
+			\draw  (9.,4.)-- (6.,7.);
+			\draw  (6.,7.)-- (4.,10.);
+			\draw  (6.,7.)-- (8.,10.);
+			\draw  (9.,4.)-- (12.,10.);
+			\draw  (9.,4.)-- (15.,7.);
+			\draw  (15.,7.)-- (13.,10.);
+			\draw  (15.,7.)-- (16.,10.);
 			\begin{scriptsize}
 				\draw [fill=qqqqff] (9.,1.) circle (5pt);
 				\draw [fill=qqqqff] (9.,4.) circle (5pt);
@@ -118,12 +118,12 @@
 	\vskip 0.1cm
 	Nếu đồ thị $\pazocal{G}$ không chứa tam giác, ta xét một chu trình ngắn nhất $\pazocal{Z}$ trong đồ thị $\pazocal{G}$. Chu trình này không thể là một chu trình Hamilton (tức là chu trình đi qua tất cả các đỉnh của đồ thị, mỗi đỉnh đúng một lần). Thật vậy, nếu không, do tính nhỏ nhất của $\pazocal{Z}$, đồ thị $\pazocal{G}$ sẽ không chứa thêm một cạnh nào nữa, dẫn đến mỗi đỉnh của đồ thị $\pazocal{G}$ đều có bậc bằng $2$, mâu thuẫn với việc đồ thị luôn có đỉnh bậc lẻ. Như vậy, $\pazocal{Z}$ không là một chu trình Hamilton và vì thế có thể tìm được một đỉnh $C$ không thuộc $\pazocal{Z}$ và kề với một đỉnh $A$ thuộc $\pazocal{Z}$. Do đồ thị $\pazocal{G}$ không chứa tam giác, đỉnh $C$ sẽ không kề với bất kỳ đỉnh $B$ nào kề với $A$ trong $\pazocal{Z}$ và ta chọn được chu trình $\pazocal{Z}$ và ba đỉnh $A,B,C$.    
 	\begin{figure}[H]
-		\vspace*{-5pt}
+		\vspace*{5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\definecolor{qqqqff}{rgb}{0.,0.,1.}
 		\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
-		\begin{tikzpicture}[scale=0.25, hoccungpi]
+		\begin{tikzpicture}[scale=0.257, hoccungpi]
 			\draw (18.,30.)-- (12.,24.);
 			\draw (12.,24.)-- (18.,18.);
 			\draw (18.,18.)-- (26.,18.);
@@ -183,11 +183,12 @@
 	\vskip 0.1cm
 	\textbf{\color{hoccungpi}Bài $\pmb{2.}$}\textit{(Mở rộng Bài $2$)}  Cho đồ thị $\pazocal{G}$ có $2n$ đỉnh. Mỗi đồ thị con $n$ đỉnh của  $\pazocal{G}$ đều có ít nhất $n$ cạnh. Chứng minh rằng $\pazocal{G}$ có ít nhất $5n$ cạnh.
 	\vskip 0.1cm
-	\textbf{\color{hoccungpi}Bài $\pmb{3.}$} \textit{(Olympic Liên bang Nga năm $2004$)} Một quốc gia có $1001$ thành phố.  Hai thành phố bất kỳ được nối với nhau bằng một con đường một chiều. Mỗi thành phố có $500$ con đường đi ra và $500$ con đường đi vào. Có một tổ chức ly khai xuất hiện và chiếm đóng $668$ thành phố. Chứng minh rằng, trong khu vực ly khai này, từ mỗi thành phố đều có có thể đi đến một thành phố khác.
+	\textbf{\color{hoccungpi}Bài $\pmb{3.}$} \textit{(Olympic Liên bang Nga năm $2004$)} Một quốc gia có $1001$ thành phố.  Hai thành phố bất kỳ được nối với nhau bằng một con đường một chiều. Mỗi thành phố có $500$ con đường đi ra và $500$ con đường đi vào. Có một tổ chức ly khai xuất hiện và chiếm đóng $668$ thành phố. Chứng minh rằng, trong khu vực ly khai này, từ mỗi thành phố đều có có thể đi đến một thành \linebreak phố khác.
 	\vskip 0.1cm
 	\textbf{\color{hoccungpi}Bài $\pmb{4.}$}  Cho đồ thị $\pazocal{G} = (V,E)$ thỏa mãn $|E| = |V| +4$. Chứng minh rằng, trong $\pazocal{G}$ có
 	hai chu trình không có cạnh chung. 
 	\vskip 0.1cm
+	\columnbreak
 	\textbf{\color{hoccungpi}Tài liệu}
 	\vskip 0.1cm
 	[$1$] Đỗ Đức Thái, \textit{Chuyên đề học tập toán $11$}. NXB Đại học Sư phạm Hà Nội. 
