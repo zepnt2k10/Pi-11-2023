@@ -56,17 +56,17 @@
 	\textit{Lời giải.}
 	Ta sẽ chứng minh rằng khoảng cách quan sát lớn nhất có thể là $140$.
 	\vskip 0.1cm	
-	Với hai điểm quan sát $X,Y$ được mô tả như trên, ta nói $A_1, \ldots, A_{n+1}$ là các điểm thuộc \textit{chuỗi quan sát} độ dài $n$ nối $X$ và $Y$. Để tìm một chuỗi quan sát có độ dài nhỏ nhất, ta chỉ cần xét trường hợp mỗi điểm quan sát trong chuỗi xuất hiện đúng một lần. Vì chỉ có hữu hạn điểm quan sát nên độ dài các chuỗi quan sát là hữu hạn (bị chặn trên bởi $2022$). Như vậy giữa tất cả các chuỗi quan sát nối $X$ và $Y$ luôn tồn tại chuỗi quan sát có độ dài ngắn nhất, và độ dài này chính là khoảng cách quan sát được định nghĩa ở trên. Do chỉ có hữu hạn các cặp điểm quan sát, tồn tại một cặp điểm có khoảng cách quan sát lớn nhất.
+	Với hai điểm quan sát $X,Y$ trong bài, ta nói $A_1, \ldots, A_{n+1}$ là các điểm thuộc \textit{chuỗi quan sát} độ dài $n$ nối $X$ và $Y$. Để tìm một chuỗi quan sát có độ dài nhỏ nhất, ta chỉ cần xét trường hợp mỗi điểm quan sát trong chuỗi xuất hiện đúng một lần. Vì chỉ có hữu hạn điểm quan sát nên độ dài các chuỗi quan sát là hữu hạn (bị chặn trên bởi $2022$). Như vậy giữa tất cả các chuỗi quan sát nối $X$ và $Y$ luôn tồn tại chuỗi quan sát có độ dài ngắn nhất, và độ dài này chính là khoảng cách quan sát được định nghĩa ở trên. Do chỉ có hữu hạn các cặp điểm quan sát, tồn tại một cặp điểm có khoảng cách quan sát lớn nhất.
 	\vskip 0.1cm	
 	Cho trước một hệ thống tùy ý $M$ gồm $2023$ điểm quan sát thỏa mãn yêu cầu của bài toán. Chọn $X \in M$ bất kỳ và gọi $M_i$ tập các điểm quan sát có khoảng cách quan sát $i$ tới $X$. Ta cũng sẽ đặt $M_0 = \{X\}$. Do với bất kỳ $Y \in M$ luôn tồn tại một chuỗi quan sát nối $X$ và $Y$ nên các tập $M_i$ lập nên một phân hoạch của $M$. Nói cách khác, $M = \cup_{i}M_i$ và $M_i \cap M_j = \emptyset$ nếu $i\neq j$.
 	\vskip 0.1cm
-	Gọi $n(X)$ là chỉ số sao cho $M_{n(X)} \neq \emptyset$ và $M_i = \emptyset$ với mọi $i \ge n(X)$. Bằng định nghĩa, với mỗi $Y \in M_{n(X)}$ luôn tồn tại chuỗi quan sát ngắn nhất $A_1, \ldots A_{n(X) + 1}$ với $A_1 = X$ và $A_{n(X)+1} = Y$. Rõ ràng $A_i, A_{i+1}, \ldots, A_{j}$ cũng là chuỗi quan sát ngắn nhất giữa $A_i$ và $A_j$ với mọi $1 \le i <j \le n(X) + 1$. Do đó $A_i \in M_{i-1}$ và ta có $M_i \neq \emptyset$ với mọi $i \le n(X)$.
+	Gọi $n(X)$ là chỉ số sao cho $M_{n(X)} \neq \emptyset$ và $M_i = \emptyset$ với mọi $i \ge n(X)$. Bằng định nghĩa, với mỗi $Y \in M_{n(X)}$ luôn tồn tại chuỗi quan sát ngắn nhất $A_1, \ldots A_{n(X) + 1}$ với $A_1 = X$ và $A_{n(X)+1} = Y$. Rõ ràng $A_i, A_{i+1}, \ldots, A_{j}$ cũng là chuỗi quan sát ngắn nhất giữa $A_i$ và $A_j$ với mọi $1 \le i <j \le n(X) + 1$. Nói riêng, $A_i \in M_{i-1}$ và ta có $M_i \neq \emptyset$ với mọi $i \le n(X)$.
 	\vskip 0.1cm	
-	Mặt khác, từ mỗi điểm trong $M_i$ chỉ có thể quan sát được các điểm trong $M_{i-1}, M_i$ và $M_{i+1}$. Thật vậy, nếu từ $V \in M_i$ quan sát được $W \in M_j$ với $j \le i-2$ thì $V \in M_{j+1}$. Do đó, $V \in M_i \cap M_{j+1}$. Điều này vô lý vì $M_i \cap M_{j+1} = \emptyset$ do $j+1 \neq i$. Tương tự, từ $V \in M_i$ quan sát được $W \in M_j$ với $j \ge i+2$ cũng dẫn đến mâu thuẫn. Như vậy, từ mỗi $V \in M_i$ có thể quan sát được ít nhất $42$ điểm khác, và các điểm này phải nằm trong $M_{i-1}, M_i, M_{i+1}$. Do đó 
+	Hơn nữa, từ mỗi điểm trong $M_i$ chỉ có thể quan sát được các điểm trong $M_{i-1}, M_i$ và $M_{i+1}$. Thật vậy, nếu từ $V \in M_i$ quan sát được $W \in M_j$ với $j \le i-2$ thì $V \in M_{j+1}$. Do đó, $V \in M_i \cap M_{j+1}$. Điều này vô lý vì $M_i \cap M_{j+1} = \emptyset$ do $j+1 \neq i$. Tương tự, từ $V \in M_i$ quan sát được $W \in M_j$ với $j \ge i+2$ cũng dẫn đến mâu thuẫn. Vì từ mỗi $V \in M_i$ có thể quan sát được ít nhất $42$ điểm khác và các điểm này nằm trong $M_{i-1}, M_i, M_{i+1}$ nên
 	\begin{align*}
 		|M_{i-1} \cup M_i \cup M_{i+1}| \ge 43.
 	\end{align*}
-	Từ $X \in M_0$ chỉ quan sát được các điểm trong $M_1$ và từ $Y \in M_{n(X)}$ chỉ quan sát được các điểm từ $M_{n(X)}$ và $M_{n(X)-1}$. Bởi vậy,
+	Từ $X \in M_0$ chỉ quan sát được các điểm trong $M_1$ và từ $Y \in M_{n(X)}$ chỉ quan sát được các điểm từ $M_{n(X)}$ và $M_{n(X)-1}$ nên
 	\begin{align*}
 		|M_0 \cup M_1| \ge 43 \text{ và } |M_{n(X)-1} \cup M_{n(X)}| \ge 43.
 	\end{align*}
@@ -74,7 +74,7 @@
 	\vskip 0.1cm
 	Thật vậy, nếu $M_{141} \neq \emptyset$ thì 
 	\begin{align*}
-		& |M_0 \cup M_1| + |M_2 \cap M_3 \cap M_4| \\
+		& |M_0 \cup M_1| + |M_2 \cup M_3 \cup M_4| \\
 		&+ |M_5 \cup M_6 \cup M7| + \ldots \\
 		&+ |M_{137} \cup M_{138} \cup M_{139}| + |M_{140} \cup M_{141}| \\
 		\ge \,&43 + 46.43 + 43 = 2064 > 2023
@@ -83,7 +83,7 @@
 	\vskip 0.1cm
 		\textbf{\color{cackithi}Khẳng định $\pmb{2}$:} \textit{Tồn tại một hệ thống điểm quan sát sao cho khoảng cách quan sát lớn nhất là $140$.} 
 		\vskip 0.1cm
-		Thật vậy, ta phân chia $2023$ điểm quan sát thành $141$ tập không rỗng $M_i$ với $i = 0, \ldots, 140$ như sau:
+		Thật vậy, xây dựng $141$ tập không rỗng $M_i$ với $i = 0, \ldots, 140$ như trong Hình $1$, trong đó:
 		\vskip 0.1cm
 		\begin{figure}[H]
 				\vspace*{-5pt}
@@ -137,21 +137,15 @@
 		\vskip 0.1cm		
 		$\bullet$ Mỗi tập $M_{3k}$ và $M_{3k+2}$ với $k = 0, \ldots, 46$ chỉ chứa một điểm quan sát.
 		\vskip 0.1cm
-		$\bullet$ Mỗi tập $M_{1}$ và $M_{139}$ chứa $42$ điểm quan sát.
+		$\bullet$ Mỗi tập $M_{1}$ và $M_{139}$ có $42$ điểm quan sát.
 		\vskip 0.1cm
 		$\bullet$ Mỗi tập $M_{3k+1}$ với $k = 1, \ldots, 45$ có $41$ điểm quan sát.
 		\vskip 0.1cm
-		Hệ thống này thỏa mãn điều kiện rằng mọi điểm quan sát trong $M_i$ với $i = 1, \ldots, 139$ quan sát được tât cả điểm còn lại trong $M_{i}$ cũng như tất cả các điểm trong tập đứng trước $M_{i-1}$ và tất cả các điểm trong tập đứng sau $M_{i+1}$. Điểm quan sát duy nhất trong $M_0$ quan sát được $42$ điểm trong $M_1$ và điểm quan sát duy nhất trong $M_{140}$ quan sát được $42$ điểm trong $M_{139}$ (Hình $1$).
-		\vskip 0.1cm
-		Rõ ràng $M_i \neq \emptyset$ với mọi $i = 0, \ldots, 140$ và tổng số điểm quan sát là
-		\begin{align*}
-			47.2 + 2.42 + 45.41 = 2023.
-		\end{align*}
-		Từ mỗi điểm trong $M_1$ và $M_{139}$ quan sát được $43$ điểm quan sát khác và từ mỗi điểm quan sát còn lại nhìn được đúng $42$ điểm quan sát khác. Nói cách khác, từ mỗi điểm quan sát nhìn được ít nhất $42$ điểm quan sát khác. Từ cách xây dựng thì mỗi chuỗi $A_0, A_1, \ldots, A_k$ với $i = 0, \ldots, k$ và $A_i \in M_i$ tùy ý là một chuỗi quan sát độ dài $k$ từ $A_0$ đến $A_k$. Đây rõ ràng là chuỗi quan sát ngắn nhất từ $A_0$ đến $A_k$. Tương tự, mỗi chuỗi con $A_i, A_{i+1}, \ldots, A_j$ là chuỗi quan sát ngắn nhất nối $A_i$ và $A_j$. Do $A_i$ và $A_j$ tùy ý nên với mỗi cặp điểm quan sát đều tồn tại một chuỗi quan sát liên kết chúng. Như vậy, hệ thống điểm quan sát vừa xây dựng thỏa mãn yêu cầu của bài toán. Ở đó, điểm quan sát duy nhất trong $M_{140}$ có khoảng cách quan sát $140$ tới điểm quan sát duy nhất trong $M_0$.
+		Độc giả có thể kiểm tra rằng hệ thống này có $2023$ điểm quan sát và thỏa mãn điều kiện của bài toán. Ở đó, điểm quan sát duy nhất trong $M_{140}$ có khoảng cách quan sát $140$ tới điểm quan sát duy nhất trong $M_0$.
 		\vskip 0.1cm
 	\textbf{\color{cackithi}Câu $\pmb{3}$:} Cho tam giác $AB$C với tâm đường tròn nội tiếp $I$. Gọi trung điểm của các cạnh $AC$ và $BC$ lần lượt là $M_b$ và $M_a$. Gọi giao điểm của đường thẳng $M_bI$ với đường thẳng $BC$ là $B'$ và giao điểm của đường thẳng $M_aI$ với đường thẳng $AC$ là $A'$. Biết rằng hai tam giác $ABC$ và $A'B'C$ có cùng diện tích. 
 	\vskip 0.1cm
-	Tìm giá trị có thể của góc $ACB$.\footnote{\color{cackithi}Trong số $09/2023$ chúng tôi đã sai sót khi yêu cầu tìm giá trị \textbf{\color{cackithi}lớn nhất} có thể của góc $ACB$. Thành thật xin lỗi quý độc giả.}	
+	Tìm giá trị có thể của góc $ACB$.\footnote{\color{cackithi}Trong số $09/2023$ chúng tôi đã sai sót khi yêu cầu tìm giá trị \textbf{\color{cackithi}lớn nhất} có thể của góc $ACB$. Thành thật xin lỗi các độc giả của Pi.}	
 		\begin{figure}[H]
 			\vspace*{-10pt}
 			\centering
@@ -193,24 +187,12 @@
 			\end{tikzpicture}}
 		\vspace*{-10pt}
 		\end{figure}
-		Đặt $\gamma \colon = \angle BCA$. Gọi độ dài các cạnh $AB$, $BC$ và $CA$ lần lượt là $c$, $a$, $b$. 
-		Do hai tam giác $ACB$ và $A'CB'$ chung góc $BCA$ và có cùng diện tích nên 
-		\begin{align*}
-			CA' . CB' = CA . CB = ba. 
-		\end{align*}
-		Sử dụng kết quả sau (chứng minh bên dưới):
-		\begin{align*}
-			CA' = \frac{ab}{a+c-b} \text{ và } CB' = \frac{ab}{b+c-a}
-		\end{align*}
-		ta thu được
-		\begin{align*}
-			(3) \Leftrightarrow \,& ab  = \frac{a^2b^2}{(a+c-b)(b+c-a)} \\
-			\Leftrightarrow \,& ab = c^2 - (a-b)^2 \\
-			\Leftrightarrow \,& c^2 = a^2 + b^2 - ab.
-		\end{align*}
-		Từ hệ thức $c^2 = a^2 + b^2 - 2 ab \cos(\gamma)$ ta có $\cos(\gamma) = \frac{1}{2}$. Do đó $\angle ACB = \gamma = 60^{\circ}$.
+		\textit{Lời giải.} Gọi độ dài các cạnh $AB$, $BC$ và $CA$ lần lượt là $c$, $a$, $b$. Đặt $\gamma \colon = \angle ACB$. Ta sẽ chứng minh rằng $\gamma = 60^{\circ}$.
 		\vskip 0.1cm
-		\textit{Chứng minh bổ đề $1$}:
+		Thật vậy, từ $M_a$ vẽ đường thẳng song song với $AC$ và cắt $CI$ tại $P$. Vì $\angle CPM_a = \angle A'CI = \gamma/2$ nên tam giác $CM_aP$ cân tại $M_a$ và ta có $M_aP = M_aC = a/2 = M_aB$. Như vậy $P$ nằm trên đường tròn tâm $M_a$ bán kính $a/2$. Từ đó suy ra tam giác $BPC$ vuông tại $P$ và ta thu được 
+		\begin{align*}
+			CP = CB \cos (\gamma /2) = a \cos(\gamma/2).
+		\end{align*}
 		\begin{figure}[H]
 			\vspace*{-5pt}
 			\centering
@@ -238,7 +220,7 @@
 				\tkzLabelPoint[above left](A1){$A'$}
 				\tkzDrawLine[dashed](A1,Ma)
 				\tkzDrawCircle(I,i)
-				\tkzDrawPoints(I, Mb, Ma, Mc)
+				\tkzDrawPoints(I, Mb, Ma)
 				
 				\tkzDrawPoints(A,B,C)
 				
@@ -259,61 +241,72 @@
 				\tkzLabelPoint[above](Ta){$T_a$}
 				\tkzDrawSegment(Ta,I)
 				\tkzMarkRightAngles(C,Ta,I C,P,B)
-				\tkzMarkAngle[size = 0.6,
-				arc=l](P,C,B)
+				\tkzMarkAngle[size = 0.6, arc=l](P,C,B)
 				\tkzLabelAngle[pos=0.95](P,C,B){$\gamma/2$}
+				\tkzMarkAngle[size = 0.6, arc=l](Ma,P,C)
+				\tkzLabelAngle[pos=0.95](Ma,P,C){$\gamma/2$}
 			\end{tikzpicture}}
 			\vspace*{-10pt}
 		\end{figure}
-		Ta chỉ cần chỉ ra $CA' = \frac{ab}{a+c-b}$. Hoán đổi vai trò của $A$ với $B$ (do đó $M_a$ với $M_b$, $a$ với $b$ cũng như $A'$ với $B'$) ta thu được kết quả tương tự cho $CB'$. 
-		\vskip 0.1cm
-		Gọi trung điểm của $AB$ là $M_c$ và giao điểm của $CI$ và $M_aM_c$ là $P$. Do $CA' \parallel M_aP$ nên theo định lý Thales thì $CA' = M_aP. \frac{CI}{IP}$. Mặt khác, vì $\angle CPM_a = \angle A'CI = \gamma/2$ nên $CM_aP$ là tam giác cân tại $M_a$ và ta thu được $M_aP = M_aC = a/2 = M_aB$. Như vậy, $P$ nằm trên đường tròn tâm $M_a$ bán kính $a/2$. Từ đó suy ra $\angle CPB = 90^{\circ}$ và ta có 
-		\begin{align*}
-			CP = CB \cos (\gamma /2) = a \cos(\gamma/2).
-		\end{align*}
-		Gọi $T_a$ là điểm tiếp xúc của đường tròn nội tiếp tam giác $ABC$ với cạnh $BC$. Vì $CT_a = \frac{a+b-c}{2}$ nên 
+		Gọi $T_a$ là điểm tiếp xúc của đường tròn nội tiếp tam giác $ABC$ với cạnh $BC$ thì $CT_a = (a+b-c)/2$. Do đó 
 		\begin{align*}
 			CI = \frac{CT_a}{\cos(\gamma/2)} = \frac{a+b-c}{2 \cos(\gamma/2)}
-		\end{align*} 
-		Do đó,
-		\begin{align*}
-			IP &= CP -CI  = a \cos(\gamma/2) - \frac{a+b-c}{2 \cos(\gamma/2)} \\
-			& = \frac{2a \cos^2(\gamma/2) - a-b+c}{2 \cos (\gamma/2)} \\
-			& = \frac{a[1+\cos (\gamma)] - a -b +c}{2 \cos (\gamma/2)} \\
-			& = \frac{a\cos(\gamma) - b +c}{2 \cos (\gamma/2)}.
 		\end{align*}
-		Ở trên ta đã sử dụng đẳng thức $2 \cos^2(\gamma/2) = 1 + \cos (\gamma)$. Mặt khác, từ hệ thức $\cos(\gamma) = \frac{a^2 + b^2 - c^2}{2ab}$ ta thu được
+		và ta có
 		\begin{align*}
-			IP & = \frac{a \frac{a^2 + b^2 - c^2}{2ab} -b+c}{2 \cos (\gamma/2)} \\
-			& = \frac{a^2 + b^2 - c^2 - 2b^2 + 2bc}{4b \cos (\gamma / 2)} \\
-			& = \frac{a^2 - b^2 - c^2 + 2bc}{4b \cos (\gamma / 2)} \\
-			& = \frac{{a^2 -(b-c)^2}}{4b \cos (\gamma / 2)} \\
-			& = \frac{(a -b+c)(a+b-c)}{4b \cos (\gamma / 2)}
+		IP = CP - CI & =  a \cos(\gamma/2) - \frac{a+b-c}{2 \cos(\gamma/2)} \\
+		& = \frac{2a \cos^2(\gamma/2) -a-b+c}{2 \cos(\gamma/2)} \\
+		& = \frac{a[2\cos^2(\gamma /2)-1] - b +c}{2 \cos(\gamma/2)} \\
+		& = \frac{a \cos (\gamma)-b+c}{2 \cos(\gamma/2)}.
 		\end{align*}
-		Như vậy,
+		Vì $A'C \parallel M_aP$ nên theo định lý Thales 
 		\begin{align*}
-			CA' & = M_aP \frac{CI}{IP}  \\
-			& = \frac{a}{2} . \frac{a+b-c}{2 \cos(\gamma/2)} . \frac{4b \cos (\gamma/2)}{(a -b+c)(a+b-c)} \\
-			& = \frac{ab}{a-b+c}.
+			\frac{CA'}{M_aP} = \frac{CI}{IP} & =  \frac{a+b-c}{a \cos(\gamma) - b +c} \\
+			& = \frac{a+b-c}{a\frac{a^2 + b^2 -c^2}{2ab} -b +c} \\
+			& = \frac{2b(a+b-c)}{a^2 + b^2 - c^2 - 2b^2 + 2bc} \\
+			& = \frac{2b(a+b-c)}{a^2 - b^2 -c^2 + 2bc} \\
+			& = \frac{2b(a+b-c)}{(a+c-b)(a+b-c)} \\
+			& = \frac{2b}{a+c-b}
 		\end{align*}
-	\textbf{\color{cackithi}Câu $\pmb{4}$}: Cho một đa diện đều $2n$ cạnh. Từ các đoạn thẳng nối các đỉnh của đa diện (cạnh biên hoặc đường chéo) ta tô $n$ cạnh màu đỏ sao cho:
+		và do đó
+		\begin{align*} 
+			\frac{CA'}{CB} = \frac{CA'}{2M_aP} = \frac{b}{a+c-b}. \tag{$3$}
+		\end{align*}
+		Hoán đổi vai trò của $A$ với $B$ (do đó $M_a$ với $M_b$, $a$ với $b$, $A'$ với $B'$) ta thu được
+		\begin{align*} 
+			\frac{CB'}{CA} = \frac{a}{b+c-a}. \tag{$4$}
+		\end{align*}
+		Từ giả thiết hai tam giác $ABC$ và $A'B'C$ có cùng diện tích ta có
+		\begin{align*}
+			\frac{CA'}{CB} = \frac{CA}{CB'}.
+		\end{align*}
+		Kết hợp với ($3$) và ($4$) ta nhận được
+		\begin{align*}
+			&\frac{b}{a+c-b}  = \frac{b+c-a}{a} \\
+			\Leftrightarrow \,&ab  = (a+c-b)(b+c-a) \\
+			\Leftrightarrow \,&ab  = c^2 - (a-b)^2 \\
+			\Leftrightarrow \,&c^2 = a^2 + b^2 - ab.
+		\end{align*}
+		Từ hệ thức $c^2 = a^2 + b^2 - 2 ab \cos(\gamma)$ suy ra $\cos(\gamma) = \frac{1}{2}$. Do đó $\gamma = 60^{\circ}$.
 	\vskip 0.1cm
-	$1.$ Các điểm cuối của các cạnh màu đỏ chính là $2n$ đỉnh của đa diện.
+	\textbf{\color{cackithi}Câu $\pmb{4}$}: Cho một đa giác đều $2n$ cạnh. Trong các đoạn thẳng nối các đỉnh của đa giác (cạnh biên hoặc đường chéo) ta tô $n$ đoạn màu đỏ sao cho:
 	\vskip 0.1cm
-	$2.$ Không có $2$ cạnh màu đỏ nào có độ dài bằng nhau.
+	$1.$ Các điểm cuối của các đoạn màu đỏ chính là $2n$ đỉnh của đa giác.
 	\vskip 0.1cm
-	Tìm tất cả các số tự nhiên $n \ge 2$ thỏa mãn yêu cầu đã cho.
+	$2.$ Không có $2$ đoạn màu đỏ nào có độ dài bằng nhau.
+	\vskip 0.1cm
+	Tìm tất cả các số tự nhiên $n \ge 2$ sao cho tồn tại một phép tô màu thỏa mãn yêu cầu bên trên.
 	\vskip 0.1cm	
 	\textit{Lời giải.}
 	Ta sẽ chứng minh rằng một cách tô màu như vậy tồn tại khi và chỉ khi $n \equiv 0 \mod 4$ hoặc $n \equiv 1 \mod 4$.
 	\vskip 0.1cm
-	$``\Rightarrow":$ Giả sử tồn tại cách tô màu như vậy. Gọi $2n$ đỉnh của đa giác là $A_1, A_2, \ldots, A_{2n}$, được sắp xếp theo chiều kim đồng hồ. Ta định nghĩa \textit{khoảng cách $d(i,j)$ giữa hai đỉnh $A_i, A_j$} là số cạnh nằm trên đường đi ngắn nhất dọc theo các cạnh biên của đa diện nối hai đỉnh này. Khoảng cách này sẽ lấy một trong các giá trị trong tập $\{1,2\ldots,n\}$. Chẳng hạn, với $n=4$ như trong Hình $2$ thì $d(1,4) = 3$ và $d(1,7) = 2$. 
+	$``\Rightarrow":$ Giả sử tồn tại cách tô màu như vậy. Gọi $2n$ đỉnh của đa giác là $A_1, A_2, \ldots, A_{2n}$, được sắp xếp theo chiều kim đồng hồ. Ta định nghĩa \textit{khoảng cách $d(i,j)$ giữa hai đỉnh $A_i, A_j$} là số cạnh nằm trên đường đi ngắn nhất dọc theo các cạnh biên của đa giác nối hai đỉnh này. Khoảng cách này sẽ lấy một trong các giá trị trong tập $\{1,2\ldots,n\}$. Chẳng hạn, với $n=4$ như trong Hình $2$ thì $d(1,4) = 3$ và $d(1,7) = 2$. 
 	\vskip 0.1cm
-	Không khó để tính được
+	Dễ thấy
 	\begin{align*}
 		A_iA_j = 2r \sin\frac{d(i,j)\pi}{2n}
 	\end{align*}
-	với $r$ là khoảng cách từ đỉnh đến tâm của đa giác. Do đó, $A_iA_j > A_rA_s \iff d(i,j) > d(r,s)$. Bởi vậy ta có thể thay yêu cầu rằng không có hai cạnh màu đỏ nào có cùng độ dài bằng yêu cầu không có hai cặp đỉnh nào có cùng khoảng cách.
+	với $r$ là khoảng cách từ đỉnh đến tâm của đa giác. Do đó, $A_iA_j > A_rA_s \iff d(i,j) > d(r,s)$. Bởi vậy ta có thể thay yêu cầu rằng không có hai đoạn màu đỏ nào có cùng độ dài bằng yêu cầu không có hai cặp đỉnh nào có cùng khoảng cách.
 	\vskip 0.1cm	
 	Biểu diễn mỗi cặp đỉnh $(A_i, A_j)$ bởi cặp chỉ số $(i,j)$. Ta có thể giả sử $i <j$. Bài toán đã cho tương đương với việc phân hoạch tập $2n$ số tự nhiên $\{1,2,\ldots, 2n\}$ thành $n$ cặp $\{(i_k,j_k)\}_{k = 1}^n$ với $i_k<j_k$ sao cho tập các khoảng cách $\{d(i_k,j_k)\}_{k=1}^n$ là $\{1, \ldots, n\}$. Ta có
 	\begin{align*}
@@ -321,20 +314,20 @@
 		\begin{cases}
 			\!\!j_k\!-\!i_k, \text{ nếu } j_k\!-\!i_k \!\le\! n \\
 			\!\!2n\!-\! j_k \!+\! i_k, \text{ nếu } j_k\!-\!i_k \!>\! n.
-		\end{cases}\hspace*{-10pt} \tag{$4$}
+		\end{cases}\hspace*{-10pt} \tag{$5$}
 	\end{align*}
 	Bằng cách hoán đổi $i_k$ với $j_k$ trong trường hợp $j_k-i_k > n$ ta có 
 	\begin{align*} 
 			\sum_{k=1}^{n}j_k - \sum_{k=1}^n i_k = &\sum_{k=1}^nd(i_k,j_k) + 2ns\\
 			 = &\sum_{k=1}^ni + 2ns \\
-			 = &n(n+1)/2 + 2ns.\tag{$5$}
+			 = &n(n+1)/2 + 2ns.\tag{$6$}
 		\end{align*}
 		với $s$ là số trường hợp $j_k-i_k > n$. Mặt khác,
 		\begin{align*}
 			\sum_{k=1}^nj_k + \sum_{k=1}^ni_k &= \sum_{k=1}^{2n}i \\
-			&= 2n(2n+1)/2. \tag{$6$}
+			&= 2n(2n+1)/2. \tag{$7$}
 		\end{align*}
-		Từ các phương trình ($5$) và ($6$) ta thu được 
+		Từ các phương trình ($6$) và ($7$) ta thu được 
 		\begin{align*}
 			\sum_{k=1}^{n}j_k = \frac{n(5n+3)}{4} + ns.
 		\end{align*}
@@ -343,9 +336,9 @@
 %		$"\Leftarrow":$
 		\underline{\textit{Trường hợp $n \equiv 0 \mod 4$.}} Đặt $n = 4k$.
 		\vskip 0.1cm
-		$\bullet$ Với $k=1$ ($2n = 8$) ta có thể tô màu như Hình $2$.
+		$\bullet$ Với $k=1$ ta có thể tô màu như Hình $2$.
 			\begin{figure}[H]
-				\vspace*{-10pt}
+%				\vspace*{-10pt}
 				\centering
 				\captionsetup{labelformat= empty, justification=centering}
 				\begin{tikzpicture}[cackithi,scale = 0.75]
@@ -368,7 +361,7 @@
 				\caption{\small\textit{\color{cackithi}Hình $2$. Đa giác đều $8$ cạnh.}}
 				\vspace*{-10pt}
 			\end{figure}
-			$\bullet$ Với $k \ge 2$ thì danh sách các cạnh được tô màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($4$) với $2n = 8k$) được cho trong bảng dưới đây:
+			$\bullet$ Với $k \ge 2$ thì danh sách các đoạn màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($5$) với $2n = 8k$) được cho trong bảng dưới đây:
 		\begin{center}
 			\resizebox{\linewidth}{!}{%
 				\begin{tabular}{ |c|c|c| } 
@@ -420,7 +413,7 @@
 		\end{figure}
 		\underline{\textit{Trường hợp $n \equiv 1 \mod 4$.}} Đặt $n = 4k+1$. 
 		\vskip 0.1cm
-		$\bullet$ Với $k=1$ ($2n = 10$) ta có thể tô màu như Hình $4$.
+		$\bullet$ Với $k=1$ ta có thể tô màu như Hình $4$.
 		\begin{figure}[H]
 			\vspace*{-10pt}
 			\centering
@@ -447,7 +440,7 @@
 			\caption{\small\textit{\color{cackithi}Hình $4$. Đa giác đều $10$ cạnh.}}
 			\vspace*{-15pt}
 		\end{figure}
-		$\bullet$  Với $k \ge 2$ thì danh sách các cạnh được tô màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($4$) với $2n = 8k+2$) được cho trong bảng dưới đây:
+		$\bullet$  Với $k \ge 2$ thì danh sách các đoạn màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($5$) với $2n = 8k+2$) được cho trong bảng dưới đây:
 		\begin{center}
 			\resizebox{\linewidth}{!}{%
 				\begin{tabular}{ |c|c|c| } 
@@ -468,37 +461,4 @@
 					\hline
 			\end{tabular}}
 		\end{center}
-%		\begin{figure}[H]
-%			\vspace*{-5pt}
-%			\centering
-%			\captionsetup{labelformat= empty, justification=centering}
-%			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
-%				\tkzSetUpPoint[size=4, fill= teal!50]
-%				\def\laenge{0.6}
-%				\def\n{26}
-%				\pgfmathtruncatemacro\w{360/\n}
-%				\draw
-%				(0:0) coordinate (A1)
-%				foreach \i in {2,...,\n}
-%				{--++(360+\w/2-\i*\w+\w:\laenge) coordinate (A\i)}
-%				--cycle;
-%				\tkzDrawPoints(A1,A...,A26)
-%				\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
-%				\tkzDrawSegment[red](A1,A26)
-%				\tkzDrawSegment[red](A2,A25)
-%				\tkzDrawSegment[red](A3,A24)
-%				\tkzDrawSegment[red](A4,A18)
-%				\tkzDrawSegment[red](A5,A23)
-%				\tkzDrawSegment[red](A6,A22)
-%				\tkzDrawSegment[red](A7,A14)
-%				\tkzDrawSegment[red](A8,A21)
-%				\tkzDrawSegment[red](A9,A20)
-%				\tkzDrawSegment[red](A10,A19)
-%				\tkzDrawSegment[red](A11,A17)
-%				\tkzDrawSegment[red](A12,A16)
-%				\tkzDrawSegment[red](A13,A15)
-%			\end{tikzpicture}}
-%			\caption{Đa giác đều $26$ cạnh.}
-%			\vspace*{-10pt}
-%		\end{figure}
 \end{multicols}
