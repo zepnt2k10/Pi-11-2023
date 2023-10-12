@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  11 OCT 2023 15:23
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  12 OCT 2023 15:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2890,7 +2890,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 84.
 
-(../hoccungpi/hoccungpi.tex
+(../lichsutoanhoc/lichsutoanhoc4.tex
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  5.
 
@@ -3048,12 +3048,6 @@ d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 14.
-Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
-mapping=tex-text;" at 12.0pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Bold.otf
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 16.
 Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
@@ -3063,20 +3057,16 @@ d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
 (microtype)             Ignoring protrusion settings for this character.
+File: ../lichsutoanhoc/pic//1a.jpg Graphic file (type bmp)
+<../lichsutoanhoc/pic//1a.jpg>
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 35.
-Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
-um;mapping=tex-text;" at 8.0pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Regular.otf
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 48.
+(Font)              scaled to size 10.95pt on input line 23.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
 um;mapping=tex-text;" at 10.95pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
 d/EBGaramond-Regular.otf
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 48.
+(Font)              scaled to size 10.95pt on input line 23.
 Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
 m;mapping=tex-text;" at 10.95pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
@@ -3093,10 +3083,10 @@ Requested font "zptmcm7y" at 8.0pt
 Requested font "zptmcm7v" at 10.95pt
 Requested font "zptmcm7v" at 8.0pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 Requested font "ptmb7t" at 10.95pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 Requested font "ptmb7t" at 8.0pt
 Requested font "ptmri7t" at 10.95pt
 Requested font "ptmri7t" at 8.0pt
@@ -3108,19 +3098,10 @@ Requested font "yhcmex10" at 10.95pt
 Requested font "yhcmex10" at 8.0pt
 Requested font "rsfs10" at 10.95pt
 Requested font "rsfs10" at 8.0pt
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-51.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-Requested font "zplmr7y" at 12.0pt
-Requested font "zplmr7y" at 9.0pt
-Requested font "zplmr7y" at 7.0pt
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 1 might be wrong on input line 74.
+(multicol)                Footnotes on page 1 might be wrong on input line 29.
 
 
 Overfull \vbox (11.62634pt too high) has occurred while \output is active []
@@ -3141,96 +3122,132 @@ Package microtype Info: Loading generic protrusion settings for font family
 Requested font "[lmsans8-regular]:mapping=tex-text;" at 8.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsans
 8-regular.otf
-File: ../hoccungpi/pic//../bannerhoccungpi.jpg Graphic file (type bmp)
-<../hoccungpi/pic//../bannerhoccungpi.jpg>
-File: ../hoccungpi/pic//../tieude.pdf Graphic file (type pdf)
-<use ../hoccungpi/pic//../tieude.pdf>
-File: fhoccungpi2.pdf Graphic file (type pdf)
-<use fhoccungpi2.pdf>
-File: fhoccungpi2.pdf Graphic file (type pdf)
-<use fhoccungpi2.pdf>
-File: fhoccungpi2.pdf Graphic file (type pdf)
-<use fhoccungpi2.pdf>
+File: ../lichsutoanhoc/pic//../bannerlichsu.jpg Graphic file (type bmp)
+<../lichsutoanhoc/pic//../bannerlichsu.jpg>
+File: ../lichsutoanhoc/pic//../tieude4.pdf Graphic file (type pdf)
+<use ../lichsutoanhoc/pic//../tieude4.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
 [1
 
 ]
-Requested font "zplmr7y" at 10.95pt
-Requested font "zplmr7y" at 8.0pt
-Requested font "zplmr7y" at 6.0pt
-
-Overfull \hbox (2.53635pt too wide) in paragraph at lines 156--157
- [][] 
- []
-
-File: hoccungpi1.pdf Graphic file (type pdf)
-<use hoccungpi1.pdf>
-File: fhoccungpi1.pdf Graphic file (type pdf)
-<use fhoccungpi1.pdf>
-File: hoccungpi1.pdf Graphic file (type pdf)
-<use hoccungpi1.pdf>
-File: fhoccungpi1.pdf Graphic file (type pdf)
-<use fhoccungpi1.pdf>
-File: hoccungpi1.pdf Graphic file (type pdf)
-<use hoccungpi1.pdf>
-File: fhoccungpi1.pdf Graphic file (type pdf)
-<use fhoccungpi1.pdf>
-[2]
-File: hoccungpi2.pdf Graphic file (type pdf)
-<use hoccungpi2.pdf>
-File: fhoccungpi2.pdf Graphic file (type pdf)
-<use fhoccungpi2.pdf>
-File: hoccungpi2.pdf Graphic file (type pdf)
-<use hoccungpi2.pdf>
-File: fhoccungpi2.pdf Graphic file (type pdf)
-<use fhoccungpi2.pdf>
-File: hoccungpi2.pdf Graphic file (type pdf)
-<use hoccungpi2.pdf>
-File: fhoccungpi2.pdf Graphic file (type pdf)
-<use fhoccungpi2.pdf>
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
-\TU/EBGaramond(0)/m/it/12 their Applications\TU/EBGaramond(0)/m/n/12 . Cambridg
-e University
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+\TU/EBGaramond(0)/m/n/12 Năm $[]\OT1/ztmcm/m/n/12 1908$[]\TU/EBGaramond(0)/m/n/
+12 , cô được bầu vào Circolo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 4$[]\TU/EBGaramond(0)/m/n/12 ]
- Bender, Edward A.; Williamson, S.
+Underfull \hbox (badness 6775) in paragraph at lines 48--49
+\TU/EBGaramond(0)/m/n/12 Cô đã giảng bài Zur Invariantentheorie
+ []
+
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+[3]
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+\TU/EBGaramond(0)/m/n/12 Beziehungen zur kommutativen Algebra
+ []
+
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+File: lichsu2.pdf Graphic file (type pdf)
+<use lichsu2.pdf>
+File: flichsu2.pdf Graphic file (type pdf)
+<use flichsu2.pdf>
+[5]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 100.
+Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
+mapping=tex-text;" at 12.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Bold.otf
+
+Underfull \hbox (badness 7326) in paragraph at lines 106--107
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 3$[]\TU/EBGaramond(0)/m/n/12 ]
+ C. H. Kimberling, Emmy Noether,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 5$[]\TU/EBGaramond(0)/m/n/12 ]
- Titu Andreescu, Bogdan Enescu,
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+\TU/EBGaramond(0)/m/n/12 greatest woman mathematician, \TU/EBGaramond(0)/m/it/1
+2 The
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
-\TU/EBGaramond(0)/m/it/12 Mathematical Olympiad Treasures\TU/EBGaramond(0)/m/n/
-12 .
+Underfull \hbox (badness 5091) in paragraph at lines 110--111
+\TU/EBGaramond(0)/m/n/12 Emmy Noether, \TU/EBGaramond(0)/m/it/12 Mathematische 
+Annalen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 6$[]\TU/EBGaramond(0)/m/n/12 ]
- Website [][]$[][][][][][] [] [] [] [][][][][][][][][][][][][][][][][][][] []
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 7$[]\TU/EBGaramond(0)/m/n/12 ]
+ H. Weyl, Emmy Noether, \TU/EBGaramond(0)/m/it/12 Scripta
  []
 
-)
-File: hoccungpi1.pdf Graphic file (type pdf)
-<use hoccungpi1.pdf>
-File: fhoccungpi1.pdf Graphic file (type pdf)
-<use fhoccungpi1.pdf>
-File: hoccungpi1.pdf Graphic file (type pdf)
-<use hoccungpi1.pdf>
-File: fhoccungpi1.pdf Graphic file (type pdf)
-<use fhoccungpi1.pdf>
-File: hoccungpi1.pdf Graphic file (type pdf)
-<use hoccungpi1.pdf>
-File: fhoccungpi1.pdf Graphic file (type pdf)
-<use fhoccungpi1.pdf>
- [4] (_main.aux)
+
+Overfull \vbox (2.42693pt too high) has occurred while \output is active []
+
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+File: lichsu1.pdf Graphic file (type pdf)
+<use lichsu1.pdf>
+File: flichsu1.pdf Graphic file (type pdf)
+<use flichsu1.pdf>
+
+[6]) (_main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3241,12 +3258,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68719 strings out of 410939
- 1560873 string characters out of 2823530
- 2640449 words of memory out of 3000000
- 88234 multiletter control sequences out of 15000+600000
- 509916 words of font info for 146 fonts, out of 8000000 for 9000
+ 68670 strings out of 410939
+ 1559656 string characters out of 2823530
+ 2654447 words of memory out of 3000000
+ 88189 multiletter control sequences out of 15000+600000
+ 508078 words of font info for 139 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,12n,120p,1132b,921s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 104i,11n,120p,1728b,692s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on _main.pdf (4 pages).
+Output written on _main.pdf (6 pages).
