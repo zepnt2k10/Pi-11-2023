@@ -62,20 +62,20 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[scale=0.7]
+		\begin{tikzpicture}[scale=0.6]
 			\clip (0,0) - ++(0,2) - ++(2,4) - ++(4,2) - ++(6,4) - ++(8,2) - ++(8,0) - ++(4,-4) -- cycle;;
 			\draw[fill=bulgarianrose!90] (0,0) - ++(0,2) - ++(2,4) - ++(4,2) - ++(6,4) - ++(8,2) - ++(8,0) - ++(4,-4) -- cycle;
 			\draw (0,0) - ++(0,2) - ++(2,4) - ++(4,2) - ++(6,4) - ++(8,2) - ++(8,0) - ++(4,-4) -- cycle;
 			\draw (0,-4) grid (8,4);
 		\end{tikzpicture}
-		\vspace*{-10pt}
+		\vspace*{-5pt}
 	\end{figure}
 	\textbf{\color{toancuabi}Bài $\pmb{4.}$} Trong hình vẽ sau, mỗi miền tô $1$ màu, không có $2$ miền nào cùng màu. Có bao nhiêu miền nằm trong ít nhất $3$ hình tròn?	 
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.7\linewidth]{2}
+		\includegraphics[width= 0.65\linewidth]{2}
 %		\caption{\small\textit{\color{}}}
 		\vspace*{-5pt}
 	\end{figure}
@@ -93,7 +93,7 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[scale=1.5]
+		\begin{tikzpicture}[scale=1.2]
 			\draw[fill=diendantoanhoc!50] (0,0) rectangle (1,1);
 			\draw[fill=gocco!50] (0,1) rectangle (1,2);
 			\draw[fill=toancuabi!50] (0,2) rectangle (1,3);
@@ -114,34 +114,112 @@
 		\captionsetup{labelformat= empty, justification=centering}
 		\includegraphics[width= 0.7\linewidth]{5}
 %		\caption{\small\textit{\color{}}}
-		\vspace*{-10pt}
+%		\vspace*{-10pt}
 	\end{figure}
 	\textbf{\color{toancuabi}Bài $\pmb{8.}$} Trong siêu thị có sự kiện ra mắt $1$ loại kem mới, để quảng cáo loại kem này, họ cho phép cứ $2$ cái vỏ que kem đổi được $1$ cây kem, bạn Bảo Châu mua $10$ que kem, vậy bạn ấy thực sự có thể ăn được nhiều nhất bao nhiêu que kem?
 	\vskip 0.1cm
-	\textbf{\color{toancuabi}Bài $\pmb{9.}$} Một hình vuông to được chia thành các hình vuông nhỏ hơn với nhiều kích cỡ, trong đó một số được tô màu đen như hình vẽ. Biết diện tích phần màu trắng của hình vuông là $180$. Tìm diện tích phần màu đen của hình vuông.
+	\textbf{\color{toancuabi}Bài $\pmb{9.}$} Một hình vuông to được chia thành các hình vuông nhỏ hơn với nhiều kích cỡ, trong đó một số được tô màu hồng như hình vẽ. Biết diện tích phần màu trắng của hình vuông là $180$. Tìm diện tích phần màu đen của hình vuông.
 	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.7\linewidth]{6}
-%		\caption{\small\textit{\color{}}}
-		\vspace*{-10pt}
+	\vspace*{-5pt}
+	\centering
+	\captionsetup{labelformat= empty, justification=centering}
+	\begin{tikzpicture}[scale=0.55, cackithi]
+		\fill[fill=toancuabi] (-2.,7.) -- (-2.,5.5) -- (-0.5,5.5) -- (-0.5,7.) -- cycle;
+		\fill[fill=toancuabi] (-0.5,5.5) -- (-0.5,4.) -- (1.,4.) -- (1.,5.5) -- cycle;
+		\fill[fill=toancuabi] (1.,7.) -- (1.,5.) -- (3.,5.) -- (3.,7.) -- cycle;
+		\fill[fill=toancuabi] (5.,7.) -- (5.,5.) -- (7.,5.) -- (7.,7.) -- cycle;
+		\fill[fill=toancuabi] (4.,5.) -- (4.,4.) -- (5.,4.) -- (5.,5.) -- cycle;
+		\fill[fill=toancuabi] (3.,4.) -- (3.,3.) -- (4.,3.) -- (4.,4.) -- cycle;
+		\fill[fill=toancuabi] (5.,3.) -- (5.,1.) -- (7.,1.) -- (7.,3.) -- cycle;
+		\fill[fill=toancuabi] (1.,3.) -- (1.,1.) -- (3.,1.) -- (3.,3.) -- cycle;
+		\fill[fill=toancuabi] (4.,1.) -- (4.,-0.5) -- (5.5,-0.5) -- (5.5,1.) -- cycle;
+		\fill[fill=toancuabi] (5.5,-0.5) -- (5.5,-2.) -- (7.,-2.) -- (7.,-0.5) -- cycle;
+		\fill[fill=toancuabi] (-2.,1.) -- (-2.,-2.) -- (1.,-2.) -- (1.,1.) -- cycle;
+		\draw  (3.,5.)-- (5.,5.);
+		\draw  (5.,5.)-- (5.,3.);
+		\draw  (5.,3.)-- (3.,3.);
+		\draw  (3.,3.)-- (3.,5.);
+		\draw  (4.,5.)-- (4.,3.);
+		\draw  (3.,4.)-- (5.,4.);
+		\draw  (7.,5.)-- (7.,3.);
+		\draw  (7.,3.)-- (5.,3.);
+		\draw  (3.,5.)-- (1.,5.);
+		\draw  (1.,5.)-- (1.,3.);
+		\draw  (1.,3.)-- (3.,3.);
+		\draw  (1.,3.)-- (1.,1.);
+		\draw  (1.,1.)-- (7.,1.);
+		\draw  (7.,1.)-- (7.,3.);
+		\draw  (5.,3.)-- (5.,1.);
+		\draw  (3.,3.)-- (3.,1.);
+		\draw  (1.,5.)-- (1.,7.);
+		\draw  (1.,7.)-- (7.,7.);
+		\draw  (7.,7.)-- (7.,5.);
+		\draw  (5.,5.)-- (5.,7.);
+		\draw  (3.,5.)-- (3.,7.);
+		\draw  (1.,7.)-- (-2.,7.);
+		\draw  (-2.,7.)-- (-2.,1.);
+		\draw  (1.,4.)-- (-2.,4.);
+		\draw  (-2.,-2.)-- (7.,-2.);
+		\draw  (7.,-2.)-- (7.,1.);
+		\draw  (4.,1.)-- (4.,-2.);
+		\draw  (-2.,7.)-- (-2.,5.5);
+		\draw  (-2.,5.5)-- (-0.5,5.5);
+		\draw  (-0.5,5.5)-- (-0.5,7.);
+		\draw  (-0.5,7.)-- (-2.,7.);
+		\draw  (-0.5,5.5)-- (-0.5,4.);
+		\draw  (-0.5,4.)-- (1.,4.);
+		\draw  (1.,4.)-- (1.,5.5);
+		\draw  (1.,5.5)-- (-0.5,5.5);
+		\draw  (1.,7.)-- (1.,5.);
+		\draw  (1.,5.)-- (3.,5.);
+		\draw  (3.,5.)-- (3.,7.);
+		\draw  (3.,7.)-- (1.,7.);
+		\draw  (5.,7.)-- (5.,5.);
+		\draw  (5.,5.)-- (7.,5.);
+		\draw  (7.,5.)-- (7.,7.);
+		\draw  (7.,7.)-- (5.,7.);
+		\draw  (4.,5.)-- (4.,4.);
+		\draw  (4.,4.)-- (5.,4.);
+		\draw  (5.,4.)-- (5.,5.);
+		\draw  (5.,5.)-- (4.,5.);
+		\draw  (3.,4.)-- (3.,3.);
+		\draw  (3.,3.)-- (4.,3.);
+		\draw  (4.,3.)-- (4.,4.);
+		\draw  (4.,4.)-- (3.,4.);
+		\draw  (5.,3.)-- (5.,1.);
+		\draw  (5.,1.)-- (7.,1.);
+		\draw  (7.,1.)-- (7.,3.);
+		\draw  (7.,3.)-- (5.,3.);
+		\draw  (1.,3.)-- (1.,1.);
+		\draw  (1.,1.)-- (3.,1.);
+		\draw  (3.,1.)-- (3.,3.);
+		\draw  (3.,3.)-- (1.,3.);
+		\draw  (4.,1.)-- (4.,-0.5);
+		\draw  (4.,-0.5)-- (5.5,-0.5);
+		\draw  (5.5,-0.5)-- (5.5,1.);
+		\draw  (5.5,1.)-- (4.,1.);
+		\draw  (5.5,-0.5)-- (5.5,-2.);
+		\draw  (5.5,-2.)-- (7.,-2.);
+		\draw  (7.,-2.)-- (7.,-0.5);
+		\draw  (7.,-0.5)-- (5.5,-0.5);
+		\draw  (-2.,1.)-- (-2.,-2.);
+		\draw  (-2.,-2.)-- (1.,-2.);
+		\draw  (1.,-2.)-- (1.,1.);
+		\draw  (1.,1.)-- (-2.,1.);
+	\end{tikzpicture}
+	\vspace*{-5pt}
 	\end{figure}
 	\textbf{\color{toancuabi}Bài $\pmb{10.}$} Hai bạn Nam và Dương đi chợ sách và nhìn thấy cuốn tạp chí Pi. Nam muốn mua $1$ cuốn nhưng thiếu $12$ nghìn đồng. Dương muốn mua $1$ cuốn nhưng thiếu $23$ nghìn đồng. Nếu $2$ bạn chung tiền mua thì vừa đủ mua $1$ cuốn. Hỏi cuốn tạp chí Pi giá bao nhiêu tiền?
-	\vskip 0.1cm
+	\end{multicols}
+	\newpage
+	\begin{multicols}{2}
 	\textbf{\color{toancuabi}Lời giải.}
 	\vskip 0.1cm
 	\textbf{\color{toancuabi}Bài $\pmb{1.}$} Ta thấy nếu lấy ô vuông được tô màu làm tâm, thì theo ngược chiều kim đồng hồ số các ô vuông kề với tâm sẽ tăng dần: $1,2,3,4$. Do đó hình $B$ là hình tiếp theo trong dãy.
 	\vskip 0.1cm
-	Đáp án: $B$.
-	\vskip 0.1cm
 	\textbf{\color{toancuabi}Bài $\pmb{2.}$} Ta có thể thấy ngay cặp số bạn thân có tổng bằng $99$ thì mỗi số trong cặp có tổng chữ số hàng chục và hàng đơn vị bằng $9$. Do $9 = 1+8 = 2+7 = 3+6 = 4+5$ nên ta có $4$ cặp số số bạn thân thỏa mãn là: $18-81$, $27-72$, $26-63$, $45-54$.
 	\vskip 0.1cm
-	Đáp án: $4$
-	\vskip 0.1cm
 	\textbf{\color{toancuabi}Bài $\pmb{3.}$} Thanh sô--cô--la hình trái tim được ghép từ $32$ miếng ô vuông diện tích và $16$ miếng nửa ô vuông. Sau khi ghép các nửa ô vuông lại với nhau, thì ta thấy thanh sô--cô--la gồm $40$ ô. Do đó khối lượng của thanh sô--cô--la là: $4\times 80=320 \text{ (g)}$.
-	\vskip 0.1cm
-	Đáp án: $320$
 	\vskip 0.1cm
 	\textbf{\color{toancuabi}Bài $\pmb{4.}$} Đánh số các miền như trong hình dưới đây. Ta thấy các miền $4$, $5$, $10$, $9$ và $7$ nằm trong ít nhất $3$ hình tròn. Do đó có $5$ miền thỏa mãn đề bài.
 	\begin{figure}[H]
@@ -193,12 +271,12 @@
 	\begin{align*}
 		10+5+2+1+1=19 \text{ (que kem).}
 	\end{align*}
-	\textbf{\color{toancuabi}Bài $\pmb{9.}$} Bằng cách ghép các phần được tô đen như trong các minh họa dưới đây, ta thấy phần tô đen gồm $4$ ô vuông nhỏ và phần màu trắng gồm $5$ ô vuông nhỏ.
+	\textbf{\color{toancuabi}Bài $\pmb{9.}$} Bằng cách ghép các phần được tô hồng như trong các minh họa dưới đây, ta thấy phần tô hồng gồm $4$ ô vuông nhỏ và phần màu trắng gồm $5$ ô vuông nhỏ.
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{10}
+		\includegraphics[width= 1\linewidth]{10a.pdf}
 		%		\caption{\small\textit{\color{}}}
 		\vspace*{-15pt}
 	\end{figure}
