@@ -216,849 +216,428 @@
 \begin{multicols}{2}
 	\setlength{\abovedisplayskip}{5pt}
 	\setlength{\belowdisplayskip}{5pt}
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P711.}}
-	(Mức $B$) Bác An có $6$ tấm thẻ $A,$ $B,$ $C,$ $D,$ $E,$ $F$. Bác ghi các số nguyên dương $1,$ $2,$ $3,$ $4,$ $5,$ $6$ lên mỗi tấm thẻ, sao cho mỗi thẻ được ghi một số và không có hai thẻ nào có số giống nhau. Biết rằng tổng các số ghi ở các tấm thẻ $A,$ $B,$ $C$ bằng $14$ và tổng các số được ghi ở các tấm thẻ $A,$ $D,$ $E$ là $12$. Hỏi bác An có bao nhiêu cách ghi số như vậy?
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P720.}}
+	(Mức $A$) Một thành phố có $1332$ căn nhà. Mỗi dịp Noel, Ông già Noel sẽ đến thăm các căn nhà đó theo thứ tự tùy ý. Chứng minh rằng, có thể tìm được $12$ căn nhà trong thành phố đó, sao cho trong ba năm liên tiếp, có ít nhất hai năm mà Ông già Noel đến thăm $12$ căn nhà đó theo cùng một thứ tự.
 	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của bạn Phạm Văn Đăng, lớp $11$A, trường THPT Hà Đông, tỉnh Hải Dương})\textbf{\color{thachthuctoanhoc}.}
+	\textbf{Lời giải} (\textit{dựa theo Đáp án của bài toán})\textbf{.}
 	\vskip 0.05cm
-	Xét một cách ghi số tùy ý, thỏa mãn yêu cầu đề bài.
+	Trước hết, ta nhắc lại kết quả nổi tiếng sau:
 	\vskip 0.05cm
-	Ký hiệu $a, b, c, d, e, f$, tương ứng, là các số được ghi trên các tấm thẻ $A, B, C, D, E, F$.
+	\textbf{Định lý Erdos -- Szekeres.} Cho các số nguyên dương $p, q > 1$. Khi đó, mỗi dãy $(p - 1)(q - 1) + 1$ số thực đôi một phân biệt sẽ chứa một dãy con tăng có $p$ số hạng, hoặc chứa một dãy con giảm có $q$ số hạng.
 	\vskip 0.05cm
-	Theo bài ra, ta có:
-	\begin{align*}
-		&\{a; b; c; d; e; f\} = \{1; 2; 3; 4; 5; 6\}, \tag{$1$}\\
-	\text{và }
-		&\begin{cases}
-			a + b + c = 14\\[-0.6ex]
-			a + d + e = 12. 
-		\end{cases} \tag{$2$}
-	\end{align*}
-	Do đó
-	\begin{align*}
-			&14 + 12 = \left( {a + b + c} \right) + \left( {a + d + e} \right) \\[-0.6ex]
-			=\, &a + \left( {a + b + c + d + e} \right)\\[-0.6ex]
-			 = \,&a + \left( {\left( {1 + 2 + 3 + 4 + 5 + 6} \right) - f} \right)\left( {{\rm{do}}(1)} \right)\\[-0.6ex]
-			 = \,&a - f + 21.
-	\end{align*}
-	Vì vậy, $a -  f = 5$. \hfill ($3$)
-	\vskip 0.05cm
-	Suy ra, $a = 6$ và $f = 1$, vì nếu ngược lại, $a \ne 6$ hoặc $f \ne 1$, thì từ ($1$) ta có $a \le 5$ hoặc $f \ge 2$; dẫn tới
-	\begin{align*}
-		a - f \le 5 - 1 = 4 \text{ \,\,(do  $f \ge 1$ (theo ($1$))},
-	\end{align*}
-	hoặc 
-	\begin{align*}
-		a - f \le 6 - 2 = 4 \text{\,\,(do  $a \le 6$ (theo ($1$)))},
-	\end{align*}
-	mâu thuẫn với ($3$).
-	\vskip 0.05cm
-	Vì $a = 6$ và $f = 1$, nên từ ($1$) và ($2$) ta có:
-	\begin{align*}
-		&b, c, d, e \in \{2; 3; 4; 5\}; \tag{$4$}\\[-0.6ex]
-		&\begin{cases}
-			b + c = 8\\[-0.6ex]
-			d + e = 6.
-		\end{cases} \tag{$5$}
-	\end{align*}
-	Từ ($5$), do $8, 6$ là các số chẵn, suy ra $b, c$ có cùng tính chẵn -- lẻ, và $d, e$ cũng có cùng tính chẵn -- lẻ.  \hfill ($6$)
-	\vskip 0.05cm
-	Từ ($4$), ($5$) và ($6$), suy ra $b, c \in \{3; 5\}$ và $d, e \in \{2; 4\}$.
-	\vskip 0.05cm
-	Ngược lại, dễ thấy, ghi số $6$ lên thẻ $A$, các số $3$, $5$, theo thứ tự tùy ý, lên các thẻ $B$, $C$, các số $2$, $4$, theo thứ tự tùy ý, lên các thẻ $D$, $E$, số $1$ lên thẻ $F$ là một cách ghi thỏa mãn yêu cầu đề bài.
-	\vskip 0.05cm
-	Vì vậy, tất cả các cách ghi số lên thẻ, thỏa mãn yêu cầu đề bài, là:
-	\vskip 0.05cm
-	$\bullet$ $A: 6, B: 3, C: 5, D: 2, E: 4, F: 1;$
-	\vskip 0.05cm
-	$\bullet$ $A: 6, B: 3, C: 5, D: 4, E: 2, F: 1;$
-	\vskip 0.05cm
-	$\bullet$ $A: 6, B: 5, C: 3, D: 2, E: 4, F: 1;$
-	\vskip 0.05cm
-	$\bullet$ $A: 6, B: 5, C: 3, D: 4, E: 2, F: 1.$
-	\vskip 0.05cm
-	Vậy, bác An có tất cả bốn cách ghi số thỏa mãn yêu cầu đề bài.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm	
-	Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có:
-	\vskip 0.05cm
-	-- Hai lời giải sai, gồm một lời giải có kết quả sai (do người giải bài ``quên" điều kiện các số trên $6$ tấm thẻ phải đôi một khác nhau) và một lời giải tuy có kết quả đúng, nhưng cách tìm ra kết quả đó là sai (cụ thể, người giải bài đã lập luận rằng, vì có một cách ghi số lên hai thẻ $A$, $F$, hai cách ghi số lên hai thẻ $B$, $C$, và hai cách ghi số lên hai thẻ $D$, $E$, nên theo quy tắc cộng, số cách ghi số lên sáu tấm thẻ là $2 + 2 = 4$);
-	\vskip 0.05cm
-	-- Hai lời giải chưa hoàn chỉnh, gồm một lời giải được trình bày quá tắt (chỉ nêu các kết quả mà không trình bày các lập luận dẫn đến các kết quả đó), và một lời giải thiếu chính xác về logic.
-	\vskip 0.05cm
-	\hfill	\textbf{\color{thachthuctoanhoc}Hà Thanh}
-	\vskip 0.05cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P712.}}
-	(Mức $B$) Tìm tất cả các số nguyên $a$ sao cho $a^2+a+1$ chỉ có ước nguyên tố không vượt quá $5$. 
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo cách giải của đa số lời giải Tạp chí đã nhận được từ bạn đọc})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Xét số nguyên $a$ tùy ý.
-	\vskip 0.05cm
-	Đặt $A = a^2 + a + 1$; ta có $A >0$.
-	\vskip 0.05cm 
-	Do $A = a(a+1) + 1$  và $a(a + 1)$ chia hết cho $2$, nên $A$ không chia hết cho $2$.      \hfill ($1$)
-	\vskip 0.05cm
-	Tiếp theo, ta có:
-	\begin{align*}
-		4A  = (2a + 1)^2 + 3. \tag{$2$}
-	\end{align*}
-	Từ đó, do số dư trong phép chia một số chính phương cho $5$ chỉ có thể là $0$, hoặc $1$, hoặc $4$, suy ra $4A$ không chia hết cho $5$. Do đó, $A$ không chia hết cho $5$. \hfill ($3$)
-	\vskip 0.05cm
-	Vì tất cả các số nguyên tố không vượt quá $5$ là $2, 3, 5$, nên từ ($1$) và ($3$) suy ra, nếu $A$ chỉ có ước nguyên tố không vượt quá $5$ thì $A$ chỉ chia hết cho $3$; nghĩa là, $A$ có dạng
-	\begin{align*}
-		 A = 3^n, \tag{$4$}
-	\end{align*}
-	với $n$ là một số nguyên dương.
-	\vskip 0.05cm
-	Khi đó, $4A$ chia hết cho $3$. Vì thế, $(2a + 1)^2$ chia hết cho $3$ (do ($2$)). Mà $3$ là số nguyên tố nên $2a + 1$ chia hết cho $3$. Do đó, $(2a+1)^2$ chia hết cho $9$. Từ đây và ($2$) suy ra, $4A$ không chia hết cho $9$. Vì thế, A không chia hết cho $9$. Suy ra, $A = 3$ (do ($4$)).
-	\vskip 0.05cm
-	Ngược lại, với $A = 3$, ta có $A$ là số chỉ có ước nguyên tố không vượt quá $5$.
-	\vskip 0.05cm
-	Như vậy, $A$ chỉ có ước nguyên tố không vượt quá $5$ khi và chỉ khi $A = 3$.
-	Ta có:
-	\begin{align*}
-		A = 3 &\Leftrightarrow a^2 + a + 1 = 3 \\
-		&\Leftrightarrow (a-1)(a+2) = 0\\
-		&\Leftrightarrow a \in \{-2;1\}.
-	\end{align*}
-	Vậy, tất cả các số nguyên $a$ cần tìm, theo yêu cầu của đề bài, là: $a = -2$ và $a = 1$.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	Trong số tất cả lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một lời giải sai, do người giải bài đã mắc một số nhầm lẫn trong các tính toán.
+	\textit{Chứng minh.}
 	\vskip 0.1cm
-	\hfill	\textbf{\color{thachthuctoanhoc}Lưu Thị Thanh Hà}
-	\vskip 0.1cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P713.}}
-	(Mức $B$) Xác định tất cả các cặp số thực $(a;b)$ sao cho $a+b$ là số nguyên và $a^3+b^3=2$. 
+	Đặt $N = (p - 1)(q - 1) + 1$.
 	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{phỏng theo ý giải của bạn Phạm Quang Thắng, lớp $7$C, trường THCS Hồ Xuân Hương, huyện Quỳnh Lưu, tỉnh Nghệ An})\textbf{\color{thachthuctoanhoc}.}
+	Xét dãy số thực $x_1,x_2,\ldots,x_N$ tùy ý, thỏa mãn $x_i \ne x_j$, với mọi $i, j \in \{1; 2; \ldots; N\}$ và $i \ne j$.
 	\vskip 0.05cm
-	$\bullet$ Giả sử $(a, b)$ là cặp số thực thỏa mãn các điều kiện của đề bài.
+	Với mỗi $i \in \{1; 2; \ldots; N\}$, kí hiệu $d_i$ là số các số hạng của dãy con tăng có nhiều số hạng nhất và có $x_i$ là số hạng có giá trị lớn nhất; kí hiệu $n_i$ là số các số hạng của dãy con giảm có nhiều số hạng nhất và có  $x_i$ là số hạng có giá trị bé nhất.
 	\vskip 0.05cm
-	Ta có:
-	\begin{align*}
-		0 < 2 &= {a^3} + {b^3} = \left( {a + b} \right)\left( {{a^2} - ab + {b^2}} \right) \\[-0.5ex]
-		&= \left( {a + b} \right)\left( {{{\left( {a - \frac{b}{2}} \right)}^2} + \frac{{3{b^2}}}{4}} \right).
-	\end{align*}
-	Từ đó, do
-	\begin{align*}
-		{\left( {a - \frac{b}{2}} \right)^2} + \frac{{3{b^2}}}{4} \ge 0,
-	\end{align*}
-	suy ra $a + b > 0$. \hfill ($1$)
+	Xét các cặp số $\left(d_i, n_i\right),  i = 1, 2, \ldots, N$.
 	\vskip 0.05cm
-	Vì thế, do
-	\begin{align*}
-		ab \le {\left( {\frac{{a + b}}{2}} \right)^2},
-	\end{align*}
-	nên
-	\begin{align*}
-		ab\left( {a + b} \right) \le \frac{1}{4}{\left( {a + b} \right)^3}.
-	\end{align*}
-	Do đó
-	\begin{align*}
-		2 &= {a^3} + {b^3} = {\left( {a + b} \right)^3} - 3ab\left( {a + b} \right) \\[-0.5ex]
-		&\ge {\left( {a + b} \right)^3} - \frac{3}{4}{\left( {a + b} \right)^3} \\[-0.5ex]
-		&= \frac{1}{4}{\left( {a + b} \right)^3}.
-	\end{align*}
-	Suy ra, ${\left( {a + b} \right)^3} \le 8.$  Từ đây và ($1$), ta được
-	\begin{align*}
-		0 < a + b \le 2.
-	\end{align*}
-	Mà $a + b$ là số nguyên, nên 
-	\begin{align*}
-		a + b \in \{1; 2\}. \tag{$2$}
-	\end{align*}
-	Như vậy, nếu $(a, b)$ là cặp số thực thỏa mãn các điều kiện của đề bài thì $a, b$ thỏa mãn ($2$) và $a^3 + b^3 = 2$.
-	\vskip 0.05cm 
-	$\bullet$ Ngược lại, nếu cặp số thực $(a, b)$ thỏa mãn ($2$) và  $a^3 + b^3 = 2$, thì nó là cặp số thỏa mãn các điều kiện của đề bài.
+	Dễ thấy, với $1 \le i < j \le N$, ta có  $d_i < d_j$ nếu  $x_i < x_j$, và $n_i < n_j$  nếu $x_i > x_j$. Vì vậy, $N$ cặp $\left(d_i, n_i\right), i = 1, 2, \ldots, N$, đôi một khác nhau.     \hfill ($1$)
 	\vskip 0.05cm
-	$\bullet$ Vì vậy, $(a, b)$ là cặp số thực thỏa mãn các điều kiện của đề bài khi và chỉ khi $a, b$ thỏa mãn một trong các hệ sau:
-	\begin{align*}
-		\begin{cases}
-			a + b = 1\\[-0.5ex]
-			a^3 + b^3 = 2
-		\end{cases}
-		\text{\, và \,} \begin{cases}
-			a + b = 2\\[-0.5ex]
-			a^3 + b^3 = 2.
-		\end{cases}
-	\end{align*}
-	Ta có:
-	\begin{align*}
-		&\begin{cases}
-			a + b = 1\\
-			a^3 + b^3 = 2
-		\end{cases} \\
-	\Leftrightarrow &\begin{cases}
-		a + b = 1\\
-		(a+b)^3 - 3ab(a + b) = 2
-	\end{cases}\\
-	\Leftrightarrow &\begin{cases}
-		a + b = 1\\
-		1^3 - 3ab\cdot 1 = 2
-	\end{cases}\\
-	\Leftrightarrow& \begin{cases}
-		a + b = 1 \\
-		ab= -\frac{1}{3}.
-	\end{cases} \tag{$\text{I}$}
-	\end{align*}
-	Bằng cách hoàn toàn tương tự, ta cũng có:
-	\begin{align*}
-		\begin{cases}
-			a + b = 2\\
-			a^3 + b^3 = 2
-		\end{cases} \Leftrightarrow \begin{cases}
-		a + b = 2\\
-		ab = 1.
-	\end{cases} \tag{$\text{II}$}
-	\end{align*}
-	Theo định lý Vi--et (thuận và đảo) cho phương trình bậc hai, ta có:
+	Nhận thấy, nếu với mọi $i \in {1; 2; \ldots; N}$, $1 \le d_i \le p-1$  và $1 \le n_i \le q-1$, thì trong $N$ cặp $\left(d_i, n_i\right), i = 1, 2, \ldots, N$, chỉ có tối đa $(p - 1)(q - 1)$ cặp đôi một khác nhau, mâu thuẫn với ($1$) (do $(p - 1)(q - 1) < N$). Vì vậy, phải tồn tại $i \in {\1; 2; \ldots; N\}$ sao cho $d_i \ge p$, hoặc tồn tại $j \in \{1; 2; \ldots; N\}$ sao cho $n_j \ge q$. Từ đây, hiển nhiên ta có điều phải chứng minh theo yêu cầu của định lý.
 	\vskip 0.05cm
-	$\diamond$ $a, b$ thỏa mãn hệ ($\text{I}$) khi và chỉ khi chúng là hai nghiệm của phương trình
-	\begin{align*}
-		x^2 -x - \frac{1}{3} = 0; \tag{$3$}
-	\end{align*}
-	$\diamond$ $a, b$ thỏa mãn hệ ($\text{II}$) khi và chỉ khi chúng là hai nghiệm của phương trình
-	\begin{align*}
-		x^2 - 2x + 1 = 0. \tag{$4$}
-	\end{align*}
-	Giải phương trình ($3$), ta được hai nghiệm của nó là:
-	\begin{align*}
-		{x_1} = \frac{{3 - \sqrt {21} }}{6} \text{\, và \,} {x_2} = \frac{{3 + \sqrt {21} }}{6}.
-	\end{align*}  
-	Giải phương trình ($4$), ta được hai nghiệm của nó là: $x_1 = x_2 = 1$. 
-	\vskip 0.05cm
-	Vì vậy, tất cả các cặp số thực $(a, b)$ thỏa mãn các điều kiện của đề bài là:
-	\begin{align*}
-		&\left( {a,b} \right) = \left( {\frac{{3 - \sqrt {21} }}{6},\frac{{3 + \sqrt {21} }}{6}} \right),\\
-		&\left( {a,b} \right) = \left( {\frac{{3 + \sqrt {21} }}{6},\frac{{3 - \sqrt {21} }}{6}} \right)\\
-		\text{và }&\left( {a,b} \right) = \left( {1,1} \right).
-	\end{align*}
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	Tất cả các lời giải, mà Tạp chí nhận được từ bạn đọc, đều có kết quả đúng. Tuy nhiên, một số lời giải chưa đạt yêu cầu về logic, do người giải bài đã ``quên" bước thử lại các cặp số $(a, b)$, tìm được nhờ phép suy luận ``suy ra".
-	\vskip 0.1cm
-	\hfill	\textbf{\color{thachthuctoanhoc}Lê Huy}
-	\vskip 0.1cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P714.}}
-	(Mức $B$) Cho $2023$ số nguyên dương $a_1,$ $a_2,$ $\ldots,$ $a_{2023}$ thỏa mãn
-	\begin{align*}
-		\frac{1}{a_1^2}+\frac{1}{a_2^2}+\cdots+\frac{1}{a_{2023}^2}\ge 33.
-	\end{align*}
-	Chứng minh rằng, trong $2023$ số đó, luôn tìm được ít nhất $21$ số bằng nhau. 
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo cách giải của bạn Lê Nguyễn Hoàng Nhật Đình, lớp 8C, trường THCS Nguyễn Thái Bình, tỉnh Cà Mau})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Do tính bình đẳng của ${a_1},{a_2}, \ldots ,{a_{2023}}$ trong giả thiết của bài toán, nên không mất tính tổng quát, có thể giả sử
-	\begin{align*}
-		{a_1} \!\le\! {a_2} \!\le\!  \cdots \! \le\! {a_{2021}} \!\le\! {a_{2022}} \!\le\! {a_{2023}}. \tag{$1$}
-	\end{align*}
-	Tiếp theo, ta sẽ chứng minh khẳng định của bài ra bằng phương pháp phản chứng.
-	\vskip 0.05cm
-	Giả sử, ngược lại, trong $2023$ số đã cho, chỉ có thể tìm được không quá $20$ số bằng \linebreak nhau.  \hfill ($2$)
-	\vskip 0.05cm
-	Khi đó, do ($1$) và do ${a_1},{a_2}, \ldots ,{a_{2023}}$  là các số nguyên dương, ta có:
-	\begin{align*}
-		{a_{1 + k \cdot 20}},{a_{2 + k \cdot 20}}, \ldots ,{a_{20 + k \cdot 20}} \ge k + 1,
-	\end{align*}
-	với mỗi $k = 0, 1, 2, \ldots, 100$; và 
-	\begin{align*}
-		{a_{2021}},{a_{2022}}, {a_{2023}} \ge 102.
-	\end{align*}
-	Do đó
-	\begin{align*}
-		&\frac{1}{{a_1^2}} + \frac{1}{{a_2^2}} +  \cdots  + \frac{1}{{a_{2023}^2}}\\
-		\le\, &20\!\left(\!\! {\frac{1}{{{1^2}}} \!+\! \frac{1}{{{2^2}}} \!+\! \frac{1}{{{3^2}}} \!+\! \frac{1}{{{4^2}}} \!+\!  \cdots  \!+\! \frac{1}{{{{101}^2}}}} \!\!\right) \!\!+\!\! \frac{3}{{{{102}^2}}}\\
-		< \,&20\!\left(\!\!{\frac{1}{{{1^2}}} \!+\! \frac{1}{{{2^2}}} \!+\! \frac{1}{{{3^2}}} \!+\! \frac{1}{{{4^2}}} \!+\!  \cdots  \!+\! \frac{1}{{{{102}^2}}}}\!\! \right)\!\!. \quad{\color{black}(}3{\color{black})}
-	\end{align*}
-	Do với mỗi số nguyên dương $n$ ta có
-	\begin{align*}
-		\frac{1}{{{n^2}}} \!= \!\frac{4}{{4{n^2}}} \!<\! \frac{4}{{4{n^2} \!-\! 1}} \!=\! 2\!\left(\! {\frac{1}{{2n \!-\! 1}} \!-\! \frac{1}{{2n \!+\! 1}}} \!\right),
-	\end{align*}
-	nên
-	\begin{align*}
-		&\frac{1}{{{1^2}}} + \frac{1}{{{2^2}}} + \frac{1}{{{3^2}}} + \frac{1}{{{4^2}}} +  \cdots  + \frac{1}{{{{102}^2}}} \\
-		< \,&1 + \frac{1}{4} + 2\left( \left( {\frac{1}{5} - \frac{1}{7}} \right) + \left( {\frac{1}{7} - \frac{1}{9}} \right) \right.\\
-		&\left.+  \cdots  + \left( {\frac{1}{{203}} - \frac{1}{{205}}} \right) \right)\\
-		= \,&\frac{5}{4} + 2\left( {\frac{1}{5} - \frac{1}{{205}}} \right) < \frac{5}{4} + \frac{2}{5} = \frac{{33}}{{20}}. \tag{$4$}
-	\end{align*}
-	Từ ($3$) và ($4$), suy ra
-	\begin{align*}
-		\frac{1}{{a_1^2}} + \frac{1}{{a_2^2}} +  \cdots  + \frac{1}{{a_{2023}^2}} < 33,
-	\end{align*}
-	mâu thuẫn với giả thiết của đề bài.
-	\vskip 0.05cm
-	Mâu thuẫn nhận được cho thấy giả sử ($2$) là sai. Vì vậy, ta có điều phải chứng minh theo yêu cầu đề bài.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	$\pmb{1.}$ Theo người chấm bài, bài đã ra là một bài toán thú vị và không dễ, tuy định hướng giải bài rất rõ ràng và tự nhiên. Một trong những điểm khó trong việc giải bài toán, theo định hướng phản chứng, là biết sử dụng giả thiết phản chứng để nhìn ra đánh giá ($3$), trong Lời giải trên.
-	\vskip 0.05cm
-	$\pmb{2.}$ Với $n$ là một số nguyên dương lớn hơn $1$, một trong các đánh giá quen thuộc cho $\dfrac{1}{n^2}$  thường được sử dụng trong giải toán, là
-	\begin{align*}
-		\frac{1}{{{n^2}}} < \frac{1}{{n\left( {n - 1} \right)}} = \frac{1}{n} - \frac{1}{{n - 1}}.
-	\end{align*}
-	Tuy nhiên, sử dụng đánh giá này để đánh giá tổng ở vế phải của ($3$) (trong Lời giải trên) sẽ không thu được kết quả mong muốn.
-	\vskip 0.05cm
-	$\pmb{3.}$ Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một lời giải sai.
-	\begin{flushright}
-		\textbf{\color{thachthuctoanhoc}Võ Quốc Bá Cẩn}
-	\end{flushright}
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P715.}}
-	(Mức $B$) Cho tam giác không cân $ABC$ nội tiếp đường tròn $(O)$, có $M$ là trung điểm $BC$. Đường tròn ngoại tiếp tam giác $AMO$ cắt đường tròn $(O)$ tại điểm thứ hai $D$. Đường thẳng $AM$ cắt $(O)$  tại điểm thứ hai $E$. Chứng minh rằng $DE\| BC$. 
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo cách giải của bạn Nguyễn Tuấn Kiệt, lớp $11$T$1$, trường THPT chuyên Nguyễn Bỉnh Khiêm, tỉnh Vĩnh Long})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Do tồn tại tam giác $AMO$ (theo giả thiết của bài toán) nên $M$ không trùng $O$. Vì thế, từ giả thiết $M$ là trung điểm của $BC$ suy ra
-	\begin{align*}
-		OM \bot BC,    
-	\end{align*}
-	và tam giác $ABC$ không vuông tại $A$. \hfill ($1$)
-	\vskip 0.05cm
-	Xét hai trường hợp sau:
-	\vskip 0.05cm
-	$\bullet$ \textit{Trường hợp $1$: góc $BAC$ là góc nhọn} (xem Hình $1$).
-	\begin{figure}[H]
-		\vspace*{-15pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-		\definecolor{ffqqqq}{rgb}{1.,0.,0.}
-		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
-		\definecolor{qqqqff}{rgb}{0.,0.,1.}
-		\begin{tikzpicture}[thachthuctoanhoc, scale=0.55]
-			\draw[pattern color=ffqqqq,fill=ffqqqq,fill opacity=0.10000000149011612] (7.,-1.7171572875253813) -- (6.7171572875253815,-1.7171572875253813) -- (6.7171572875253815,-2.) -- (7.,-2.) -- cycle; 
-			\draw[pattern color=ffqqqq,fill=ffqqqq,fill opacity=0.10000000149011612] (7.,-4.033899368973346) -- (6.717157287525382,-4.033899368973346) -- (6.717157287525382,-4.3167420814479645) -- (7.,-4.3167420814479645) -- cycle; 
-			\draw [shift={(3.62,2.16)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-76.98006863036619:0.6) arc (-76.98006863036619:-50.9061411137705:0.6) -- cycle;
-			\draw [shift={(7.,-0.4699519230769231)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-116.0739275165957:0.6) arc (-116.0739275165957:-90.:0.6) -- cycle;
-			\draw [shift={(7.,-0.4699519230769231)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-90.:0.8) arc (-90.:-63.9260724834043:0.8) -- cycle;
-			\draw  (7.,-0.4699519230769231) circle (4.282644874104787cm);
-			\draw [color=qqqqff] (5.117647058823531,-4.3167420814479645)-- (8.882352941176471,-4.316742081447964);
-			\draw  (5.117647058823531,-4.3167420814479645)-- (3.62,2.16);
-			\draw  (7.,-0.4699519230769231)-- (5.117647058823531,-4.3167420814479645);
-			\draw  (7.,-0.4699519230769231)-- (3.62,2.16);
-			\draw  (5.117647058823531,-4.3167420814479645)-- (3.,-2.);
-			\draw  (11.,-2.)-- (5.117647058823531,-4.3167420814479645);
-			\draw  (7.,-2.)-- (5.117647058823531,-4.3167420814479645);
-			\draw (3.16,3) node[anchor=north west] {$A$};
-			\draw (2.2,-1.8) node[anchor=north west] {$B$};
-			\draw (11.08,-1.56) node[anchor=north west] {$C$};
-			\draw (7.02,0.16) node[anchor=north west] {$O$};
-			\draw (6.98,-1.2) node[anchor=north west] {$M$};
-			\draw (4.9,-4.36) node[anchor=north west] {$D$};
-			\draw (8.88,-4.08) node[anchor=north west] {$E$};
-			\draw  (3.,-2.)-- (3.62,2.16);
-			\draw  (3.62,2.16)-- (11.,-2.);
-			\draw  (3.62,2.16)-- (8.882352941176471,-4.316742081447964);
-			\draw  (7.,-0.4699519230769231)-- (11.,-2.);
-			\draw  (8.882352941176471,-4.316742081447964)-- (11.,-2.);
-			\draw [color=qqqqff] (3.,-2.)-- (11.,-2.);
-			\draw [shift={(3.6915680473372747,-1.2349759615384623)},line width=0.8pt]  plot[domain=-1.4274933769780676:1.9072856505613451,variable=\t]({1.*3.3957302255661714*cos(\t r)+0.*3.3957302255661714*sin(\t r)},{0.*3.3957302255661714*cos(\t r)+1.*3.3957302255661714*sin(\t r)});
-			\draw [color=ffqqqq] (7.,-2.)-- (7.,-0.4699519230769231);
-			\draw  (7.,-0.4699519230769231)-- (8.882352941176471,-4.316742081447964);
-			\draw [color=ffqqqq] (7.,-4.3167420814479645)-- (7.,-2.);
-			\begin{scriptsize}
-				\draw [fill=white] (3.62,2.16) circle (1.5pt);
-				\draw [fill=white] (3.,-2.) circle (1.5pt);
-				\draw [fill=white] (11.,-2.) circle (1.5pt);
-				\draw [fill=white] (7.,-2.) circle (1.5pt);
-				\draw [fill=white] (7.,-0.4699519230769231) circle (1.5pt);
-				\draw [fill=white] (3.62,2.16) circle (1.5pt);
-				\draw [fill=white] (5.117647058823531,-4.3167420814479645) circle (1.5pt);
-				\draw [fill=white] (7.,-2.) circle (1.5pt);
-				\draw [fill=white] (3.62,2.16) circle (1.5pt);
-				\draw [fill=white] (8.882352941176471,-4.316742081447964) circle (1.5pt);
-				\draw [fill=white] (11.,-2.) circle (1.5pt);
-				\draw [fill=white] (7.,-4.3167420814479645) circle (1.5pt);
-			\end{scriptsize}
-		\end{tikzpicture}
-		\vspace*{-5pt}
-		\caption{\small\textit{\color{thachthuctoanhoc}Hình $1$.}}
-		\vspace*{-15pt}
-	\end{figure}
-	Dễ thấy, trong trường hợp này, tứ giác $AOMD$ là một tứ giác lồi. Vì thế, từ tính nội tiếp của tứ giác đó, ta có:
-	\begin{align*}
-		\angle DOM = \angle DAM = \angle DAE = \frac{1}{2}\angle DOE. 
-	\end{align*}
-	Suy ra, $OM$ là phân giác trong của góc $DOE$. Mà tam giác $DOE$ cân tại $O$ nên $OM$ cũng là đường cao của tam giác đó. Vì vậy,
-	\begin{align*}
-		OM \bot DE. \tag{$2$}
-	\end{align*}
-	Từ ($1$) và ($2$), suy ra $DE \parallel BC$.
-	\vskip 0.05cm
-	$\bullet$ \textit{Trường hợp $2$: góc $BAC$ là góc tù} (xem Hình $2$).
-	\vskip 0.05cm
-	Trong trường hợp này, tứ giác $AMOD$ là một tứ giác lồi.
-	\vskip 0.05cm
-	Do đó, gọi $F$ là giao điểm của đường thẳng $MO$ và $DE$, từ tính nội tiếp của tứ giác $AMOD$, ta có:
-	\begin{align*}
-		\angle DOF &= {180^{\rm{o}}} - \angle DOM \\[-0.5ex]
-		&= \angle DAM = \angle DAE = \frac{1}{2}\angle DOE.
-	\end{align*}
-	\begin{figure}[H]
-%		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
-		\definecolor{ffqqqq}{rgb}{1.,0.,0.}
-		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
-		\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
-		\definecolor{qqqqff}{rgb}{0.,0.,1.}
-		\begin{tikzpicture}[thachthuctoanhoc,scale=0.55]
-			\draw[pattern color=ffqqqq,fill=ffqqqq,fill opacity=0.10000000149011612] (1.9972043037575584,-0.8049463318737589) -- (1.6549647916562145,-0.8046052209914847) -- (1.6546236807739403,-1.1468447330928289) -- (1.9968631928752845,-1.147185843975103) -- cycle; 
-			\draw[pattern color=ffqqqq,fill=ffqqqq,fill opacity=0.10000000149011612] (1.659711862848614,3.958172553691724) -- (1.65937075196634,3.6159330415903796) -- (2.0016102640676845,3.6155919307081055) -- (2.0019513749499582,3.9578314428094497) -- cycle; 
-			\draw [shift={(2.,2.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-141.04847369154828:0.484) arc (-141.04847369154828:-90.05710681185948:0.484) -- cycle;
-			\draw [shift={(2.,2.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-90.05710681185948:0.726) arc (-90.05710681185948:-39.06573993217067:0.726) -- cycle;
-			\draw [shift={(2.,2.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (89.94289318814054:0.726) arc (89.94289318814054:218.95152630845175:0.726) -- cycle;
-			\draw  (2.,2.) circle (5.cm);
-			\draw [color=qqqqff] (-2.598795434665666,3.9624170173788835)-- (6.6026981845655826,3.953245868240016);
-			\draw  (6.6026981845655826,3.953245868240016)-- (0.006369442927748548,6.585350281266175);
-			\draw  (0.006369442927748548,6.585350281266175)-- (-2.598795434665666,3.9624170173788835);
-			\draw  (0.006369442927748548,6.585350281266175)-- (-1.8883905218934682,-1.1433134029633516);
-			\draw [color=qqqqff] (-1.8883905218934682,-1.1433134029633516)-- (5.882116907644037,-1.1510582849868543);
-			\draw [color=ffqqqq] (2.0019513749499582,3.9578314428094497)-- (1.9968631928752845,-1.147185843975103);
-			\draw (1.95,-1.2) node[anchor=north west] {$F$};
-			\draw (-0.2592,7.7086) node[anchor=north west] {$A$};
-			\draw (-3.6084,4.5078) node[anchor=north west] {$B$};
-			\draw (6.7346,4.5804) node[anchor=north west] {$C$};
-			\draw (-2.3888,-1.2098) node[anchor=north west] {$D$};
-			\draw (5.8876,-0.8646) node[anchor=north west] {$E$};
-			\draw (1.943,4.8708) node[anchor=north west] {$M$};
-			\draw (2.0398,2.6444) node[anchor=north west] {$O$};
-			\draw  (0.006369442927748548,6.585350281266175)-- (5.882116907644037,-1.1510582849868543);
-			\draw [shift={(-2.009268797703465,2.9829127409951113)},line width=0.8pt]  plot[domain=-1.8145938369187515:1.3246472473443627,variable=\t]({1.*4.127996335832813*cos(\t r)+0.*4.127996335832813*sin(\t r)},{0.*4.127996335832813*cos(\t r)+1.*4.127996335832813*sin(\t r)});
-			\draw  (2.0019513749499582,3.9578314428094497)-- (-1.8883905218934682,-1.1433134029633516);
-			\draw  (2.,2.)-- (-1.8883905218934682,-1.1433134029633516);
-			\draw  (2.,2.)-- (5.882116907644037,-1.1510582849868543);
-			\draw [shift={(2.,2.)},color=qqwuqq] (89.94289318814054:0.726) arc (89.94289318814054:218.95152630845175:0.726);
-			\draw [shift={(2.,2.)},color=qqwuqq] (89.94289318814054:0.605) arc (89.94289318814054:218.95152630845175:0.605);
-			\draw [fill=white] (2.,2.) circle (1.5pt);
-			\draw [fill=white] (-2.598795434665666,3.9624170173788835) circle (1.5pt);
-			\draw [fill=white] (6.6026981845655826,3.953245868240016) circle (1.5pt);
-			\draw [fill=white] (0.006369442927748548,6.585350281266175) circle (1.5pt);
-			\draw [fill=white] (2.0019513749499582,3.9578314428094497) circle (1.5pt);
-			\draw [fill=white] (0.006369442927748548,6.585350281266175) circle (1.5pt);
-			\draw [fill=white] (-1.8883905218934682,-1.1433134029633516) circle (1.5pt);
-			\draw [fill=white] (0.006369442927748548,6.585350281266175) circle (1.5pt);
-			\draw [fill=white] (5.882116907644037,-1.1510582849868543) circle (1.5pt);
-			\draw [fill=white] (1.9968631928752845,-1.147185843975103) circle (1.5pt);
-		\end{tikzpicture}
-		\caption{\small\textit{\color{thachthuctoanhoc}Hình $2$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	Suy ra, $OF$ là phân giác trong của góc $DOE$. Mà tam giác $DOE$ cân tại $O$ nên $OF$ cũng là đường cao của tam giác đó. Vì vậy,
-	\begin{align*}
-		OM \bot DE. \tag{$3$}
-	\end{align*}
-	Từ ($1$) và ($3$), suy ra $DE \parallel BC$.
-	\vskip 0.05cm
-	Kết quả xét hai trường hợp nêu trên cho ta điều phải chứng minh theo yêu cầu đề bài.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, chỉ có năm lời giải đúng và hoàn chỉnh; các lời giải còn lại đều mắc các sai sót, như nhầm lẫn giữa đường tròn $(O)$ và đường tròn $(AMO)$, hoặc chỉ xét trường hợp góc $BAC$ là góc nhọn, $\ldots$
-	\vskip 0.15cm
-	\hfill	\textbf{\color{thachthuctoanhoc}Hạ Vũ Anh}
-	\vskip 0.15cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P716.}}
-	(Mức $B$) Trong một lớp học có $33$ học sinh. Mỗi bạn viết lên bảng số người trong lớp có cùng tên với mình và số người có cùng họ với mình (không tính bản thân người đó). Sau khi tất cả học sinh hoàn thành việc viết số, thì trên bảng mỗi số $0,1,2,\ldots,10$ đều xuất hiện ít nhất một lần. Hỏi số $6$ xuất hiện bao nhiêu lần?
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của các bạn: Nguyễn Tuấn Kiệt, lớp $11$T$1$, trường THPT chuyên Nguyễn Bỉnh Khiêm, tỉnh Vĩnh Long, và Phạm Hồng Thanh Thảo, lớp $11$T$1$, trường THPT chuyên Nguyễn Quang Diêu, tỉnh Đồng Tháp})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Ký hiệu $s_n$  là số lần xuất hiện trên bảng của số tự nhiên $n$.
-	\vskip 0.05cm
-	Theo giả thiết của bài ra, số tự nhiên $n$ được viết lên bảng chỉ khi có ít nhất một nhóm gồm đúng $n + 1$ học sinh có cùng tên, hoặc có cùng họ; và khi đó, mỗi học sinh trong mỗi nhóm như vậy đều viết lên bảng một số $n$. Do vậy, với mỗi số $n$ được viết lên bảng, ta đều có:
-	\begin{align*}
-		{s_n} \ge n + 1.
-	\end{align*}
-	Từ đó, do lớp có $33$ học sinh, mỗi học sinh đều viết lên bảng hai số tự nhiên, và do trong các số có mặt trên bảng có đầy đủ các số tự nhiên từ $0$ đến $10$, nên ta có:
-	\begin{align*}
-		2 \cdot 33 &\ge {s_0} + {s_1} + {s_2} +  \cdots  + {s_{10}} \\
-		&\ge \left(\! {0 \!+\! 1}\! \right) \!+\! \left( \!{1 \!+\! 1} \!\right) \!+\! \left(\! {2 \!+\! 1} \!\right) \!+\!  \cdots \left(\! {10 \!+\! 1}\! \right) \\
-		&= 1 + 2 + 3 +  \cdots  + 11 = 66.
-	\end{align*}
-	Suy ra, ở các bất đẳng thức vừa nêu trên đều phải xảy ra dấu ``=".
-	\vskip 0.05cm
-	Như vậy, ở trên bảng chỉ có các số tự nhiên $0, 1, 2, \ldots, 10$, và với mỗi $n \in \{0; 1; 2;$ $\ldots; 10\}$, đều có
-	\begin{align*}
-		{s_n} = n + 1.
-	\end{align*}
-	Suy ra, $s_6 = 7$; nghĩa là, số $6$ xuất hiện $7$ lần trên bảng.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	$\pmb{1.}$ Đánh giá cho $s_n$, được nêu ở Lời giải trên, là một đánh giá khá thô. Dùng đánh giá đó, bạn đọc sẽ không thể giải được, chẳng hạn, bài toán ``cùng kiểu" (với bài đã ra) dưới đây:
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bài toán ``cùng kiểu".} \textit{Một lớp học có $37$ học sinh. Mỗi bạn đều viết lên bảng số người trong lớp có cùng tên với mình và số người trong lớp có cùng họ với mình (không tính bản thân người đó). Sau khi tất cả học sinh hoàn thành việc viết như vậy, người ta thấy, tất cả các số tự nhiên có mặt trên bảng là: $0, 1, 2, \ldots, 10$. Hỏi số $8$ có mặt bao nhiêu lần?}
-	\vskip 0.05cm
-	Để giải được bài toán vừa nêu trên, bạn đọc cần tới một đánh giá cho $s_n$, tinh hơn đánh giá đã nêu ở Lời giải trên. Mời các bạn đọc có quan tâm cùng thử sức.
-	\vskip 0.05cm
-	$\pmb{2.}$ Tất cả các lời giải Tạp chí đã nhận được từ bạn đọc đều là lời giải đúng và hoàn chỉnh.
-	\vskip 0.1cm
-	\hfill	\textbf{\color{thachthuctoanhoc}Nguyễn Khắc Minh}
-	\vskip 0.1cm
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P717.}}
-	(Mức $A$) Chứng minh rằng, với mọi bộ ba số thực $(a;b;c)$ thoả mãn  $ac\ne0$ và $b^2\ge4ac$, ta có
-	\begin{align*}
-		(a-b)^4+(b-c)^4+(c-a)^4 \ge \dfrac{81}{128}c^4.
-	\end{align*}
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{của người chấm bài})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Do $ac \ne 0$, nên $c \ne 0$. Vì vậy, bất đẳng thức cần chứng minh theo yêu cầu đề bài tương đương với bất đẳng thức:
-	\begin{align*}
-		{\left(\!\! {\frac{a}{c} \!-\! \frac{b}{c}} \!\!\right)^4} \!\!\!+\!\! {\left(\!\! {\frac{b}{c} \!-\! 1} \!\!\right)^4}\!\!\! +\!\! {\left(\!\! {1 \!-\! \frac{a}{c}} \!\!\right)^4} \!\ge\! \frac{{81}}{{128}}. \tag{$1$}
-	\end{align*}
-	Đặt $x = \dfrac{b}{c}$  và $y = \dfrac{a}{c};$ khi đó, bất đẳng thức ($1$) trở thành:
-	\begin{align*}
-		{\left( {y \!- \!x} \right)^4} \!+\! {\left( {x \!-\! 1} \right)^4} \!+\! {\left( {1 \!-\! y} \right)^4} \!\ge\! \frac{{81}}{{128}}. \tag{$2$}
-	\end{align*}
-	Lại có: $ac \ne 0 \Leftrightarrow y \ne 0$, và 
-	\begin{align*}
-		b^2 \ge 4ac \Leftrightarrow x^2 \ge 4y.
-	\end{align*}
-	Vì vậy, theo bài ra, ta cần chứng minh bất đẳng thức ($2$), với $x, y$ là các số thực thỏa mãn:
-	\begin{align*}
-		y \ne 0 \text{ và  } 4y \le x^2. \tag{$3$}    
-	\end{align*}
-	Xét các số thực $x, y$ thỏa mãn ($3$).
-	\vskip 0.05cm
-	Xảy ra hai trường hợp sau:
-	\vskip 0.05cm
-	$\bullet$ \textit{Trường hợp $1$: Trong hai số $x, y$, có ít nhất một số không thuộc khoảng $(0; 2)$.}
-	\vskip 0.05cm
-	Khi đó, hiển nhiên có
-	\begin{align*}
-		{\left( {x - 1} \right)^4} + {\left( {1 - y} \right)^4} \ge 1 > \frac{{81}}{{128}}.
-	\end{align*}
-	Do đó, ($2$) là một bất đẳng thức đúng, trong trường hợp này.
-	\vskip 0.05cm
-	$\bullet$ \textit{Trường hợp $2$:  $x, y \in (0; 2)$.}
-	\vskip 0.05cm
-	Khi đó, ta có:
-	\begin{align*}
-		0 < 4y \le {x^2} < 2x < 2\left( {x + 1} \right); \tag{$4$}
-	\end{align*}
-	suy ra, $0 < y < \dfrac{{x + 1}}{2}.$
-	\vskip 0.05cm
-	Xét số thực $x$ tùy ý thuộc khoảng $(0; 2)$.
-	\vskip 0.05cm
-	Xét hàm số
-	\begin{align*}
-		f\left( y \right) = {\left( {y - x} \right)^4} + {\left( {1 - y} \right)^4} + {\left( {x - 1} \right)^4},
-	\end{align*}
-	xác định trên khoảng $\left( {0;\dfrac{{x + 1}}{2}} \right).$
-	\vskip 0.05cm  
-	Ta có:
-	\begin{align*}
-			&f'\left( y \right) = 4{\left( {y - x} \right)^3} - 4{\left( {1 - y} \right)^3} \\
-			= \,&4\left( {2y - x - 1} \right)\\
-			&\times\!\!\left( {{{\left( {y - x} \right)}^2} + \left( {y - x} \right)\left( {1 - y} \right) + {{\left( {1 - y} \right)}^2}} \right)\\
-			 = \,&8\left( {y - \frac{{x + 1}}{2}} \right)\\
-			 &\times\!\!\left(\!\!\!\! {{{\left(\!\! {\left( {y \!-\! x} \right) \!+\! \frac{1}{2}\left( {1 \!-\! y} \right)} \!\!\right)}^2} \!\!+\! \frac{3}{4}{{\left( {1 \!-\! y} \right)}^2}}\! \!\!\right) \!\le\! 0,
-	\end{align*}
-	với mọi $y \in \left( {0;\dfrac{{x + 1}}{2}} \right).$
-	\vskip 0.05cm
-	Do đó, hàm số $f(y)$ nghịch biến trên   $\left( {0;\dfrac{{x + 1}}{2}} \right).$
-	\vskip 0.05cm
-	Vì thế, từ 
-	\begin{align*}
-		0 < \frac{{{x^2}}}{4} < \frac{{x + 1}}{2} \quad(\text{theo } (4))
-	\end{align*}
-	suy ra, $f\left( y \right) \ge f\left( {\frac{{{x^2}}}{4}} \right)$ với mọi $y$ thỏa mãn $0 < 4y \le {x^2};$ nghĩa là, ta có:
-	\begin{align*}
-		&{\left( {y - x} \right)^4} + {\left( {1 - y} \right)^4} + {\left( {x - 1} \right)^4} \\
-		\ge &{\left(\! \!{\frac{{{x^2}}}{4} \!-\! x} \!\!\right)^4} \!+\! {\left(\!\! {1 \!-\! \frac{{{x^2}}}{4}}\!\! \right)^4} \!+\! {\left( {x \!-\! 1} \right)^4}, \tag{$5$}
-	\end{align*}
-	với mọi $y$ mà $0 < 4y \le {x^2}.$
-	\vskip 0.05cm
-	Do số thực $x$ được xét là số tùy ý thuộc $(0; 2)$ nên ta có ($5$) với mọi $x, y \in (0; 2)$, mà 
-	\begin{align*}
-		0 < 4y \le x^2
-	\end{align*}
-	(tức, với mọi $x, y$ thỏa mãn ($3$) và thuộc $(0; 2)$).
-	\vskip 0.05cm
-	Tiếp theo, ta sẽ chứng minh
-	\begin{align*}
-		\hspace*{-5pt}{\left(\!\! {\frac{{{x^2}}}{4} \!-\! x}\!\! \right)^4} \!\!\!+\! {\left(\!\!\! {1 \!-\! \frac{{{x^2}}}{4}}\! \right)^4}\!\! \!+\! {\left(\! {x \!-\! 1} \!\right)^4} \!\ge\! \frac{{81}}{{128}}, \tag{$6$}
-	\end{align*}
-	với mọi $x \in (0; 2)$.
-	\vskip 0.05cm
-	Trước hết, nhận thấy
-	\begin{align*}
-		\left( {\frac{{{x^2}}}{4} - x} \right) + \left( {1 - \frac{{{x^2}}}{4}} \right) + \left( {x - 1} \right) = 0.
-	\end{align*}
-	Do đó, theo một hằng đẳng thức quen thuộc, ta có:
-	\begin{align*}
-		&{\left( {\frac{{{x^2}}}{4} - x} \right)^4} + {\left( {1 - \frac{{{x^2}}}{4}} \right)^4} + {\left( {x - 1} \right)^4} \\
-		= &\frac{1}{2}{\left(\!\! {{{\left(\!\! {\frac{{{x^2}}}{4} \!-\! x} \!\!\right)}^2} \!+\! {{\left(\!\! {1 \!-\! \frac{{{x^2}}}{4}} \!\!\right)}^2} \!+\! {{\left( {x - 1}\!\! \right)}^2}}\!\! \right)^2}.
-	\end{align*}
-	Vì vậy
-	\begin{align*}
-		(6) \Leftrightarrow &{\left( {\frac{{{x^2}}}{4} - x} \right)^2} + {\left( {1 - \frac{{{x^2}}}{4}} \right)^2} \\
-		&+ {\left( {x - 1} \right)^2} \ge \frac{9}{8}. \tag{$7$}
-	\end{align*}
-	Ta có:
-	\begin{align*}
-			&(7)\\
-			 \Leftrightarrow& {\left( {\frac{{{x^2}}}{4} - x} \right)^2} - \frac{9}{{16}} \\
-			 &+ {\left( {1 - \frac{{{x^2}}}{4}} \right)^2} - \frac{9}{{16}} + {\left( {x - 1} \right)^2} \ge 0\\
-			 \Leftrightarrow& \left( {\frac{{{x^2}}}{4} - x - \frac{3}{4}} \right)\left( {\frac{{{x^2}}}{4} - x + \frac{3}{4}} \right)\\
-			 &+ \!\left(\!\! {1\! -\! \frac{{{x^2}}}{4} \!-\! \frac{3}{4}} \!\!\right)\!\!\!\left(\!\! {1 \!-\! \frac{{{x^2}}}{4} \!+\! \frac{3}{4}} \!\!\right) \!+\! {\left( {x \!-\! 1} \right)^2} \!\ge\! 0\\
-			 \Leftrightarrow& \frac{1}{{16}}\left( {{x^2} - 4x - 3} \right)\left( {{x^2} - 4x + 3} \right) \\
-			 &+ \frac{1}{{16}}\left( {1 - {x^2}} \right)\left( {7 - {x^2}} \right) + {\left( {x - 1} \right)^2} \ge 0\\
-			 \Leftrightarrow& \frac{1}{{16}}\left( {x - 1} \right)\left( \left( {{x^2} - 4x - 3} \right)\left( {x - 3} \right)\right. \\
-			 &\left. + \left( {x + 1} \right)\left( {{x^2} - 7} \right) \right) + {\left( {x - 1} \right)^2} \ge 0\\
-			 \Leftrightarrow& \frac{1}{8}\left( {x \!-\! 1} \right)\!\left( {{x^3} \!-\! 3{x^2} \!+\! x \!+\! 1} \!\right) \!+\! {\left( {x \!-\! 1} \right)^2} \!\ge\! 0\\
-			 \Leftrightarrow& \frac{1}{8}{\left( {x - 1} \right)^2}\left( {{x^2} - 2x - 1} \right) + {\left( {x - 1} \right)^2} \ge 0\\
-			 \Leftrightarrow&{\left( {x- 1} \right)^2}\left( {{x^2} - 2x + 7} \right) \ge 0. \tag{$8$}
-	\end{align*}
-	Hiển nhiên, ($8$) là một bất đẳng thức đúng với mọi $x \in (0;2)$; do đó, ($7$) là một bất đẳng thức đúng với mọi $x \in (0; 2)$. Vì vậy, ($6$) là một bất đẳng thức đúng với mọi $x \in (0; 2)$.
-	\vskip 0.05cm
-	Từ ($5$) và ($6$) suy ra, ($2$) là một bất đẳng thức đúng với mọi $x, y$ thỏa mãn ($3$) và thuộc $(0; 2)$.
-	\vskip 0.05cm
-	Kết quả xét hai trường hợp nêu trên cho ta điều phải chứng minh theo yêu cầu đề bài.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	$\pmb{1.}$ Ngoài phương pháp đại số đã trình bày ở Lời giải trên, còn có thể chứng minh bất đẳng thức ($7$) bằng phương pháp giải tích (khảo sát hàm số).
-	\vskip 0.05cm
-	$\pmb{2.}$ Theo ý kiến chủ quan của người chấm bài, bài đã ra là một bài toán đẹp, một ví dụ hay về việc vận dụng linh hoạt phương pháp đại số và phương pháp giải tích trong chứng minh bất đẳng thức.
-	\vskip 0.05cm
-	$\pmb{3.}$ Rất tiếc, trong số các lời giải Tạp chí đã nhận được từ bạn đọc, có một lời giải không hoàn chỉnh, do người giải bài đã bỏ qua, không trình bày chứng minh của một bất đẳng thức then chốt được sử dụng trong lời giải.
-	\vskip 0.05cm
-	$\pmb{4.}$ Bài đã ra khiến người chấm bài liên tưởng đến một kết quả rất đẹp khác, đã được sử dụng làm một bài toán thi, trong Đề thi chọn Đội tuyển học sinh Việt Nam tham dự Olympic Toán học Quốc tế năm $1996$ (IMO $1996$). Bài toán đó như sau:
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bài $\pmb{3}$ Đề thi chọn Đội tuyển học sinh VN tham dự IMO $\pmb{1996.}$} \textit{Xét các số thực $a, b, c$. Tìm giá trị nhỏ nhất của biểu thức:}
-	\begin{align*}
-		f\left( {a,b,c} \right) =& {\left( {a + b} \right)^4} + {\left( {b + c} \right)^4} + {\left( {c + a} \right)^4} \\
-		&- \frac{4}{7}\left( {{a^4} + {b^4} + {c^4}} \right).
-	\end{align*}
-	
-	\vskip 0.05cm
-	Theo Đáp án của Đề thi, để giải bài toán trên, ta chứng minh bất đẳng thức
-	\begin{align*}
-		&{\left( {a + b} \right)^4} + {\left( {b + c} \right)^4} + {\left( {c + a} \right)^4} \\
-		\ge\,& \frac{4}{7}\left( {{a^4} + {b^4} + {c^4}} \right).
-	\end{align*}
-	 Bất đẳng thức trên được chứng minh bằng cách chuẩn hóa, rồi dồn biến, đưa bất đẳng thức đó về một bất đẳng thức một biến; sau đó, chứng minh bất đẳng thức một biến thu được bằng phương pháp giải tích (khảo sát hàm số). Bên cạnh cách chứng minh này, bất đẳng thức trên còn có một cách chứng minh thuần túy đại số rất đẹp; tóm tắt như sau:
-	\vskip 0.05cm
-	``Ta sẽ chứng minh bất đẳng thức mạnh hơn sau
-	\begin{align*}
-		&{\left( {a + b} \right)^4} + {\left( {b + c} \right)^4} + {\left( {c + a} \right)^4} \\
-		\ge &\frac{4}{7}\left( {{a^4} + {b^4} + {c^4} + {{\left( {a + b + c} \right)}^4}} \right). \tag{$*$}
-	\end{align*}
-	Đặt $x = a + b$, $y = b + c$, $z = c + a$; viết lại bất đẳng thức ($*$) dưới dạng một bất đẳng thức của các biến $x, y, z$, gọi là bất đẳng thức ($**$). Sau đó, sử dụng các phép biến đổi đại số, biến đổi tương đương bất đẳng thức ($**$) về bất đẳng thức
-	\begin{align*}
-		{x^4} + {y^4} + {z^4} \ge {x^2}{y^2} + {y^2}{z^2} + {z^2}{x^2}.
-	\end{align*}
-	Bất đẳng thức vừa nêu trên hiển nhiên đúng; do đó, bất đẳng thức ($*$) được chứng minh."
-	\vskip 0.05cm
-	Cách chứng minh thuần túy đại số này do thầy \textit{Võ Quốc Bá Cẩn} tìm ra; và do đã gần $30$ năm trôi qua, người chấm bài xin phép được ``bật mí", tác giả của bài toán thi trên đây là thầy \textit{Nguyễn Khắc Minh}.
-	\vskip 0.05cm
-	$\pmb{5.}$ Người chấm bài có linh cảm rằng, bài P$717$ có một lời giải đại số thuần túy. Mời các bạn đọc có quan tâm cùng tìm hiểu.
-	\begin{flushright}
-		\textbf{\color{thachthuctoanhoc}Trần Nam Dũng}
-	\end{flushright}
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P718.}}
-	(Mức $A$) Cho tam giác $ABC$ và $P$ là một điểm cố định nằm trong tam giác đó. Một đường thẳng $d$ quay quanh điểm $P$, cắt các đường thẳng $BC,CA,AB$ tương ứng tại các điểm $D,E,F$. Gọi $Q$ là giao điểm thứ hai của hai đường tròn $(ADE)$ và $(APF)$. Chứng minh rằng, $Q$ luôn thuộc một đường tròn cố định.  
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo Đáp án của bài toán})\textbf{\color{thachthuctoanhoc}.}
-	\vskip 0.05cm
-	Trước hết, ta nhắc lại (không chứng minh) Bổ đề sau:
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bổ đề} (\textit{về ba đường tròn đồng trục})\textbf{\color{thachthuctoanhoc}.} Cho ba đường tròn đồng trục $(O_1), (O_2), (O_3)$. Khi đó, với mọi cặp điểm $X, Y$ trên đường tròn $(O_3)$  ta đều có
-	\begin{align*}
-		\frac{{{P_{X/\left( {{O_1}} \right)}}}}{{{P_{X/\left( {{O_2}} \right)}}}} = \frac{{{P_{Y/\left( {{O_1}} \right)}}}}{{{P_{Y/\left( {{O_2}} \right)}}}}.
-	\end{align*}
 	\textit{Trở lại bài toán.}
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\definecolor{ffqqqq}{rgb}{1.,0.,0.}
-		\definecolor{qqffqq}{rgb}{0.,1.,0.}
-		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
-		\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
-		\definecolor{qqqqff}{rgb}{0.,0.,1.}
-		\begin{tikzpicture}[thachthuctoanhoc, scale=0.6]
-			\draw [color=qqqqff] (2.285714285714286,1.142857142857143) circle (3.9227229193559947cm);
-			\draw [color=qqffqq] (1.8076923076923077,2.576923076923077) circle (2.7005368740833777cm);
-			\draw [color=ffqqqq] (2.,2.) circle (3.1622776601683795cm);
-			\draw  (3.,-1.)-- (5.,3.);
-			\draw (2.68,6.2) node[anchor=north west] {$A$};
-			\draw (0.52,-0.9) node[anchor=north west] {$B$};
-			\draw (9.,-0.76) node[anchor=north west] {$C$};
-			\draw (-1.34,-1) node[anchor=north west] {$D$};
-			\draw (5.,3.64) node[anchor=north west] {$Y$};
-			\draw (0.8,0.9) node[anchor=north west] {$F$};
-			\draw (6.02,2.82) node[anchor=north west] {$E$};
-			\draw (4.,1.24) node[anchor=north west] {$P$};
-			\draw (-1.36,4.75) node[anchor=north west] {$Q$};
-			\draw (3.,-0.9) node[anchor=north west] {$X$};
-			\draw  (3.,5.)-- (1.,-1.);
-			\draw  (9.,-1.)-- (3.,5.);
-			\draw  (-2.22,-1.)-- (9.,-1.);
-			\draw  (7.024137931034483,2.209655172413793)-- (-2.0068965517241377,-1.4027586206896552);
-			\draw (6.9,2.5) node[anchor=north west] {$d$};
-			\draw [fill=white] (3.,5.) circle (1.5pt);
-			\draw [fill=white] (1.,-1.) circle (1.5pt);
-			\draw [fill=white] (9.,-1.) circle (1.5pt);
-			\draw [fill=white] (4.,1.) circle (1.5pt);
-			\draw [fill=white] (-1.,-1.) circle (1.5pt);
-			\draw [fill=white] (1.3076923076923077,-0.07692307692307693) circle (1.5pt);
-			\draw [fill=white] (6.142857142857143,1.8571428571428572) circle (1.5pt);
-			\draw [fill=white] (3.,5.) circle (1.5pt);
-			\draw [fill=white] (-0.6,3.8) circle (1.5pt);
-			\draw [fill=white] (1.,-1.) circle (1.5pt);
-			\draw [fill=white] (3.,-1.) circle (1.5pt);
-			\draw [fill=white] (3.,5.) circle (1.5pt);
-			\draw [fill=white] (5.,3.) circle (1.5pt);S
-		\end{tikzpicture}
-		\vspace*{-10pt}
-	\end{figure}
-	Do $P$ nằm trong tam giác $ABC$ nên $d$ cắt hai trong ba đường thẳng $BC$, $CA$, $AB$ tại điểm trong của hai cạnh và cắt đường thẳng còn lại tại điểm nằm ngoài cạnh thứ ba của tam giác đó.
 	\vskip 0.05cm
-	Giả sử $E$, $F$, tương ứng, nằm trong các cạnh $CA$, $AB$, và $D$ nằm trên tia đối của tia $BC$.  \hfill                     ($1$)
+	Xét ba năm liên tiếp tùy ý.
 	\vskip 0.05cm
-	(Các trường hợp còn lại được xét tương tự.)
-	\vskip 0.1cm
-	Gọi $X, Y$, tương ứng, là giao điểm thứ hai của $BC$, $CA$ và đường tròn $(ABQ)$.
+	Ở năm thứ nhất, theo chân Ông già Noel, ta lần lượt đánh số các căn nhà mà Ông tới thăm, bởi$ 1, 2, \ldots, 1332$. Ta sẽ gọi căn nhà được đánh số $i$ là căn nhà $i$.
 	\vskip 0.05cm
-	Do bốn điểm $A, B, X, Y$ cùng thuộc một đường tròn, nên
+	Khi đó, ở năm thứ hai, liệt kê các căn nhà theo thứ tự mà Ông già Noel lần lượt tới thăm, ta sẽ thu được một hoán vị của $1, 2, \ldots, 1332$:
 	\begin{align*}
-		\left( {BC;XY} \right) &\equiv \left( {XB;XY} \right) \equiv \left( {AB;AY} \right) \\
-		&\equiv \left( {AB;AC} \right)\left( {\bmod \pi } \right).
+		{a_1},\,\,{a_2},\,\, \ldots ,\,\,{a_{1332}}. \tag{$2$}
 	\end{align*}
-	Do đó, đường thẳng $XY$ có phương không đổi.           \hfill ($2$)
+	Dễ thấy, nếu trong dãy ($2$) tồn tại một dãy con tăng có $12$ số hạng thì $12$ số hạng của dãy con đó sẽ là $12$ số hạng nằm theo cùng một thứ tự trong dãy $1, 2, \ldots, 1332$ và trong dãy ($2$). Vì thế, ta có $12$ căn nhà, mà Ông già Noel tới thăm ở năm thứ nhất và năm thứ hai theo cùng một thứ tự.
 	\vskip 0.05cm
-	Áp dụng định lý Menelaus cho tam giác $CDE$ với cát tuyến $BFA$, ta được:
-	\begin{align*}
-		\frac{{BD}}{{BC}} \cdot \frac{{AC}}{{AE}} \cdot \frac{{FE}}{{FD}} = 1;
-	\end{align*}
-	suy ra, $\dfrac{{FD}}{{FE}} = \dfrac{{DB}}{{EA}} \cdot \dfrac{{CA}}{{CB}}.$ \hfill ($3$)
+	Xét trường hợp ngược lại, trong dãy ($2$) không tồn tại một dãy con tăng có $12$ số hạng.
 	\vskip 0.05cm
-	Dễ thấy, hai tam giác $CXY$ và $CAB$ đồng dạng với nhau (trường hợp g.g). Do đó
+	Khi đó, do
 	\begin{align*}
-		\frac{{CA}}{{CB}} = \frac{{CX}}{{CY}}. \tag{$4$}
+		1332 = (12 - 1)(122 - 1) + 1,
 	\end{align*}
-	Từ ($3$) và ($4$), suy ra
+	nên theo định lý Erdos -- Szekeres, trong dãy ($2$) phải tồn tại một dãy con giảm có $122$ số hạng. Giả sử dãy con đó là
 	\begin{align*}
-		\frac{{FD}}{{FE}} = \frac{{DB}}{{EA}} \cdot \frac{{CX}}{{CY}}. \tag{$5$}
+		{a_{{i_1}}},\,\,{a_{{i_2}}},\,\, \ldots ,\,\,{a_{{i_{122}}}}. \tag{$3$}
 	\end{align*}
-	Do ba đường tròn $(APF)$, $(ADE)$, $(ABXY)$ đồng trục, nên áp dụng Bổ đề nêu trên cho cặp điểm $D, E$ của đường tròn $(ADE)$, ta được:
+	Xét năm thứ ba. Giả sử trong năm này, Ông già Noel tới thăm các căn nhà thuộc dãy ($3$) theo thứ tự:
 	\begin{align*}
-		\frac{{DF \cdot DP}}{{DB \cdot DX}} &= \frac{{{P_{D/\left( {APF} \right)}}}}{{{P_{D/\left( {ABXY} \right)}}}} = \frac{{{P_{E/\left( {APF} \right)}}}}{{{P_{E/\left( {ABXY} \right)}}}} \\
-		&= \frac{{EP \cdot EF}}{{EY \cdot EA}}.
+		{a_{{j_1}}},\,\,{a_{{j_2}}},\,\, \ldots ,\,\,{a_{{j_{122}}}}. \tag{$4$}
 	\end{align*}
-	Suy ra
-	\begin{align*}
-		\frac{{FD}}{{FE}} = \frac{{PE \cdot DB \cdot DX}}{{PD \cdot EY \cdot EA}}. \tag{$6$}
-	\end{align*}
-	Từ ($5$) và ($6$), ta được:
-	\begin{align*}
-		\frac{{CX}}{{CY}} = \frac{{PE \cdot DX}}{{PD \cdot EY}};
-	\end{align*}
-	suy ra
-	\begin{align*}
-		\frac{{XC}}{{XD}} \cdot \frac{{PD}}{{PE}} \cdot \frac{{YE}}{{YC}} = 1.
-	\end{align*}
-	Hơn nữa, do ($1$) nên $X$ nằm giữa $C$ và $D$; $P$ nằm giữa $E$ và $F$; $Y$ thuộc tia đối của tia $EC$.
+	Dễ thấy, nếu trong dãy ($4$) tồn tại một dãy con tăng có $12$ số hạng thì $12$ số hạng của dãy con đó sẽ là $12$ số hạng nằm trong dãy $1, 2, \ldots, 1332$ và dãy ($4$) theo cùng một thứ tự. Vì thế, ta có $12$ căn nhà, mà Ông già Noel tới thăm ở năm thứ nhất và năm thứ ba theo cùng một thứ tự.
 	\vskip 0.05cm
-	Vì thế, áp dụng định lý Menelaus cho tam giác $CDE$, ta được $X, P, Y$ là ba điểm thẳng hàng. Từ đây và ($2$), do $P$ là điểm cố định, suy ra $X, Y$ là các điểm cố định. Vì vậy, ($AXY$) là đường tròn cố định; mà $Q$ thuộc ($AXY$) nên ta có điều phải chứng minh theo yêu cầu đề bài.
+	Xét trường hợp ngược lại, trong dãy ($4$) không tồn tại một dãy con tăng có $12$ số hạng.
 	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	Khi đó, do
+	\begin{align*}
+		122 = (12 - 1)(12 - 1) + 1,
+	\end{align*}
+	nên theo định lý Erdos -- Szekeres, trong dãy ($4$) phải tồn tại một dãy con giảm có $12$ số hạng; kí hiệu dãy con này là ($5$).
 	\vskip 0.05cm
-	Rất tiếc, tất cả các lời giải Tạp chí đã nhận được từ bạn đọc đều là lời giải không đúng, do người giải bài mô tả không chính xác phép nghịch đảo, và chưa xét hết các trường hợp có thể xảy ra trong quan hệ tương đối giữa đường tròn $(APE)$ và đường thẳng $AB$, giữa đường tròn $(APF)$ và đường thẳng $AC$.
+	Do tất cả $12$ số hạng của dãy ($5$) đều là số hạng của dãy ($3$), và do cả hai dãy ($3$), ($5$) cùng là dãy giảm, nên tất cả $12$ số hạng của dãy ($5$) nằm trong dãy ($3$) và dãy ($4$) theo cùng một thứ tự. Vì thế, ta có $12$ căn nhà, mà Ông già Noel tới thăm ở năm thứ hai và năm thứ ba theo cùng một thứ tự.
+	\vskip 0.05cm
+	Kết quả xét các trường hợp có thể xảy ra trên đây cho ta điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{Bình luận và Nhận xét}
+	\vskip 0.05cm
+	Cho tới thời điểm bản thảo vào Nhà in, Tạp chí vẫn chưa nhận được lời giải nào từ bạn đọc.
 	\begin{flushright}
-		\textbf{\color{thachthuctoanhoc}Hạ Vũ Anh}
+		\textbf{Nguyễn Khắc Minh}
 	\end{flushright}
-	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P719.}}
-	(Mức $A$) Cho $S$ là một tập hữu hạn các số nguyên lớn hơn $1$ thoả mãn: với mỗi số nguyên dương $n$, tồn tại $x\in S$ sao cho  hoặc $x,n$ nguyên tố cùng nhau, hoặc $n$ chia hết cho $x$.  Chứng minh rằng, tồn tại $x,y\in S$ (có thể $x=y$) sao cho ước chung lớn nhất của $x,y$ là một số nguyên tố. 
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P721.}}
+	(Mức $B$)
+	Trên mỗi cạnh của một hình vuông, bạn An viết một số nguyên dương. Sau đó, tại mỗi đỉnh của hình vuông đó, bạn An viết một số bằng tích của hai số đã được viết ở hai cạnh đi qua đỉnh đó. Biết rằng, tổng các số ở các đỉnh của hình vuông bằng $1333$. Hỏi, tổng các số được viết ở các cạnh của hình vuông đó có thể bằng bao nhiêu?
 	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của bạn Nguyễn Tuấn Kiệt, lớp $11$T$1$, trường THPT chuyên Nguyễn Bỉnh Khiêm, tỉnh Vĩnh Long})\textbf{\color{thachthuctoanhoc}.}
+	\textbf{Lời giải} (\textit{dựa theo ý giải của một bạn học sinh cấp THCS})\textbf{.}
 	\vskip 0.05cm
-	Trong phần trình bày dưới đây, $(a, b)$ ký hiệu ước số chung lớn nhất của hai số nguyên $a, b$.
+	Giả sử các số nguyên dương được viết ở các cạnh của hình vuông, tính theo chiều kim đồng hồ, lần lượt là $a, b, c, d$.
 	\vskip 0.05cm
+	Khi đó, các số được viết ở bốn đỉnh của hình vuông đó sẽ là $ab$, $bc$, $cd$ và $da$.
+	\vskip 0.05cm
+	Theo giả thiết của bài ra, ta có:
+	\begin{align*}
+		31 \cdot 43\,\, = \,\,1333\,\, = \,\,ab\,\, + \,\,bc\,\, + \,\,cd\,\, + \,\,da\,\, = \,\,\left( {a\,\, + \,\,c} \right)\left( {b\,\, + \,\,d} \right). \tag$(*)$
+	\end{align*}
+	Do $a + c, b + d$ là các số nguyên dương lớn hơn $1$ (vì $a,b,c,d \in \mathbb{N^*}$) và $31$, $43$ là các số nguyên tố, nên
+	\begin{align*}
+		\left( *  \right)\,\, \Leftrightarrow \,\,\left( {a\,\, + \,\,c,\,\,b\,\, + \,\,d} \right)\,\, \in \,\,\left\{ {\left( {31,\,\,43} \right);\,\,\left( {43,\,\,31} \right)} \right\}.
+	\end{align*}
+	Vì vậy, $a + b + c + d = 31 + 43 = 74$.
+	\vskip 0.05cm
+	Vậy, tổng các số được viết ở các cạnh của hình vuông bằng $74$.
+	\vskip 0.05cm
+	\textbf{Bình luận và Nhận xét}
+	\vskip 0.05cm	
+	Tuy bài đã ra là một bài toán đơn giản, nhưng rất tiếc, trong số các lời giải Tạp chí đã nhận được từ bạn đọc, có một số lời giải thiếu chặt chẽ, thiếu chính xác, do người giải bài đã mắc một trong các lỗi chuyên môn sau:
+	\vskip 0.05cm
+	-- Bỏ sót phân tích $1333 = 1 \cdot 1333$, khi xét các phân tích số $1333$ thành tích của hai số nguyên dương;
+	\vskip 0.05cm
+	-- Thiếu khẳng định $1333$ chỉ có đúng hai cách phân tích thành tích của hai số nguyên dương, là
+	\begin{align*}
+		1333 = 1 \cdot 1333 \text{ và } 1333 = 31 \cdot 43.
+	\end{align*}  
+	\begin{flushright}
+		\textbf{Hà Thanh}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P722.}}
+	(Mức $B$)
+	Cho $a, b, c$ là các số thực khác $0$, thỏa mãn:
+	\begin{align*}
+		\begin{cases}
+			a\,\, + \,\,b\,\, + \,\,c\,\, = \,\,\frac{1}{a}\,\, + \,\,\frac{1}{b}\,\, + \,\,\frac{1}{c}\\
+			{a^3}\, + \,\,{b^3}\, + \,\,{c^3}\, = \,\,\frac{1}{{{a^3}}}\,\, + \,\,\frac{1}{{{b^3}}}\,\, + \,\,\frac{1}{{{c^3}}}.
+		\end{cases}
+	\end{align*}
+	Chứng minh rằng
+	\begin{align*}
+		{a^{2023}}\, + \,\,{b^{2023}}\, + \,\,{c^{2023}}\, = \,\,\frac{1}{{{a^{2023}}}}\,\, + \,\,\frac{1}{{{b^{2023}}}}\,\, + \,\,\frac{1}{{{c^{2023}}}}.
+	\end{align*}
+	\textbf{Lời giải} (\textit{của người chấm bài})\textbf{.}
+	\vskip 0.05cm
+	Đặt ,   và  .
+	Theo giả thiết của bài ra, ta có:
+	(1)
+	và
+	
+	(2)
+	Từ (1) suy ra x + y = z. Do đó, từ (2) ta được:
+	
+	Vì vậy, x = 0, hoặc y = 0, hoặc z = 0. Điều này cho thấy, trong ba số a, b, c, có ít nhất một số bằng nghịch đảo của nó.
+	Do vai trò của a, b, c trong bài toán hoàn toàn như nhau, nên không mất tính tổng quát, giả sử
+	.                                                                          (3)
+	Khi đó, từ giả thiết
+	,
+	suy ra
+	.
+	Do đó, b + c = 0 hoặc bc = 1.
+	- Nếu b + c = 0 thì b =  c. Từ đây và (3), suy ra
+	
+	- Nếu bc = 1 thì
+	
+	Vì vậy, ta có điều phải chứng minh theo yêu cầu đề bài.
+	Bình luận và Nhận xét
+	1. Ở bài đã ra, nếu thay giả thiết
+	,
+	bởi giả thiết “ ”, ta có thể dễ dàng chứng minh được rằng
+	,
+	với mọi số nguyên dương n > 1.
+	2. Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có ba lời giải sai, do người giải bài đã mắc ít nhất một trong các lỗi chuyên môn sau:
+	- Chưa xét hết các trường hợp có thể xảy ra đối với a, b, c;
+	- Nhầm lẫn giữa “hoặc” và “đồng thời”.
+	Hà Thanh
+	P723. (Mức B) Cho số nguyên dương k và cho A là số tự nhiên gồm k chữ số 9. Gọi m, n, p tương ứng là tổng các chữ số của A,     Chứng minh rằng p = 2m = 2n.
+	Lời giải (dựa theo lời giải của bạn Nguyễn Chánh Thiện, lớp 9/12, trường THCS Lê Quý Đôn, Quận 3, Tp. Hồ Chí Minh).
+	Theo giả thiết của bài ra,                                                                                                     (1)
+	Vì vậy, m = 9k.                                                                                                                                        (2)
+	Từ (1), ta có:
+	
+	
+	Vì vậy
+	n = 9(k - 1) + 8 + 1 = 9k,                                                          (3)
+	p = 9(k - 1) + 7 + 2 + 9k = 18k.                                                     (4)
+	Từ (2), (3) và (4), suy ra p = 2m = 2n, là điều phải chứng minh theo yêu cầu đề bài.
+	Bình luận và Nhận xét
+	Tất cả lời giải Tạp chí nhận được từ bạn đọc đều là lời giải đúng và hoàn chỉnh.
+	Lưu Thị Thanh Hà
+	P724. (Mức B) Cho tam giác ABC. Trên các cạnh BC, CA, AB, tương ứng, lấy các điểm D, E, F, sao cho AEDF là hình bình hành (D, E, F không trùng với các đỉnh của tam giác). Gọi Y là điểm đối xứng với B qua DF; Z là điểm đối xứng với C qua DE. Chứng minh rằng, đường tròn ngoại tiếp tam giác AYZ đi qua trực tâm của tam giác ABC.
+	Lời giải (dựa theo Đáp án của BBT Tạp chí).
+	Gọi H là trực tâm của tam giác ABC.
 	Xét hai trường hợp sau:
-	\vskip 0.05cm
-	$\bullet$ \textit{Trường hợp $1$: Tập $S$ có chứa số nguyên tố.}
-	\vskip 0.05cm
-	Khi đó, chọn $x = y = p$, với $p$ là một số nguyên tố thuộc $S$, ta sẽ có hai số $x, y$ thỏa mãn các điều kiện của đề bài.
-	\vskip 0.05cm
-	$\bullet$ \textit{Trường hợp $2$: Tập $S$ không chứa số nguyên tố.}
-	\vskip 0.05cm
-	Khi đó, do $S$ chỉ chứa các số nguyên lớn hơn $1$, nên mọi số thuộc $S$ đều là hợp số. \hfill ($1$)
-	\vskip 0.05cm
-	Gọi $P$ là tập gồm và chỉ gồm các số nguyên tố, mà mỗi số đều là ước nguyên tố bé nhất của ít nhất một số thuộc $S$.
-	\vskip 0.05cm
-	Do $S$ là tập hữu hạn khác rỗng, nên $P$ là tập hữu hạn khác rỗng.
-	\vskip 0.05cm
-	Dễ thấy, $P$ có ít nhất hai phần tử, vì nếu ngược lại, $P$ chỉ có đúng một phần tử, gọi là $q$, thì bằng cách chọn $n = q$, từ giả thiết của bài toán dễ dàng suy ra, $q \in S$, mâu thuẫn với ($1$) (do $q$ là số nguyên tố).
-	\vskip 0.05cm
-	Xét số nguyên dương $m$ bằng tích của tất cả các số thuộc $P$.
-	\vskip 0.05cm
-	Ta có $m > 1$ và $(m,s) > 1$ với mọi $s \in S$. Do đó, theo giả thiết của bài ra, tồn tại số $x \in S$ sao cho $m$ chia hết cho $x$.
-	\vskip 0.05cm
-	Từ định nghĩa số $m$, hiển nhiên suy ra:
-	\vskip 0.05cm
-	-- Tập các ước nguyên tố của $x$ là một tập con của $P$; \hfill ($2$)
-	\vskip 0.05cm
-	-- Trong phân tích chuẩn của $x$, số mũ của mỗi ước nguyên tố đều bằng $1$.       \hfill ($3$)
-	\vskip 0.05cm
-	Do $x$ là hợp số, nên từ ($3$) suy ra, $x$ có ít nhất hai ước nguyên tố. 
-	Gọi $p$ là ước nguyên tố lớn nhất của $x$. Do ($2$), nên $p \in P$. Vì thế, tồn tại số $y \in S$ sao cho $p$ là ước nguyên tố bé nhất của $y$.
-	\vskip 0.05cm
-	Vì $p$ là ước nguyên tố lớn nhất của $x$, và là ước nguyên tố bé nhất của $y$, nên $p$ là ước nguyên tố chung duy nhất của $x$ và $y$. Từ đây và ($3$), suy ra $(x, y) = p$. Vì thế, $x, y$ là hai số thỏa mãn các điều kiện của đề bài.
-	\vskip 0.05cm
+	• Trường hợp 1: D không là trung điểm của BC.
+	
+	Gọi d là đường thẳng vuông góc với BC tại D. Gọi   tương ứng là điểm đối xứng với A, B, C qua d. Gọi K là giao điểm của   và  
+	Do Z đối xứng với C qua DE (giả thiết) nên DE là đường trung trực của CZ. Từ đây và định nghĩa điểm   suy ra   Do đó
+	(1)
+	suy ra,   (vì cùng vuông góc với CZ). Mà   (do tứ giác AEDF là hình bình hành), nên                                                                                                                                           (2)
+	Xét các điểm Y, B,   một cách hoàn toàn tương tự, ta cũng chứng minh được
+	(3)
+	và                                                                                                                                            (4)
+	Từ (1) và (2) suy ra   mà CH cũng vuông góc BA (do H là trực tâm tam giác ABC), nên ba điểm C, H, Z thẳng hàng. Do đó, theo (1), ta có   suy ra                           (5)
+	Một cách hoàn toàn tương tự, từ (3) và (4) suy ra                                                            (6)
+	Do cùng vuông góc với d nên                                                                                                (7)
+	Từ (2) và (7) suy ra tứ giác   là một hình bình hành. Do đó,                                     (8)
+	Do phép đối xứng trục bảo toàn khoảng cách, nên   Kết hợp với (8), ta được   Mà   (vì cùng vuông góc với d), nên   là một hình thang cân. Suy ra
+	(9)
+	Do phép đối xứng trục bảo toàn góc, nên   Kết hợp với (9), ta được
+	
+	Do đó,   Kết hợp với (4), suy ra ba điểm   Y, K thẳng hàng. Vì thế, từ (6) suy ra
+	(10)
+	Do   (vì cùng vuông góc với d) và AH  BC (vì H là trực tâm tam giác ABC), nên
+	(11)
+	Từ (5), (10) và (11) suy ra, các điểm A, Y, Z, H, K cùng nằm trên đường tròn đường kính HK.
+	• Trường hợp 2: D là trung điểm của BC.
+	Trong trường hợp này, DE và DF là các đường trung bình của tam giác ABC. Do đó, Y là chân đường cao kẻ từ B, và Z là chân đường cao kẻ từ C, của tam giác ABC. Vì thế, các điểm A, Y, Z, H cùng nằm trên đường tròn đường kính AH.
 	Kết quả xét hai trường hợp trên đây cho ta điều phải chứng minh theo yêu cầu đề bài.
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
-	\vskip 0.05cm
-	Lời giải của bạn \textit{Nguyễn Tuấn Kiệt} là lời giải đúng duy nhất, trong số các lời giải Tạp chí đã nhận được từ bạn đọc. Tất cả các lời giải còn lại đều là lời giải sai, do người giải bài đã khẳng định sai rằng, trong tập $S$ phải có ít nhất một số nguyên tố. (\textit{Bạn đọc có thể dễ dàng kiểm chứng rằng, tập $S = \{6; 10; 15\}$ là một tập chỉ chứa các hợp số và thỏa mãn giả thiết của đề bài.})
-	\vskip 0.05cm
-	\hfill	\textbf{\color{thachthuctoanhoc}Lưu Thị Thanh Hà}
-\end{multicols}
-\begin{center}
-	\textbf{\color{thachthuctoanhoc}DANH SÁCH HỌC SINH CÓ LỜI GIẢI HOÀN CHỈNH}
-\end{center}
-\begin{multicols}{2}
-	\textit{Trong các ngoặc đơn ở phần dưới đây, sau tên lớp là mã hiệu của các bài toán mà học sinh có lời giải hoàn chỉnh.}
-	\vskip 0.1cm
-	\textbf{\color{thachthuctoanhoc}KHỐI THCS}
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THCS Nguyễn Thái Bình}, tỉnh Cà Mau: \textit{Lê Nguyễn Hoàng Nhật Đình} (lớp $8$C; P$711$, P$712$, P$713$, P$714$, P$715$).
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THCS Lê Quý Đôn}, quận $3$, Tp. Hồ Chí Minh: \textit{Nguyễn Chánh Thiện} (lớp $8/14$; P$712$).
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THCS Lê Hồng Phong}, huyện Hưng Nguyên, tỉnh Nghệ An: \textit{Trịnh Bá Hiếu} (lớp $8$A; P$711$, P$712$).
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THCS Hồ Xuân Hương}, huyện Quỳnh Lưu, tỉnh Nghệ An: \textit{Phạm Quang Thắng} (lớp $7$C; P$712$, P$713$, P$714$).
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THCS Phúc Yên}, Thành phố Phúc Yên, tỉnh Vĩnh Phúc: \textit{Vũ Bảo Lân} (lớp $8$A$5$; P$715$).
-	\vskip 0.05cm
-	\textbf{\color{thachthuctoanhoc}KHỐI THPT}
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Nguyễn Quang Diêu}, tỉnh Đồng Tháp: \textit{Đỗ Duy Quang} (lớp $11$T$1$; P$711$, P$712$, P$715$), \textit{Phạm Hồng Thanh Thảo} (lớp $11$T$1$; P$716$).
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT Hà Đông}, tỉnh Hải Dương: \textit{Phạm Văn Đăng} (lớp $11$A; P$711$).
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Lê Hồng Phong}, Tp. Hồ Chí Minh: \textit{Hồ Hữu Trí} (lớp $10$CT$1$; P$715$).
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Quốc học Huế}, tỉnh Thừa Thiên -- Huế: \textit{Võ Minh Hiển} (lớp $11$ Toán $1$; P$712$).
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Nguyễn Bỉnh Khiêm}, tỉnh Vĩnh Long: \textit{Nguyễn Tuấn Kiệt} (lớp $11$T$1$; P$711$, P$712$, P$713$, P$714$, P$715$, P$716$, P$719$).
-	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Tự nhiên}, ĐHKHTN -- ĐHQG Hà Nội: \textit{Vương Khánh Toàn} (lớp $11$A$1$ Toán; P$717$).
-\end{multicols}
-\vspace*{-10pt}
-{\color{thachthuctoanhoc}\rule{1\linewidth}{1pt}}
-\vskip 0.2cm
-\centerline{\Large{\textbf{\color{thachthuctoanhoc}LỜI GIẢI, ĐÁP ÁN}}}
-\vskip 0.1cm
-\begin{multicols}{2}
-	hơn thành $2$ nhóm có số lượng bằng nhau và bỏ lên $2$ đĩa cân (nếu số đồng xu là $5$ hoặc $7$ thì Buratino bổ sung $1$ đồng xu thật trước khi chia đôi). Nếu ở lần cân thứ $2$, cân thăng bằng thì nghĩa là tất cả các đồng xu của nhóm nặng hơn trong lần cân đầu tiên là đồng xu thật và do đó đồng xu giả nằm ở nhóm nhẹ hơn trong lần cân đầu tiên phải là đồng xu của Alice. Nếu ở lần cân thứ $2$, cân không thăng bằng thì có nghĩa là nhóm nặng hơn ở lần cân đầu tiên chứa đồng xu giả và nhóm đồng xu nhẹ hơn ở lần cân đầu tiên chỉ có các đồng xu thật, nghĩa là đồng xu giả là của Basile.
+	Bình luận và Nhận xét
+	1. Theo đánh giá chủ quan của người chấm bài, bài đã ra là một bài toán hay, và không quá khó đối với học sinh khá, giỏi toán cấp THCS.
+	2. Với các giả thiết của bài đã ra, có thể chứng minh được rằng, tỉ số   không thay đổi, khi điểm D di động trên cạnh BC sao cho D không trùng với B, C và trung điểm của BC. Mời các độc giả có quan tâm cùng chứng minh điều vừa nêu.
+	3. Hầu hết các lời giải Tạp chí đã nhận được từ bạn đọc đều có nhược điểm: lời giải chỉ đúng cho thế hình mà người giải bài đã vẽ. Tất cả những lời giải như vậy, hiển nhiên, không là lời giải hoàn chỉnh.
+	Hạ Vũ Anh
+	P725. (Mức B) Cho các số dương a, b, c. Chứng minh rằng
+	
+	Lời giải (dựa theo lời giải của các bạn: Lê Nguyễn Hoàng Nhật Đình, lớp 9C, trường THCS Nguyễn Thái Bình, Tỉnh Cà Mau, và Nguyễn Chánh Thiện, lớp 9/12, trường THCS Lê Quý Đôn, Quận 3, Tp. Hồ Chí Minh).
+	Kí hiệu P là biểu thức ở vế trái của bất đẳng thức cần chứng minh theo yêu cầu đề bài.
+	Theo bất đẳng thức Cauchy - Schwarz, ta có:
+	(1)
+	Tiếp theo, ta sẽ chứng minh
+	(2)
+	Thật vậy, ta có:
+	
+	(3)
+	Vì a, b, c > 0 (giả thiết), nên (3) là bất đẳng thức đúng. Vì vậy, (2) được chứng minh.
+	Từ (1) và (2), hiển nhiên suy ra bất đẳng thức cần chứng minh theo yêu cầu đề bài.
+	Bình luận và Nhận xét
+	1. Dễ thấy, dấu “=” ở bất đẳng thức của đề bài xảy ra khi và chỉ khi a = b = c.
+	2. Trong số các lời giải Tạp chí nhận được từ bạn đọc, rất tiếc, có một lời giải sai, do người giải bài đã ngộ nhận rằng, có thể nhân hai bất đẳng thức trái chiều, A  B > 0 và 0 < C \le D, để suy ra bất đẳng thức AC \le BD.
+	3. Trong Đề thi chọn Đội tuyển học sinh Việt Nam tham dự Olympic Toán học Quốc tế năm 1982 (IMO 1982) có bài toán sau:
+	Bài toán thi chọn Đội tuyển học sinh VN tham dự IMO 1982. Cho các số thực dương a, b, c. Chứng minh rằng
+	
+	Với a, b, c là các số thực dương, theo bất đẳng thức hoán vị, ta có:
+	
+	Vì thế, có thể nói, bất đẳng thức ở bài đã ra là một phương án làm chặt bất đẳng thức trong Đề thi chọn Đội tuyển học sinh VN tham dự IMO 1982.
+	4. Có thể dễ dàng chứng minh được rằng, k = 3 là số thực dương lớn nhất, sao cho
+	
+	với mọi a, b, c > 0.
+	Trần Nam Dũng
+	P726. (Mức B) Cho bảng ô vuông kích thước 2023  2023, mà ở mỗi ô vuông con được đặt ít nhất một viên bi. Cho phép thay đổi số bi trong bảng, theo qui tắc: Mỗi lần, thêm bi vào mỗi ô vuông con của một cột tùy ý, sao cho số bi ở mỗi ô của cột đó tăng lên gấp đôi; hoặc bớt một viên bi ở mỗi ô vuông con của một hàng tùy ý, mà ở tất cả các ô của hàng đó đều đang có bi. Chứng minh rằng, ta có thể thực hiện một số lần phép thay đổi bi nói trên, để trong bảng không còn viên bi nào.
+	Lời giải (của người chấm bài).
+	Để thuận tiện cho việc diễn đạt, ta qui ước:
+	- Gọi phép thay đổi số bi ở một cột, theo qui tắc của đề bài, là phép “nhân đôi”;
+	- Gọi phép thay đổi số bi ở một hàng, theo qui tắc của đề bài, là phép “giảm bớt”.
+	Ta có Nhận xét sau:
+	Nhận xét. Nhờ việc thực hiện một số hữu hạn lần liên tiếp phép thay đổi bi đã cho trong đề bài, có thể làm cho một hàng tùy ý của bảng không còn viên bi nào.
+	Chứng minh.
+	Xét một hàng tùy ý của bảng; gọi là hàng H. Có thể xảy ra các trường hợp sau:
+	• Trường hợp 1: Tất cả các ô của hàng H đều có số bi như nhau.
+	Giả sử tất cả các ô đều có k viên bi.
+	Khi đó, bằng cách thực hiện liên tiếp k lần phép “giảm bớt” đối với hàng H, ta sẽ làm cho hàng này không còn viên bi nào.
+	• Trường hợp 2: Tất cả các ô của hàng H không có số bi như nhau.
+	Có thể xảy ra hai trường hợp nhỏ sau:
+	♦ Trường hợp 2.1: Tồn tại ô có đúng 1 viên bi.
+	Xét phương án thực hiện phép thay đổi bi, gồm hai bước liên tiếp sau:
+	- Bước 1: Lần lượt, thực hiện phép “nhân đôi” đối với từng cột chứa ô có 1 viên bi của hàng H;
+	- Bước 2: Thực hiện phép “giảm bớt” đối với hàng H.
+	Ta gọi mỗi phương án nêu trên là một “tổ hợp tăng - giảm”.
+	Dễ thấy:
+	- Ô có đúng 1 viên bi, tại thời điểm ngay trước khi thực hiện “tổ hợp tăng - giảm”, vẫn sẽ có đúng 1 viên bi tại thời điểm ngay sau khi thực hiện “tổ hợp tăng - giảm” đó;
+	- Ô có nhiều bi nhất trong hàng, tại thời điểm ngay trước khi thực hiện “tổ hợp tăng - giảm”, vẫn sẽ là ô có nhiều bi nhất trong hàng tại thời điểm ngay sau khi thực hiện “tổ hợp tăng - giảm” đó, nhưng số bi trong ô này bị giảm đi 1.
+	Từ đó suy ra, nếu gọi M là số viên bi của ô có nhiều bi nhất trong hàng H tại thời điểm ban đầu (tức, thời điểm bắt đầu “dọn” bi trong hàng đó), thì bằng cách thực hiện liên tiếp M - 1 lần “tổ hợp tăng - giảm”, ta sẽ làm cho mỗi ô trong hàng H đều có đúng 1 viên bi. Lúc này, bằng cách thực hiện phép “giảm bớt”, ta sẽ làm cho trong hàng H không còn viên bi nào.
+	♦ Trường hợp 2.2: Mỗi ô đều có ít nhất 2 viên bi.
+	Gọi m là số viên bi của ô có ít bi nhất trong hàng H, tại thời điểm ban đầu; ta có m  2.
+	Dễ thấy, bằng cách thực hiện liên tiếp m - 1 lần phép “giảm bớt” đối với hàng H, ta sẽ làm cho hàng đó có những ô có đúng 1 viên bi. Lúc này, trạng thái bi ở hàng H là trường hợp 2.1. Vì thế, ta có thể làm cho trong hàng đó không còn viên bi nào.
+	Nhận xét được chứng minh.
+	Dễ thấy, khi làm cho một hàng nào đó không còn bi, theo cách đã trình bày trong chứng minh của Nhận xét trên, ta không làm xuất hiện bi ở những ô không có bi của các hàng khác. Vì vậy, theo Nhận xét trên, bằng cách lần lượt “dọn” bi ở từng hàng, ta sẽ làm cho trong bảng không còn viên bi nào.
+	Bình luận và Nhận xét
+	Tât cả các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, đều là lời giải không hoàn chỉnh, do các lập luận trong lời giải không chặt chẽ, thiếu chính xác.
+	Nguyễn Khắc Minh
+	P728. (Mức A) Tìm tất cả các cặp số hữu tỉ (a, b) sao cho tồn tại duy nhất hàm số   thỏa mãn:
+	
+	với mọi  .
+	Lời giải (của người chấm bài).
+	Giả sử   là hàm số thỏa mãn
+	(1)
+	với mọi  ; trong đó, a, b là các hằng số hữu tỉ.
+	Do   xác định trên   và thỏa mãn (1) với mọi  , nên phải có
+	
+	với mọi  .
+	Suy ra,   với mọi  .                                                                                                        (2)
+	Trong (1), cho y = 0, ta được:
+	(3)
+	với mọi  .
+	Với mỗi  , đặt   ta có  
+	Do   là hàm số xác định trên   và lấy giá trị trong   (theo (2)), nên g là một hàm số xác định trên   và lấy giá trị trong  .
+	Với x, y tùy ý thuộc  , theo (1) và (3), ta có:
+	
+	Như vậy, ta đã chứng minh được:
+	(4)
+	với mọi  .
+	Trong (4), cho x = 0, với lưu ý   ta được:
+	(5)
+	với mọi  . Suy ra
+	(6)
+	với mọi  .
+	Trong (5), thay y bởi   ta được:
+	(7)
+	với mọi  .
+	Trong (4), thay đồng thời x bởi   và y bởi by, ta được:
+	(8)
+	với mọi  .
+	Từ (6), (7) và (8), suy ra
+	
+	với mọi  .
+	Do đó
+	(9)
+	với mọi  .
+	Trong (4), thay y bởi   và sử dụng (5), ta được:
+	(10)
+	với mọi  .
+	Trong (4), thay đồng thời x bởi   và y bởi by, ta được:
+	(11)
+	với mọi  .
+	Từ (11), (9) và (10), suy ra
+	(12)
+	với mọi  .
+	Trong (12), thay y bởi   ta được:
+	
+	với mọi  .
+	Sử dụng hệ thức vừa thu được ở trên, bằng phương pháp qui nạp theo   dễ dàng chứng minh được
+	
+	với mọi   và với mọi  .
+	Từ đó, dễ dàng chứng minh được
+	
+	với mọi   và với mọi  
+	Vì vậy,   với   là một hằng số hữu tỉ.
+	Suy ra
+	(13)              
+	với   là các hằng số hữu tỉ.
+	Ngược lại, thay (13) vào (1), ta được:
+	
+	với mọi  .
+	Điều này tương đương với
+	(I)
+	Như vậy,   là hàm số thỏa mãn (1) khi và chỉ khi   là hàm số được xác định bởi (13); trong đó,   là nghiệm của hệ phương trình (I) (ẩn  ).
+	Do đó, (a, b) là cặp số hữu tỉ thỏa mãn yêu cầu đề bài khi và chỉ khi a, b là các số hữu tỉ sao cho hệ phương trình (I) (ẩn  ) có nghiệm duy nhất.
+	Do phương trình thứ hai của hệ (I) không có nghiệm   nên hệ đó có nghiệm chỉ khi phương trình thứ nhất của nó có nghiệm   Điều vừa nêu xảy ra khi và chỉ khi a = 1.
+	Với a = 1, dễ thấy, hệ (I) sẽ có vô số nghiệm, nếu phương trình thứ hai của nó có nghiệm  
+	Vì vậy, hệ phương trình (I) có nghiệm duy nhất khi và chỉ khi a = 1 và phương trình thứ hai của hệ đó có nghiệm duy nhất, khác 1. Điều vừa nêu xảy ra khi và chỉ khi
+	(II)
+	Giải hệ (II), ta được b = 2.
+	Vậy,   là cặp số hữu tỉ duy nhất thỏa mãn yêu cầu đề bài.
+	Bình luận và Nhận xét
+	1. Từ Lời giải trên, hiển nhiên thấy, hàm số   xác định trên  , là nghiệm hàm duy nhất của phương trình hàm đã nêu trong đề bài, ứng với  
+	2. Tạp chí chỉ nhận được duy nhất lời giải cho bài đã ra, và rất tiếc, lời giải đó lại là một lời giải sai, do người giải bài dã biến đổi sai một số phương trình hàm được đề cập trong lời giải.
+	Trần Nam Dũng - Nguyễn Khắc Minh
+	P729. (Mức A) Cho tam giác nhọn ABC, có M là trung điểm BC. Trên cạnh AC, lấy một điểm E tùy ý, khác A và C. Gọi N là giao điểm của các đường thẳng BE và AM. Đường thẳng CN cắt đường tròn (ACM) tại điểm thứ hai D. Chứng minh rằng, đường thẳng đi qua D, vuông góc với CD, cũng đi qua tâm đường tròn ngoại tiếp tam giác ABE.
+	Lời giải (dựa theo Đáp án của BBT Tạp chí).
+	
+	Đường thẳng CN cắt đường tròn (ABE) tại hai điểm X, Y, cắt AB tại F, cắt đường tròn (AEF) tại điểm thứ hai G, và cắt đường tròn (ABC) tại điểm thứ hai H.
+	Áp dụng định lý Ceva cho tam giác ABC với ba đường đồng qui AM, BE, CF, ta được:
+	(do M là trung điểm BC).
+	Suy ra,   Do đó, theo định lí Thales đảo,                                                                (1)
+	Xét phương tích của F đối với các đường tròn (ABE) và (ABC), ta được:
+	
+	Suy ra,                                                                                                                                  (2)
+	Ta có:
+	(3)
+	Xét phương tích của C đối với các đường tròn (AEF) và (ABE), ta được:
+	
+	Suy ra
+	
+	Do đó
+	(do (2)).                                                      (4)
+	Từ (3) và (4), suy ra  
+	Vì vậy, XY và GH có cùng trung điểm.                                                                                                  (5)
+	Do A, B, C, H cùng thuộc một đường tròn, nên
+	(6)
+	Do (1) và do A, E, F, G cùng thuộc một đường tròn, nên
+	(7)
+	Từ (6) và (7), suy ra AHB  AGC.
+	Do đó,   và
+	
+	Suy ra, AHG  ABC.
+	Vì vậy, gọi   là trung điểm HG, ta có   Do đó
+	
+	Suy ra,   thuộc đường tròn (AMC). Mà C, D,   thẳng hàng và D thuộc đường tròn (AMC), nên   Điều này cho thấy, D là trung điểm của HG; vì thế, theo (5), D là trung điểm của XY. Do đó, đường thẳng vuông góc với CD tại D là đường trung trực của dây cung XY của đường tròn (ABE). Vì vậy, nó đi qua tâm của đường tròn đó. Ta có điều phải chứng minh theo yêu cầu đề bài.
+	Bình luận và Nhận xét
+	Lời giải của bạn Nguyễn Gia Khánh (lớp 12 Toán, trường THPT chuyên Hưng Yên, Tỉnh Hưng Yên) là lời giải duy nhất Tạp chí nhận được từ bạn đọc, và là một lời giải đúng.
+	Hạ Vũ Anh
+	P730. (Mức A) Với mỗi số nguyên m > 1, kí hiệu   tương ứng là tổng tất cả các ước nguyên tố của m, và số các ước nguyên tố của m. Cho n là một số nguyên lẻ, lớn hơn 1, và không chia hết cho 3. Chứng minh rằng
+	
+	Lời giải (của người chấm bài).
+	Trong phần trình bày dưới đây, (a, b) kí hiệu ước số chung lớn nhất của hai số nguyên dương a, b.
+	Giả sử n có tất cả k ước nguyên tố, kí hiệu là  
+	Khi đó,   và                                                                                    (1)
+	Do n là số nguyên dương lẻ lớn hơn 1, không chia hết cho 3, nên k  1 và với mọi i = 1, 2, …, k, ta có:
+	(2)
+	(3)
+	Do (3) nên mọi ước nguyên tố của   i = 1, 2, …, k, cũng là ước nguyên tố của               (4)
+	Xét số i tùy ý thuộc {1; 2; …; k}.
+	Do (2) nên tồn tại   và r \in {1; 2}, sao cho   Do đó
+	
+	Mà   là số nguyên dương lẻ lớn hơn 9 (do (2)), nên nó phải có ước nguyên tố lớn hơn 3. Vì thế, gọi   là ước nguyên tố lớn nhất của   ta có                                                                      (5)     
+	Do   nên   suy ra
+	(6)
+	Do tính “tùy ý” của i, nên ta có (5) và (6) với mọi i = 1, 2, …, k.
+	Từ đó dễ dàng suy ra
+	với mọi i, j \in {1; 2; …; k}, i  j.                                              (7)
+	Thật vậy, giả sử ngược lại, tồn tại i, j \in {1; 2; …; k}, i  j, sao cho  
+	Đặt   theo (5) và (6), ta có q là số nguyên tố lớn hơn 3, và
+	(8)
+	Dễ thấy,   và   Vì thế, từ (8) suy ra
+	
+	là điều vô lí (do q > 3). Vì vậy, (7) được chứng minh.
+	Do n là số nguyên dương lẻ nên   Kết hợp điều này với (4), (5) và (7), ta được 3,   là các ước nguyên tố đôi một phân biệt của   Vì vậy
+	(9)
+	Tiếp theo, ta sẽ chứng minh
+	với mọi i = 1, 2, …, k.                                                (10)
+	Thật vậy, do   với mọi i = 1, 2, …, k, nên theo định lí Fermat nhỏ, ta có:
+	(11)
+	với mọi i = 1, 2, …, k.
+	Lại do   nên từ (6) và (11) suy ra
+	(12)
+	với mọi i = 1, 2, …, k.
+	Do với mọi i = 1, 2, …, k,   là số nguyên tố lẻ và   là số nguyên dương chẵn, nên
+	
+	với mọi i = 1, 2, …, k.
+	Nếu tồn tại i \in {1; 2; …; k} sao cho   thì
+	
+	mâu thuẫn với (12). Vì vậy
+	
+	với mọi i = 1, 2, …, k.
+	Suy ra,   hay   với mọi i = 1, 2, …, k.
+	(10) được chứng minh.
+	Từ (9), (10) và (1), suy ra
+	
+	Ta có điều phải chứng minh theo yêu cầu đề bài.
+	Bình luận và Nhận xét
+	1. Trong Lời giải trên, có sử dụng (không chứng minh) kết quả quen biết sau:
+	“Cho p là một số nguyên tố, và cho a, m, n là các số nguyên dương,   Khi đó, nếu
+	
+	thì  ”
+	Với các bạn đọc chưa biết kết quả nêu trên, các bạn hãy tự chứng minh, xem như một “bài tập về nhà”.
+	2. Cho tới thời điểm bản thảo vào Nhà in, Tạp chí vẫn chưa nhận được lời giải nào từ bạn đọc.
+	Lưu Thị Thanh Hà
+	
 \end{multicols}
 
