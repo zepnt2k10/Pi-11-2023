@@ -10,494 +10,555 @@
 \endgroup
 \vspace*{182pt}
 
-%\begin{multicols}{2}
-%	Trong chuyên mục này, chúng tôi sẽ trình bày Lời giải của các bài toán trong vòng hai kỳ thi toán học liên bang Đức năm $2023$, đăng trong số báo $9/2023$. 
-%	\vskip 0.1cm
-%	\textbf{\color{cackithi}Câu $\pmb{1}$:} Tìm ước chung lớn nhất của tất cả các số có dạng $p^6 - 7p^2 +6$ với $p$ chạy trên tập tất cả các số nguyên tố và $p \ge 11$.
-%	\vskip 0.1cm
-%	\textit{Lời giải.}
-%	Đặt $f(p) \colon =p^6 - 7p^2 +6$. Gọi $a$ là ước chung lớn nhất (ƯCLN) của tất cả các $f(p)$ với $p$ nguyên tố và $p \ge 11$. Ta sẽ chứng minh rằng $a = 2^5\times 3 \times 7$.
-%	\vskip 0.1cm	
-%	Thật vậy, theo định lý Fermat nhỏ thì $7|p^6 - 1$ với mọi số nguyên $7 \not | p$. Do đó, $7 |p^6 - 1  - 7p^2 + 7 = f(p)$ với mọi $p$ như trên và ta có $7 | a$.
-%	\vskip 0.1cm	
-%	Mặt khác, 
-%	$f(p) = (p^2-1)(p^2-2)(p^2+3) \equiv (p^2-1)(p^2-2)p^2 \mod 3 \equiv 0 \mod 3$ do $p^2, p^2-1, p^2-2$ là ba số nguyên liên tiếp. Như vậy, $3 | f(p)$ với mọi $p$ và ta thu được $3|a$.
-%	\vskip 0.1cm	
-%	Hơn nữa, do $p$ nguyên tố và $p \ge 11$ nên $p$ là số lẻ. Đặt $p= 2k+1$, ta có
-%	\begin{align*}
-%			f(p) = & (p^2-1)(p^2-2)(p^2+3) \\
-%			= & (4k^2 \!+\! 4k) \!(4k^2 \!+\! 4k\!-\!1)(4k^2\!+\!4k\!+\!4) \\
-%			= & 16k(k\!+\!1)(4k^2 \!+\! 4k\!-\!1)(k^2 \!+\! k \!+\! 1).
-%	\end{align*}
-%	Vì $2 |k(k+1)$ với mọi $k \in \mathbb{Z}$ nên $2\times 16 = 32 = 2^5 |f(p)$. Bởi vậy $2^5 |a$.
-%	\vskip 0.1cm
-%	Do $2^5, 3$ và $7$ đôi một nguyên tố cùng nhau nên
-%	\begin{align*}
-%		2^5 \times 3 \times 7 |a. \tag{$1$}
-%	\end{align*}
-%		Mặt khác, vì
-%		$
-%		f(11) = 1770720 = 2^5 \times 3 \times 5 \times 7 \times 17 \times 31
-%		$
-%		và
-%		$
-%		f(13) = 4825632 = 2^5 \times 3 \times 7 \times 43 \times 167
-%		$
-%		nên 
-%		\begin{align*}
-%			a |\text{ƯCLN}(f(11), f(13)) \!=\! 2^5\!\times\! 3 \!\times\! 7. \tag{$2$}
-%		\end{align*}
-%		Từ ($1$) và ($2$) ta thu được $a = 2^5\times 3 \times 7$.
-%	\vskip 0.1cm
-%	\textbf{\color{cackithi}Câu $\pmb{2}$:} Trên một hòn đảo địa hình đồi núi có $2023$ điểm quan sát. Từ mỗi điểm quan sát có thể nhìn thấy ít nhất $42$ điểm quan sát khác. Với hai điểm quan sát bất kỳ $X$ và $Y$, luôn tồn tại một số nguyên dương $n$ và các điểm quan sát $A_1,  A_2, \ldots, A_{n+1}$ sao cho $A_1 = X$, $A_{n+1} = Y$ và mỗi cặp điểm liền kề $A_i$ với $A_{i+1}$ có thể quan sát được lẫn nhau với $i = 1, 2, \ldots, n$. Số $n$ nhỏ nhất như vậy được gọi là khoảng cách quan sát (Sichtabstand). 
-%	\vskip 0.1cm
-%	Xác định khoảng cách quan sát lớn nhất có thể có giữa hai cặp điểm quan sát thỏa mãn những điều kiện ở trên.
-%	\vskip 0.1cm
-%	\textit{Lời giải.}
-%	Ta sẽ chứng minh rằng khoảng cách quan sát lớn nhất có thể là $140$.
-%	\vskip 0.1cm	
-%	Với hai điểm quan sát $X,Y$ trong bài, ta nói $A_1, \ldots, A_{n+1}$ là các điểm thuộc \textit{chuỗi quan sát} độ dài $n$ nối $X$ và $Y$. Để tìm một chuỗi quan sát có độ dài nhỏ nhất, ta chỉ cần xét trường hợp mỗi điểm quan sát trong chuỗi xuất hiện đúng một lần. Vì chỉ có hữu hạn điểm quan sát nên độ dài các chuỗi quan sát là hữu hạn (bị chặn trên bởi $2022$). Như vậy giữa tất cả các chuỗi quan sát nối $X$ và $Y$ luôn tồn tại chuỗi quan sát có độ dài ngắn nhất, và độ dài này chính là khoảng cách quan sát được định nghĩa ở trên. Do chỉ có hữu hạn các cặp điểm quan sát, tồn tại một cặp điểm có khoảng cách quan sát lớn nhất.
-%	\vskip 0.1cm	
-%	Cho trước một hệ thống tùy ý $M$ gồm $2023$ điểm quan sát thỏa mãn yêu cầu của bài toán. Chọn $X \in M$ bất kỳ và gọi $M_i$ tập các điểm quan sát có khoảng cách quan sát $i$ tới $X$. Ta cũng sẽ đặt $M_0 = \{X\}$. Do với bất kỳ $Y \in M$ luôn tồn tại một chuỗi quan sát nối $X$ và $Y$ nên các tập $M_i$ lập nên một phân hoạch của $M$. Nói cách khác, $M = \cup_{i}M_i$ và $M_i \cap M_j = \emptyset$ nếu $i\neq j$.
-%	\vskip 0.1cm
-%	Gọi $n(X)$ là chỉ số sao cho $M_{n(X)} \neq \emptyset$ và $M_i = \emptyset$ với mọi $i \ge n(X)$. Bằng định nghĩa, với mỗi $Y \in M_{n(X)}$ luôn tồn tại chuỗi quan sát ngắn nhất $A_1, \ldots A_{n(X) + 1}$ với $A_1 = X$ và $A_{n(X)+1} = Y$. Rõ ràng $A_i, A_{i+1}, \ldots, A_{j}$ cũng là chuỗi quan sát ngắn nhất giữa $A_i$ và $A_j$ với mọi $1 \le i <j \le n(X) + 1$. Nói riêng, $A_i \in M_{i-1}$ và ta có $M_i \neq \emptyset$ với mọi $i \le n(X)$.
-%	\vskip 0.1cm	
-%	Hơn nữa, từ mỗi điểm trong $M_i$ chỉ có thể quan sát được các điểm trong $M_{i-1}, M_i$ và $M_{i+1}$. Thật vậy, nếu từ $V \in M_i$ quan sát được $W \in M_j$ với $j \le i-2$ thì $V \in M_{j+1}$. Do đó, $V \in M_i \cap M_{j+1}$. Điều này vô lý vì $M_i \cap M_{j+1} = \emptyset$ do $j+1 \neq i$. Tương tự, từ $V \in M_i$ quan sát được $W \in M_j$ với $j \ge i+2$ cũng dẫn đến mâu thuẫn. Vì từ mỗi $V \in M_i$ có thể quan sát được ít nhất $42$ điểm khác và các điểm này nằm trong $M_{i-1}, M_i, M_{i+1}$ nên
-%	\begin{align*}
-%		|M_{i-1} \cup M_i \cup M_{i+1}| \ge 43.
-%	\end{align*}
-%	Từ $X \in M_0$ chỉ quan sát được các điểm trong $M_1$ và từ $Y \in M_{n(X)}$ chỉ quan sát được các điểm từ $M_{n(X)}$ và $M_{n(X)-1}$ nên
-%	\begin{align*}
-%		|M_0 \cup M_1| \ge 43 \text{ và } |M_{n(X)-1} \cup M_{n(X)}| \ge 43.
-%	\end{align*}
-%	\textbf{\color{cackithi}Khẳng định $\pmb{1}$:} \textit{Khoảng cách quan sát lớn nhất không thể lớn hơn $140$.} 
-%	\vskip 0.1cm
-%	Thật vậy, nếu $M_{141} \neq \emptyset$ thì 
-%	\begin{align*}
-%		& |M_0 \cup M_1| + |M_2 \cup M_3 \cup M_4| \\
-%		&+ |M_5 \cup M_6 \cup M7| + \ldots \\
-%		&+ |M_{137} \cup M_{138} \cup M_{139}| + |M_{140} \cup M_{141}| \\
-%		\ge \,&43 + 46.43 + 43 = 2064 > 2023
-%	\end{align*}
-%	dẫn đến mâu thuẫn.
-%	\vskip 0.1cm
-%		\textbf{\color{cackithi}Khẳng định $\pmb{2}$:} \textit{Tồn tại một hệ thống điểm quan sát sao cho khoảng cách quan sát lớn nhất là $140$.} 
-%		\vskip 0.1cm
-%		Thật vậy, xây dựng $141$ tập không rỗng $M_i$ với $i = 0, \ldots, 140$ như trong Hình $1$, trong đó:
-%		\vskip 0.1cm
-%		\begin{figure}[H]
-%				\vspace*{-5pt}
-%				\centering
-%				\captionsetup{labelformat= empty, justification=centering}
-%			\resizebox{\columnwidth}{!}{\begin{tikzpicture}[node distance={15mm}, thick, main/.style = {draw, circle}, cackithi] 
-%				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (1) {$A_0$}; 
-%				\node[main, fill= teal!50] (2) [above right of=1] {$A_1^1$}; 
-%				\node (3) [right = 5mm of 1] {$\vdots$};
-%				
-%				\node[main, fill= teal!50] (4) [below right of=1] {$A_1^{42}$}; 
-%				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (5) [below right of=2] {$A_2$}; 
-%				\node[main,fill=gray!50] (6) [above right of=5] {$A_3^1$}; 
-%				\node (7) [right = 5mm of 5] {$\vdots$};
-%				\node[main, fill=gray!50] (8) [below right of=5] {$A_3^{41}$}; 
-%				\draw (1) -- (2); 
-%				\draw (1) -- (3); 
-%				\draw (1) -- (4); 
-%				\draw (2) -- (3);
-%				\draw (3) -- (4);
-%				\draw (2) -- (5); 
-%				\draw (3) -- (5); 
-%				\draw (4) -- (5); 
-%				\draw (5) -- (6);
-%				\draw (5) -- (7);
-%				\draw (5) -- (8);   
-%				\draw (6) -- (7);
-%				\draw (7) -- (8);
-%				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (9) [below right of=6] {$A_4$};
-%				\draw (6) -- (9);
-%				\draw (7) -- (9); 
-%				\draw (8) -- (9);  
-%				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (10) [right = 5mm of 9] {$A_{138}$};
-%				\draw[dashed] (9) -- (10);  
-%				\node[main, fill= teal!50] (11) [above right of=10] {$A_{139}^1$}; 
-%				\node (12) [right = 4mm of 10] {$\vdots$}; 
-%				\node[main, fill= teal!50] (13) [below right of=10] {$A_{139}^{42}$}; 
-%				\draw (10) -- (11);
-%				\draw (10) -- (12);
-%				\draw (10) -- (13);
-%				\draw (11) -- (12);
-%				\draw (12) -- (13);
-%				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (14) [below right of=11] {$A_{140}$};
-%				\draw (11) -- (14);
-%				\draw (12) -- (14);
-%				\draw (13) -- (14);
-%			\end{tikzpicture}}
-%			\caption{\small\textit{\color{cackithi}Hình $1$. Hệ thống điểm quan sát với khoảng cách quan sát lớn nhất $140$. Mỗi điểm $A_i^{\bullet}$ thuộc tập $M_i$ có thể quan sát được tất cả điểm trong $M_{i-1}, M_{i+1}$ cũng như các điểm còn lại trong $M_i$.}}
-%			\vspace*{-10pt}
-%		\end{figure}
-%		\vskip 0.1cm		
-%		$\bullet$ Mỗi tập $M_{3k}$ và $M_{3k+2}$ với $k = 0, \ldots, 46$ chỉ chứa một điểm quan sát.
-%		\vskip 0.1cm
-%		$\bullet$ Mỗi tập $M_{1}$ và $M_{139}$ có $42$ điểm quan sát.
-%		\vskip 0.1cm
-%		$\bullet$ Mỗi tập $M_{3k+1}$ với $k = 1, \ldots, 45$ có $41$ điểm quan sát.
-%		\vskip 0.1cm
-%		Độc giả có thể kiểm tra rằng hệ thống này có $2023$ điểm quan sát và thỏa mãn điều kiện của bài toán. Ở đó, điểm quan sát duy nhất trong $M_{140}$ có khoảng cách quan sát $140$ tới điểm quan sát duy nhất trong $M_0$.
-%		\vskip 0.1cm
-%	\textbf{\color{cackithi}Câu $\pmb{3}$:} Cho tam giác $AB$C với tâm đường tròn nội tiếp $I$. Gọi trung điểm của các cạnh $AC$ và $BC$ lần lượt là $M_b$ và $M_a$. Gọi giao điểm của đường thẳng $M_bI$ với đường thẳng $BC$ là $B'$ và giao điểm của đường thẳng $M_aI$ với đường thẳng $AC$ là $A'$. Biết rằng hai tam giác $ABC$ và $A'B'C$ có cùng diện tích. 
-%	\vskip 0.1cm
-%	Tìm giá trị có thể của góc $ACB$.\footnote{\color{cackithi}Trong số $09/2023$ chúng tôi đã sai sót khi yêu cầu tìm giá trị \textbf{\color{cackithi}lớn nhất} có thể của góc $ACB$. Thành thật xin lỗi các độc giả của Pi.}	
-%		\begin{figure}[H]
-%			\vspace*{-10pt}
-%			\centering
-%			\captionsetup{labelformat= empty, justification=centering}
-%			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
-%				\tkzSetUpPoint[size=4,circle, fill= teal!50]
-%				\tkzDefPoints{0/0/A,6/0/B,0.8/4/C}
-%				
-%				\tkzDefTriangleCenter[centroid](A,B,C)
-%				\tkzGetPoint{G}
-%				\tkzDefSpcTriangle[medial](A,B,C){Ma,Mb,Mc}
-%				%\tkzLabelPoints(A,B,C)
-%				\tkzDefTriangleCenter[in](A,B,C)
-%				\tkzGetPoint{I}
-%				
-%				\tkzDefCircle[in](A,B,C) 
-%				\tkzGetPoints{I}{i}
-%				
-%				\tkzInterLL(Mb,I)(B,C)
-%				\tkzGetPoint{B1}
-%				\tkzInterLL(Ma,I)(A,C)
-%				\tkzGetPoint{A1}
-%				\tkzDrawSegments(A,B B,C C,A)
-%				\tkzDrawPoints(A1,B1)
-%				\tkzLabelPoint[above left](A1){$A'$}
-%				\tkzLabelPoint(B1){$B'$}
-%				\tkzDrawLines[dashed](B1,Mb A1,Ma)
-%				\tkzDrawSegments(B1,B A1,B1)
-%				\tkzDrawCircle(I,i)
-%				\tkzDrawPoints(I, Mb, Ma)
-%				
-%				\tkzDrawPoints(A,B,C)
-%				
-%				\tkzLabelPoint(I){$I$}
-%				
-%				\tkzLabelPoints[below left](A,Mb)
-%				\tkzLabelPoints[above right](B,Ma)
-%				\tkzLabelPoint[above](C){$C$}
-%			\end{tikzpicture}}
-%		\vspace*{-10pt}
-%		\end{figure}
-%		\textit{Lời giải.} Gọi độ dài các cạnh $AB$, $BC$ và $CA$ lần lượt là $c$, $a$, $b$. Đặt $\gamma \colon = \angle ACB$. Ta sẽ chứng minh rằng $\gamma = 60^{\circ}$.
-%		\vskip 0.1cm
-%		Thật vậy, từ $M_a$ vẽ đường thẳng song song với $AC$ và cắt $CI$ tại $P$. Vì $\angle CPM_a = \angle A'CI = \gamma/2$ nên tam giác $CM_aP$ cân tại $M_a$ và ta có $M_aP = M_aC = a/2 = M_aB$. Như vậy $P$ nằm trên đường tròn tâm $M_a$ bán kính $a/2$. Từ đó suy ra tam giác $BPC$ vuông tại $P$ và ta thu được 
-%		\begin{align*}
-%			CP = CB \cos (\gamma /2) = a \cos(\gamma/2).
-%		\end{align*}
-%		\begin{figure}[H]
-%			\vspace*{-5pt}
-%			\centering
-%			\resizebox{\columnwidth}{!}{\begin{tikzpicture}[color= cackithi]
-%				\tkzSetUpPoint[size=4, fill= teal!50]
-%				
-%				\tkzDefPoints{0/0/A,6/0/B,0.8/4/C}
-%				
-%				\tkzDefTriangleCenter[centroid](A,B,C)
-%				\tkzGetPoint{G}
-%				\tkzDefSpcTriangle[medial](A,B,C){Ma,Mb,Mc}
-%				%\tkzLabelPoints(A,B,C)
-%				\tkzDefTriangleCenter[in](A,B,C)
-%				\tkzGetPoint{I}
-%				
-%				\tkzDefCircle[in](A,B,C) 
-%				\tkzGetPoints{I}{i}
-%				
-%				\tkzInterLL(Mb,I)(B,C)
-%				\tkzGetPoint{B1}
-%				\tkzInterLL(Ma,I)(A,C)
-%				\tkzGetPoint{A1}
-%				\tkzDrawSegments(A,B B,C C,A)
-%				\tkzDrawPoint(A1)
-%				\tkzLabelPoint[above left](A1){$A'$}
-%				\tkzDrawLine[dashed](A1,Ma)
-%				\tkzDrawCircle(I,i)
-%				\tkzDrawPoints(I, Mb, Ma)
-%				
-%				\tkzDrawPoints(A,B,C)
-%				
-%				\tkzLabelPoint(I){$I$}
-%				
-%				\tkzAutoLabelPoints[center = G](A,B,C)
-%				\tkzLabelPoint[below left](Mb){$M_b$}
-%				\tkzLabelPoint[above right](Ma){$M_a$}
-%				\tkzLabelPoint[below right](Mc){$M_c$}
-%				\tkzInterLL(C,I)(Ma,Mc)
-%				\tkzGetPoint{P}
-%				\tkzDrawSegments(C,P P,B Ma,P)
-%				\tkzDrawPoint(P)
-%				\tkzLabelPoint(P){$P$}
-%				\tkzDefPointBy[projection = onto C--B](I)
-%				\tkzGetPoint{Ta}
-%				\tkzDrawPoint(Ta)
-%				\tkzLabelPoint[above](Ta){$T_a$}
-%				\tkzDrawSegment(Ta,I)
-%				\tkzMarkRightAngles(C,Ta,I C,P,B)
-%				\tkzMarkAngle[size = 0.6, arc=l](P,C,B)
-%				\tkzLabelAngle[pos=0.95](P,C,B){$\gamma/2$}
-%				\tkzMarkAngle[size = 0.6, arc=l](Ma,P,C)
-%				\tkzLabelAngle[pos=0.95](Ma,P,C){$\gamma/2$}
-%			\end{tikzpicture}}
-%			\vspace*{-10pt}
-%		\end{figure}
-%		Gọi $T_a$ là điểm tiếp xúc của đường tròn nội tiếp tam giác $ABC$ với cạnh $BC$ thì $CT_a = (a+b-c)/2$. Do đó 
-%		\begin{align*}
-%			CI = \frac{CT_a}{\cos(\gamma/2)} = \frac{a+b-c}{2 \cos(\gamma/2)}
-%		\end{align*}
-%		và ta có
-%		\begin{align*}
-%		IP = CP - CI & =  a \cos(\gamma/2) - \frac{a+b-c}{2 \cos(\gamma/2)} \\
-%		& = \frac{2a \cos^2(\gamma/2) -a-b+c}{2 \cos(\gamma/2)} \\
-%		& = \frac{a[2\cos^2(\gamma /2)-1] - b +c}{2 \cos(\gamma/2)} \\
-%		& = \frac{a \cos (\gamma)-b+c}{2 \cos(\gamma/2)}.
-%		\end{align*}
-%		Vì $A'C \parallel M_aP$ nên theo định lý Thales 
-%		\begin{align*}
-%			\frac{CA'}{M_aP} = \frac{CI}{IP} & =  \frac{a+b-c}{a \cos(\gamma) - b +c} \\
-%			& = \frac{a+b-c}{a\frac{a^2 + b^2 -c^2}{2ab} -b +c} \\
-%			& = \frac{2b(a+b-c)}{a^2 + b^2 - c^2 - 2b^2 + 2bc} \\
-%			& = \frac{2b(a+b-c)}{a^2 - b^2 -c^2 + 2bc} \\
-%			& = \frac{2b(a+b-c)}{(a+c-b)(a+b-c)} \\
-%			& = \frac{2b}{a+c-b}
-%		\end{align*}
-%		và do đó
-%		\begin{align*} 
-%			\frac{CA'}{CB} = \frac{CA'}{2M_aP} = \frac{b}{a+c-b}. \tag{$3$}
-%		\end{align*}
-%		Hoán đổi vai trò của $A$ với $B$ (do đó $M_a$ với $M_b$, $a$ với $b$, $A'$ với $B'$) ta thu được
-%		\begin{align*} 
-%			\frac{CB'}{CA} = \frac{a}{b+c-a}. \tag{$4$}
-%		\end{align*}
-%		Từ giả thiết hai tam giác $ABC$ và $A'B'C$ có cùng diện tích ta có
-%		\begin{align*}
-%			\frac{CA'}{CB} = \frac{CA}{CB'}.
-%		\end{align*}
-%		Kết hợp với ($3$) và ($4$) ta nhận được
-%		\begin{align*}
-%			&\frac{b}{a+c-b}  = \frac{b+c-a}{a} \\
-%			\Leftrightarrow \,&ab  = (a+c-b)(b+c-a) \\
-%			\Leftrightarrow \,&ab  = c^2 - (a-b)^2 \\
-%			\Leftrightarrow \,&c^2 = a^2 + b^2 - ab.
-%		\end{align*}
-%		Từ hệ thức $c^2 = a^2 + b^2 - 2 ab \cos(\gamma)$ suy ra $\cos(\gamma) = \frac{1}{2}$. Do đó $\gamma = 60^{\circ}$.
-%	\vskip 0.1cm
-%	\textbf{\color{cackithi}Câu $\pmb{4}$}: Cho một đa giác đều $2n$ cạnh. Trong các đoạn thẳng nối các đỉnh của đa giác (cạnh biên hoặc đường chéo) ta tô $n$ đoạn màu đỏ sao cho:
-%	\vskip 0.1cm
-%	$1.$ Các điểm cuối của các đoạn màu đỏ chính là $2n$ đỉnh của đa giác.
-%	\vskip 0.1cm
-%	$2.$ Không có $2$ đoạn màu đỏ nào có độ dài bằng nhau.
-%	\vskip 0.1cm
-%	Tìm tất cả các số tự nhiên $n \ge 2$ sao cho tồn tại một phép tô màu thỏa mãn yêu cầu bên trên.
-%	\vskip 0.1cm	
-%	\textit{Lời giải.}
-%	Ta sẽ chứng minh rằng một cách tô màu như vậy tồn tại khi và chỉ khi $n \equiv 0 \mod 4$ hoặc $n \equiv 1 \mod 4$.
-%	\vskip 0.1cm
-%	$``\Rightarrow":$ Giả sử tồn tại cách tô màu như vậy. Gọi $2n$ đỉnh của đa giác là $A_1, A_2, \ldots, A_{2n}$, được sắp xếp theo chiều kim đồng hồ. Ta định nghĩa \textit{khoảng cách $d(i,j)$ giữa hai đỉnh $A_i, A_j$} là số cạnh nằm trên đường đi ngắn nhất dọc theo các cạnh biên của đa giác nối hai đỉnh này. Khoảng cách này sẽ lấy một trong các giá trị trong tập $\{1,2\ldots,n\}$. Chẳng hạn, với $n=4$ như trong Hình $2$ thì $d(1,4) = 3$ và $d(1,7) = 2$. 
-%	\vskip 0.1cm
-%	Dễ thấy
-%	\begin{align*}
-%		A_iA_j = 2r \sin\frac{d(i,j)\pi}{2n}
-%	\end{align*}
-%	với $r$ là khoảng cách từ đỉnh đến tâm của đa giác. Do đó, $A_iA_j > A_rA_s \iff d(i,j) > d(r,s)$. Bởi vậy ta có thể thay yêu cầu rằng không có hai đoạn màu đỏ nào có cùng độ dài bằng yêu cầu không có hai cặp đỉnh nào có cùng khoảng cách.
-%	\vskip 0.1cm	
-%	Biểu diễn mỗi cặp đỉnh $(A_i, A_j)$ bởi cặp chỉ số $(i,j)$. Ta có thể giả sử $i <j$. Bài toán đã cho tương đương với việc phân hoạch tập $2n$ số tự nhiên $\{1,2,\ldots, 2n\}$ thành $n$ cặp $\{(i_k,j_k)\}_{k = 1}^n$ với $i_k<j_k$ sao cho tập các khoảng cách $\{d(i_k,j_k)\}_{k=1}^n$ là $\{1, \ldots, n\}$. Ta có
-%	\begin{align*}
-%		\hspace*{-10pt}d(i_k,j_k) \!\!=\!\! 
-%		\begin{cases}
-%			\!\!j_k\!-\!i_k, \text{ nếu } j_k\!-\!i_k \!\le\! n \\
-%			\!\!2n\!-\! j_k \!+\! i_k, \text{ nếu } j_k\!-\!i_k \!>\! n.
-%		\end{cases}\hspace*{-10pt} \tag{$5$}
-%	\end{align*}
-%	Bằng cách hoán đổi $i_k$ với $j_k$ trong trường hợp $j_k-i_k > n$ ta có 
-%	\begin{align*} 
-%			\sum_{k=1}^{n}j_k - \sum_{k=1}^n i_k = &\sum_{k=1}^nd(i_k,j_k) + 2ns\\
-%			 = &\sum_{k=1}^ni + 2ns \\
-%			 = &n(n+1)/2 + 2ns.\tag{$6$}
-%		\end{align*}
-%		với $s$ là số trường hợp $j_k-i_k > n$. Mặt khác,
-%		\begin{align*}
-%			\sum_{k=1}^nj_k + \sum_{k=1}^ni_k &= \sum_{k=1}^{2n}i \\
-%			&= 2n(2n+1)/2. \tag{$7$}
-%		\end{align*}
-%		Từ các phương trình ($6$) và ($7$) ta thu được 
-%		\begin{align*}
-%			\sum_{k=1}^{n}j_k = \frac{n(5n+3)}{4} + ns.
-%		\end{align*}
-%		Vì $\sum_{k=1}^{n}j_k \in \mathbb{N}$ nên $\frac{n(5n+3)}{4} \in \mathbb{Z}$. Từ đó suy ra $n \equiv 0 \mod 4$ hoặc $n \equiv 1 \mod 4$.
-%		\vskip 0.1cm
-%		$``\Leftarrow":$
-%		\vskip 0.1cm
-%		\underline{\textit{Trường hợp $n \equiv 0 \mod 4$.}} Đặt $n = 4k$.
-%		\vskip 0.1cm
-%		$\bullet$ Với $k=1$ ta có thể tô màu như Hình $2$.
-%			\begin{figure}[H]
-%%				\vspace*{-10pt}
-%				\centering
-%				\captionsetup{labelformat= empty, justification=centering}
-%				\begin{tikzpicture}[cackithi,scale = 0.75]
-%					\tkzSetUpPoint[size=4, fill= teal!50]
-%					\def\laenge{1.7}
-%					\def\n{8}
-%					\pgfmathtruncatemacro\w{360/\n}
-%					\draw
-%					(0:0) coordinate (A1)
-%					foreach \i in {2,...,\n}
-%					{--++(360+\w/2-\i*\w +\w:\laenge) coordinate (A\i)}
-%					--cycle;
-%					\tkzDrawPoints(A1,A...,A8)
-%					\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
-%					\tkzDrawSegment[red](A1,A8)
-%					\tkzDrawSegment[red](A2,A6)
-%					\tkzDrawSegment[red](A3,A5)
-%					\tkzDrawSegment[red](A4,A7)
-%				\end{tikzpicture}
-%				\caption{\small\textit{\color{cackithi}Hình $2$. Đa giác đều $8$ cạnh.}}
+\begin{multicols}{2}
+	Trong chuyên mục này, chúng tôi sẽ trình bày Lời giải của các bài toán trong vòng hai kỳ thi toán học liên bang Đức năm $2023$, đăng trong số báo $9/2023$. 
+	\vskip 0.1cm
+	\textbf{\color{cackithi}Câu $\pmb{1}$:} Tìm ước chung lớn nhất của tất cả các số có dạng $p^6 - 7p^2 +6$ với $p$ chạy trên tập tất cả các số nguyên tố và $p \ge 11$.
+	\vskip 0.1cm
+	\textit{Lời giải.}
+	Đặt $f(p) \colon =p^6 - 7p^2 +6$. Gọi $a$ là ước chung lớn nhất (ƯCLN) của tất cả các $f(p)$ với $p$ nguyên tố và $p \ge 11$. Ta sẽ chứng minh rằng $a = 2^5\times 3 \times 7$.
+	\vskip 0.1cm	
+	Thật vậy, theo định lý Fermat nhỏ thì $7|p^6 - 1$ với mọi số nguyên $7 \not | p$. Do đó, $7 |p^6 - 1  - 7p^2 + 7 = f(p)$ với mọi $p$ như trên và ta có $7 | a$.
+	\vskip 0.1cm	
+	Mặt khác, 
+	$f(p) = (p^2-1)(p^2-2)(p^2+3) \equiv (p^2-1)(p^2-2)p^2 \mod 3 \equiv 0 \mod 3$ do $p^2, p^2-1, p^2-2$ là ba số nguyên liên tiếp. Như vậy, $3 | f(p)$ với mọi $p$ và ta thu được $3|a$.
+	\vskip 0.1cm	
+	Hơn nữa, do $p$ nguyên tố và $p \ge 11$ nên $p$ là số lẻ. Đặt $p= 2k+1$, ta có
+	\begin{align*}
+			f(p) = & (p^2-1)(p^2-2)(p^2+3) \\
+			= & (4k^2 \!+\! 4k) \!(4k^2 \!+\! 4k\!-\!1)(4k^2\!+\!4k\!+\!4) \\
+			= & 16k(k\!+\!1)(4k^2 \!+\! 4k\!-\!1)(k^2 \!+\! k \!+\! 1).
+	\end{align*}
+	Vì $2 |k(k+1)$ với mọi $k \in \mathbb{Z}$ nên $2\times 16 = 32 = 2^5 |f(p)$. Bởi vậy $2^5 |a$.
+	\vskip 0.1cm
+	Do $2^5, 3$ và $7$ đôi một nguyên tố cùng nhau nên
+	\begin{align*}
+		2^5 \times 3 \times 7 |a. \tag{$1$}
+	\end{align*}
+		Mặt khác, vì
+		$
+		f(11) = 1770720 = 2^5 \times 3 \times 5 \times 7 \times 17 \times 31
+		$
+		và
+		$
+		f(13) = 4825632 = 2^5 \times 3 \times 7 \times 43 \times 167
+		$
+		nên 
+		\begin{align*}
+			a |\text{ƯCLN}(f(11), f(13)) \!=\! 2^5\!\times\! 3 \!\times\! 7. \tag{$2$}
+		\end{align*}
+		Từ ($1$) và ($2$) ta thu được $a = 2^5\times 3 \times 7$.
+	\vskip 0.1cm
+	\textbf{\color{cackithi}Câu $\pmb{2}$:} Trên một hòn đảo địa hình đồi núi có $2023$ điểm quan sát. Từ mỗi điểm quan sát có thể nhìn thấy ít nhất $42$ điểm quan sát khác. Với hai điểm quan sát bất kỳ $X$ và $Y$, luôn tồn tại một số nguyên dương $n$ và các điểm quan sát $A_1,  A_2, \ldots, A_{n+1}$ sao cho $A_1 = X$, $A_{n+1} = Y$ và mỗi cặp điểm liền kề $A_i$ với $A_{i+1}$ có thể quan sát được lẫn nhau với $i = 1, 2, \ldots, n$. Số $n$ nhỏ nhất như vậy được gọi là khoảng cách quan sát (Sichtabstand). 
+	\vskip 0.1cm
+	Xác định khoảng cách quan sát lớn nhất có thể có giữa hai cặp điểm quan sát thỏa mãn những điều kiện ở trên.
+	\vskip 0.1cm
+	\textit{Lời giải.}
+	Ta sẽ chứng minh rằng khoảng cách quan sát lớn nhất có thể là $140$.
+	\vskip 0.1cm	
+	Với hai điểm quan sát $X,Y$ trong bài, ta nói $A_1, \ldots, A_{n+1}$ là các điểm thuộc \textit{chuỗi quan sát} độ dài $n$ nối $X$ và $Y$. Để tìm một chuỗi quan sát có độ dài nhỏ nhất, ta chỉ cần xét trường hợp mỗi điểm quan sát trong chuỗi xuất hiện đúng một lần. Vì chỉ có hữu hạn điểm quan sát nên độ dài các chuỗi quan sát là hữu hạn (bị chặn trên bởi $2022$). Như vậy giữa tất cả các chuỗi quan sát nối $X$ và $Y$ luôn tồn tại chuỗi quan sát có độ dài ngắn nhất, và độ dài này chính là khoảng cách quan sát được định nghĩa ở trên. Do chỉ có hữu hạn các cặp điểm quan sát, tồn tại một cặp điểm có khoảng cách quan sát lớn nhất.
+	\vskip 0.1cm	
+	Cho trước một hệ thống tùy ý $M$ gồm $2023$ điểm quan sát thỏa mãn yêu cầu của bài toán. Chọn $X \in M$ bất kỳ và gọi $M_i$ tập các điểm quan sát có khoảng cách quan sát $i$ tới $X$. Ta cũng sẽ đặt $M_0 = \{X\}$. Do với bất kỳ $Y \in M$ luôn tồn tại một chuỗi quan sát nối $X$ và $Y$ nên các tập $M_i$ lập nên một phân hoạch của $M$. Nói cách khác, $M = \cup_{i}M_i$ và $M_i \cap M_j = \emptyset$ nếu $i\neq j$.
+	\vskip 0.1cm
+	Gọi $n(X)$ là chỉ số sao cho $M_{n(X)} \neq \emptyset$ và $M_i = \emptyset$ với mọi $i \ge n(X)$. Bằng định nghĩa, với mỗi $Y \in M_{n(X)}$ luôn tồn tại chuỗi quan sát ngắn nhất $A_1, \ldots A_{n(X) + 1}$ với $A_1 = X$ và $A_{n(X)+1} = Y$. Rõ ràng $A_i, A_{i+1}, \ldots, A_{j}$ cũng là chuỗi quan sát ngắn nhất giữa $A_i$ và $A_j$ với mọi $1 \le i <j \le n(X) + 1$. Nói riêng, $A_i \in M_{i-1}$ và ta có $M_i \neq \emptyset$ với mọi $i \le n(X)$.
+	\vskip 0.1cm	
+	Hơn nữa, từ mỗi điểm trong $M_i$ chỉ có thể quan sát được các điểm trong $M_{i-1}, M_i$ và $M_{i+1}$. Thật vậy, nếu từ $V \in M_i$ quan sát được $W \in M_j$ với $j \le i-2$ thì $V \in M_{j+1}$. Do đó, $V \in M_i \cap M_{j+1}$. Điều này vô lý vì $M_i \cap M_{j+1} = \emptyset$ do $j+1 \neq i$. Tương tự, từ $V \in M_i$ quan sát được $W \in M_j$ với $j \ge i+2$ cũng dẫn đến mâu thuẫn. Vì từ mỗi $V \in M_i$ có thể quan sát được ít nhất $42$ điểm khác và các điểm này nằm trong $M_{i-1}, M_i, M_{i+1}$ nên
+	\begin{align*}
+		|M_{i-1} \cup M_i \cup M_{i+1}| \ge 43.
+	\end{align*}
+	Từ $X \in M_0$ chỉ quan sát được các điểm trong $M_1$ và từ $Y \in M_{n(X)}$ chỉ quan sát được các điểm từ $M_{n(X)}$ và $M_{n(X)-1}$ nên
+	\begin{align*}
+		|M_0 \cup M_1| \ge 43 \text{ và } |M_{n(X)-1} \cup M_{n(X)}| \ge 43.
+	\end{align*}
+	\textbf{\color{cackithi}Khẳng định $\pmb{1}$:} \textit{Khoảng cách quan sát lớn nhất không thể lớn hơn $140$.} 
+	\vskip 0.1cm
+	Thật vậy, nếu $M_{141} \neq \emptyset$ thì 
+	\begin{align*}
+		& |M_0 \cup M_1| + |M_2 \cup M_3 \cup M_4| \\
+		&+ |M_5 \cup M_6 \cup M7| + \ldots \\
+		&+ |M_{137} \cup M_{138} \cup M_{139}| + |M_{140} \cup M_{141}| \\
+		\ge \,&43 + 46.43 + 43 = 2064 > 2023
+	\end{align*}
+	dẫn đến mâu thuẫn.
+	\vskip 0.1cm
+		\textbf{\color{cackithi}Khẳng định $\pmb{2}$:} \textit{Tồn tại một hệ thống điểm quan sát sao cho khoảng cách quan sát lớn nhất là $140$.} 
+		\vskip 0.1cm
+		Thật vậy, xây dựng $141$ tập không rỗng $M_i$ với $i = 0, \ldots, 140$ như trong Hình $1$, trong đó:
+		\vskip 0.1cm
+		\begin{figure}[H]
+				\vspace*{-5pt}
+				\centering
+				\captionsetup{labelformat= empty, justification=centering}
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}[node distance={15mm}, thick, main/.style = {draw, circle}, cackithi] 
+				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (1) {$A_0$}; 
+				\node[main, fill= teal!50] (2) [above right of=1] {$A_1^1$}; 
+				\node (3) [right = 5mm of 1] {$\vdots$};
+				
+				\node[main, fill= teal!50] (4) [below right of=1] {$A_1^{42}$}; 
+				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (5) [below right of=2] {$A_2$}; 
+				\node[main,fill=gray!50] (6) [above right of=5] {$A_3^1$}; 
+				\node (7) [right = 5mm of 5] {$\vdots$};
+				\node[main, fill=gray!50] (8) [below right of=5] {$A_3^{41}$}; 
+				\draw (1) -- (2); 
+				\draw (1) -- (3); 
+				\draw (1) -- (4); 
+				\draw (2) -- (3);
+				\draw (3) -- (4);
+				\draw (2) -- (5); 
+				\draw (3) -- (5); 
+				\draw (4) -- (5); 
+				\draw (5) -- (6);
+				\draw (5) -- (7);
+				\draw (5) -- (8);   
+				\draw (6) -- (7);
+				\draw (7) -- (8);
+				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (9) [below right of=6] {$A_4$};
+				\draw (6) -- (9);
+				\draw (7) -- (9); 
+				\draw (8) -- (9);  
+				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (10) [right = 5mm of 9] {$A_{138}$};
+				\draw[dashed] (9) -- (10);  
+				\node[main, fill= teal!50] (11) [above right of=10] {$A_{139}^1$}; 
+				\node (12) [right = 4mm of 10] {$\vdots$}; 
+				\node[main, fill= teal!50] (13) [below right of=10] {$A_{139}^{42}$}; 
+				\draw (10) -- (11);
+				\draw (10) -- (12);
+				\draw (10) -- (13);
+				\draw (11) -- (12);
+				\draw (12) -- (13);
+				\node[main, fill={rgb:orange,1;yellow,2;pink,5}] (14) [below right of=11] {$A_{140}$};
+				\draw (11) -- (14);
+				\draw (12) -- (14);
+				\draw (13) -- (14);
+			\end{tikzpicture}}
+			\caption{\small\textit{\color{cackithi}Hình $1$. Hệ thống điểm quan sát với khoảng cách quan sát lớn nhất $140$. Mỗi điểm $A_i^{\bullet}$ thuộc tập $M_i$ có thể quan sát được tất cả điểm trong $M_{i-1}, M_{i+1}$ cũng như các điểm còn lại trong $M_i$.}}
+			\vspace*{-10pt}
+		\end{figure}
+		\vskip 0.1cm		
+		$\bullet$ Mỗi tập $M_{3k}$ và $M_{3k+2}$ với $k = 0, \ldots, 46$ chỉ chứa một điểm quan sát.
+		\vskip 0.1cm
+		$\bullet$ Mỗi tập $M_{1}$ và $M_{139}$ có $42$ điểm quan sát.
+		\vskip 0.1cm
+		$\bullet$ Mỗi tập $M_{3k+1}$ với $k = 1, \ldots, 45$ có $41$ điểm quan sát.
+		\vskip 0.1cm
+		Độc giả có thể kiểm tra rằng hệ thống này có $2023$ điểm quan sát và thỏa mãn điều kiện của bài toán. Ở đó, điểm quan sát duy nhất trong $M_{140}$ có khoảng cách quan sát $140$ tới điểm quan sát duy nhất trong $M_0$.
+		\vskip 0.1cm
+	\textbf{\color{cackithi}Câu $\pmb{3}$:} Cho tam giác $AB$C với tâm đường tròn nội tiếp $I$. Gọi trung điểm của các cạnh $AC$ và $BC$ lần lượt là $M_b$ và $M_a$. Gọi giao điểm của đường thẳng $M_bI$ với đường thẳng $BC$ là $B'$ và giao điểm của đường thẳng $M_aI$ với đường thẳng $AC$ là $A'$. Biết rằng hai tam giác $ABC$ và $A'B'C$ có cùng diện tích. 
+	\vskip 0.1cm
+	Tìm giá trị có thể của góc $ACB$.\footnote{\color{cackithi}Trong số $09/2023$ chúng tôi đã sai sót khi yêu cầu tìm giá trị \textbf{\color{cackithi}lớn nhất} có thể của góc $ACB$. Thành thật xin lỗi các độc giả của Pi.}	
+		\begin{figure}[H]
+			\vspace*{-10pt}
+			\centering
+			\captionsetup{labelformat= empty, justification=centering}
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}
+				\tkzSetUpPoint[size=4,circle, fill= teal!50]
+				\tkzDefPoints{0/0/A,6/0/B,0.8/4/C}
+				
+				\tkzDefTriangleCenter[centroid](A,B,C)
+				\tkzGetPoint{G}
+				\tkzDefSpcTriangle[medial](A,B,C){Ma,Mb,Mc}
+				%\tkzLabelPoints(A,B,C)
+				\tkzDefTriangleCenter[in](A,B,C)
+				\tkzGetPoint{I}
+				
+				\tkzDefCircle[in](A,B,C) 
+				\tkzGetPoints{I}{i}
+				
+				\tkzInterLL(Mb,I)(B,C)
+				\tkzGetPoint{B1}
+				\tkzInterLL(Ma,I)(A,C)
+				\tkzGetPoint{A1}
+				\tkzDrawSegments(A,B B,C C,A)
+				\tkzDrawPoints(A1,B1)
+				\tkzLabelPoint[above left](A1){$A'$}
+				\tkzLabelPoint(B1){$B'$}
+				\tkzDrawLines[dashed](B1,Mb A1,Ma)
+				\tkzDrawSegments(B1,B A1,B1)
+				\tkzDrawCircle(I,i)
+				\tkzDrawPoints(I, Mb, Ma)
+				
+				\tkzDrawPoints(A,B,C)
+				
+				\tkzLabelPoint(I){$I$}
+				
+				\tkzLabelPoints[below left](A,Mb)
+				\tkzLabelPoints[above right](B,Ma)
+				\tkzLabelPoint[above](C){$C$}
+			\end{tikzpicture}}
+		\vspace*{-10pt}
+		\end{figure}
+		\textit{Lời giải.} Gọi độ dài các cạnh $AB$, $BC$ và $CA$ lần lượt là $c$, $a$, $b$. Đặt $\gamma \colon = \angle ACB$. Ta sẽ chứng minh rằng $\gamma = 60^{\circ}$.
+		\vskip 0.1cm
+		Thật vậy, từ $M_a$ vẽ đường thẳng song song với $AC$ và cắt $CI$ tại $P$. Vì $\angle CPM_a = \angle A'CI = \gamma/2$ nên tam giác $CM_aP$ cân tại $M_a$ và ta có $M_aP = M_aC = a/2 = M_aB$. Như vậy $P$ nằm trên đường tròn tâm $M_a$ bán kính $a/2$. Từ đó suy ra tam giác $BPC$ vuông tại $P$ và ta thu được 
+		\begin{align*}
+			CP = CB \cos (\gamma /2) = a \cos(\gamma/2).
+		\end{align*}
+		\begin{figure}[H]
+			\vspace*{-5pt}
+			\centering
+			\resizebox{\columnwidth}{!}{\begin{tikzpicture}[color= cackithi]
+				\tkzSetUpPoint[size=4, fill= teal!50]
+				
+				\tkzDefPoints{0/0/A,6/0/B,0.8/4/C}
+				
+				\tkzDefTriangleCenter[centroid](A,B,C)
+				\tkzGetPoint{G}
+				\tkzDefSpcTriangle[medial](A,B,C){Ma,Mb,Mc}
+				%\tkzLabelPoints(A,B,C)
+				\tkzDefTriangleCenter[in](A,B,C)
+				\tkzGetPoint{I}
+				
+				\tkzDefCircle[in](A,B,C) 
+				\tkzGetPoints{I}{i}
+				
+				\tkzInterLL(Mb,I)(B,C)
+				\tkzGetPoint{B1}
+				\tkzInterLL(Ma,I)(A,C)
+				\tkzGetPoint{A1}
+				\tkzDrawSegments(A,B B,C C,A)
+				\tkzDrawPoint(A1)
+				\tkzLabelPoint[above left](A1){$A'$}
+				\tkzDrawLine[dashed](A1,Ma)
+				\tkzDrawCircle(I,i)
+				\tkzDrawPoints(I, Mb, Ma)
+				
+				\tkzDrawPoints(A,B,C)
+				
+				\tkzLabelPoint(I){$I$}
+				
+				\tkzAutoLabelPoints[center = G](A,B,C)
+				\tkzLabelPoint[below left](Mb){$M_b$}
+				\tkzLabelPoint[above right](Ma){$M_a$}
+				\tkzLabelPoint[below right](Mc){$M_c$}
+				\tkzInterLL(C,I)(Ma,Mc)
+				\tkzGetPoint{P}
+				\tkzDrawSegments(C,P P,B Ma,P)
+				\tkzDrawPoint(P)
+				\tkzLabelPoint(P){$P$}
+				\tkzDefPointBy[projection = onto C--B](I)
+				\tkzGetPoint{Ta}
+				\tkzDrawPoint(Ta)
+				\tkzLabelPoint[above](Ta){$T_a$}
+				\tkzDrawSegment(Ta,I)
+				\tkzMarkRightAngles(C,Ta,I C,P,B)
+				\tkzMarkAngle[size = 0.6, arc=l](P,C,B)
+				\tkzLabelAngle[pos=0.95](P,C,B){$\gamma/2$}
+				\tkzMarkAngle[size = 0.6, arc=l](Ma,P,C)
+				\tkzLabelAngle[pos=0.95](Ma,P,C){$\gamma/2$}
+			\end{tikzpicture}}
+			\vspace*{-10pt}
+		\end{figure}
+		Gọi $T_a$ là điểm tiếp xúc của đường tròn nội tiếp tam giác $ABC$ với cạnh $BC$ thì $CT_a = (a+b-c)/2$. Do đó 
+		\begin{align*}
+			CI = \frac{CT_a}{\cos(\gamma/2)} = \frac{a+b-c}{2 \cos(\gamma/2)}
+		\end{align*}
+		và ta có
+		\begin{align*}
+		IP = CP - CI & =  a \cos(\gamma/2) - \frac{a+b-c}{2 \cos(\gamma/2)} \\
+		& = \frac{2a \cos^2(\gamma/2) -a-b+c}{2 \cos(\gamma/2)} \\
+		& = \frac{a[2\cos^2(\gamma /2)-1] - b +c}{2 \cos(\gamma/2)} \\
+		& = \frac{a \cos (\gamma)-b+c}{2 \cos(\gamma/2)}.
+		\end{align*}
+		Vì $A'C \parallel M_aP$ nên theo định lý Thales 
+		\begin{align*}
+			\frac{CA'}{M_aP} = \frac{CI}{IP} & =  \frac{a+b-c}{a \cos(\gamma) - b +c} \\
+			& = \frac{a+b-c}{a\frac{a^2 + b^2 -c^2}{2ab} -b +c} \\
+			& = \frac{2b(a+b-c)}{a^2 + b^2 - c^2 - 2b^2 + 2bc} \\
+			& = \frac{2b(a+b-c)}{a^2 - b^2 -c^2 + 2bc} \\
+			& = \frac{2b(a+b-c)}{(a+c-b)(a+b-c)} \\
+			& = \frac{2b}{a+c-b}
+		\end{align*}
+		và do đó
+		\begin{align*} 
+			\frac{CA'}{CB} = \frac{CA'}{2M_aP} = \frac{b}{a+c-b}. \tag{$3$}
+		\end{align*}
+		Hoán đổi vai trò của $A$ với $B$ (do đó $M_a$ với $M_b$, $a$ với $b$, $A'$ với $B'$) ta thu được
+		\begin{align*} 
+			\frac{CB'}{CA} = \frac{a}{b+c-a}. \tag{$4$}
+		\end{align*}
+		Từ giả thiết hai tam giác $ABC$ và $A'B'C$ có cùng diện tích ta có
+		\begin{align*}
+			\frac{CA'}{CB} = \frac{CA}{CB'}.
+		\end{align*}
+		Kết hợp với ($3$) và ($4$) ta nhận được
+		\begin{align*}
+			&\frac{b}{a+c-b}  = \frac{b+c-a}{a} \\
+			\Leftrightarrow \,&ab  = (a+c-b)(b+c-a) \\
+			\Leftrightarrow \,&ab  = c^2 - (a-b)^2 \\
+			\Leftrightarrow \,&c^2 = a^2 + b^2 - ab.
+		\end{align*}
+		Từ hệ thức $c^2 = a^2 + b^2 - 2 ab \cos(\gamma)$ suy ra $\cos(\gamma) = \frac{1}{2}$. Do đó $\gamma = 60^{\circ}$.
+	\vskip 0.1cm
+	\textbf{\color{cackithi}Câu $\pmb{4}$}: Cho một đa giác đều $2n$ cạnh. Trong các đoạn thẳng nối các đỉnh của đa giác (cạnh biên hoặc đường chéo) ta tô $n$ đoạn màu đỏ sao cho:
+	\vskip 0.1cm
+	$1.$ Các điểm cuối của các đoạn màu đỏ chính là $2n$ đỉnh của đa giác.
+	\vskip 0.1cm
+	$2.$ Không có $2$ đoạn màu đỏ nào có độ dài bằng nhau.
+	\vskip 0.1cm
+	Tìm tất cả các số tự nhiên $n \ge 2$ sao cho tồn tại một phép tô màu thỏa mãn yêu cầu bên trên.
+	\vskip 0.1cm	
+	\textit{Lời giải.}
+	Ta sẽ chứng minh rằng một cách tô màu như vậy tồn tại khi và chỉ khi $n \equiv 0 \mod 4$ hoặc $n \equiv 1 \mod 4$.
+	\vskip 0.1cm
+	$``\Rightarrow":$ Giả sử tồn tại cách tô màu như vậy. Gọi $2n$ đỉnh của đa giác là $A_1, A_2, \ldots, A_{2n}$, được sắp xếp theo chiều kim đồng hồ. Ta định nghĩa \textit{khoảng cách $d(i,j)$ giữa hai đỉnh $A_i, A_j$} là số cạnh nằm trên đường đi ngắn nhất dọc theo các cạnh biên của đa giác nối hai đỉnh này. Khoảng cách này sẽ lấy một trong các giá trị trong tập $\{1,2\ldots,n\}$. Chẳng hạn, với $n=4$ như trong Hình $2$ thì $d(1,4) = 3$ và $d(1,7) = 2$. 
+	\vskip 0.1cm
+	Dễ thấy
+	\begin{align*}
+		A_iA_j = 2r \sin\frac{d(i,j)\pi}{2n}
+	\end{align*}
+	với $r$ là khoảng cách từ đỉnh đến tâm của đa giác. Do đó, $A_iA_j > A_rA_s \iff d(i,j) > d(r,s)$. Bởi vậy ta có thể thay yêu cầu rằng không có hai đoạn màu đỏ nào có cùng độ dài bằng yêu cầu không có hai cặp đỉnh nào có cùng khoảng cách.
+	\vskip 0.1cm	
+	Biểu diễn mỗi cặp đỉnh $(A_i, A_j)$ bởi cặp chỉ số $(i,j)$. Ta có thể giả sử $i <j$. Bài toán đã cho tương đương với việc phân hoạch tập $2n$ số tự nhiên $\{1,2,\ldots, 2n\}$ thành $n$ cặp $\{(i_k,j_k)\}_{k = 1}^n$ với $i_k<j_k$ sao cho tập các khoảng cách $\{d(i_k,j_k)\}_{k=1}^n$ là $\{1, \ldots, n\}$. Ta có
+	\begin{align*}
+		\hspace*{-10pt}d(i_k,j_k) \!\!=\!\! 
+		\begin{cases}
+			\!\!j_k\!-\!i_k, \text{ nếu } j_k\!-\!i_k \!\le\! n \\
+			\!\!2n\!-\! j_k \!+\! i_k, \text{ nếu } j_k\!-\!i_k \!>\! n.
+		\end{cases}\hspace*{-10pt} \tag{$5$}
+	\end{align*}
+	Bằng cách hoán đổi $i_k$ với $j_k$ trong trường hợp $j_k-i_k > n$ ta có 
+	\begin{align*} 
+			\sum_{k=1}^{n}j_k - \sum_{k=1}^n i_k = &\sum_{k=1}^nd(i_k,j_k) + 2ns\\
+			 = &\sum_{k=1}^ni + 2ns \\
+			 = &n(n+1)/2 + 2ns.\tag{$6$}
+		\end{align*}
+		với $s$ là số trường hợp $j_k-i_k > n$. Mặt khác,
+		\begin{align*}
+			\sum_{k=1}^nj_k + \sum_{k=1}^ni_k &= \sum_{k=1}^{2n}i \\
+			&= 2n(2n+1)/2. \tag{$7$}
+		\end{align*}
+		Từ các phương trình ($6$) và ($7$) ta thu được 
+		\begin{align*}
+			\sum_{k=1}^{n}j_k = \frac{n(5n+3)}{4} + ns.
+		\end{align*}
+		Vì $\sum_{k=1}^{n}j_k \in \mathbb{N}$ nên $\frac{n(5n+3)}{4} \in \mathbb{Z}$. Từ đó suy ra $n \equiv 0 \mod 4$ hoặc $n \equiv 1 \mod 4$.
+		\vskip 0.1cm
+		$``\Leftarrow":$
+		\vskip 0.1cm
+		\underline{\textit{Trường hợp $n \equiv 0 \mod 4$.}} Đặt $n = 4k$.
+		\vskip 0.1cm
+		$\bullet$ Với $k=1$ ta có thể tô màu như Hình $2$.
+			\begin{figure}[H]
 %				\vspace*{-10pt}
-%			\end{figure}
-%			$\bullet$ Với $k \ge 2$ thì danh sách các đoạn màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($5$) với $2n = 8k$) được cho trong bảng dưới đây:
-%		\begin{center}
-%			\resizebox{\linewidth}{!}{%
-%				\begin{tabular}{ |c|c|c| } 
-%					\hline
-%					Chỉ số & Cạnh & Khoảng cách \\ 
-%					\hline
-%					$1 \le i \le k$ & $(i, 8k+1-i)$ & $1,3, \ldots, 2k-1$ \\ 
-%					\hline
-%					$i = k+1$ & $(k+1, 5k+1)$ & $4k$ \\
-%					\hline
-%					$k+2 \le i \le 2k$ & $(i, 8k+2-i)$ & $2k+2, 2k+4, \ldots, 4k-2$ \\ 
-%					\hline
-%					$i = 2k+1$ & $(2k+1,4k+1)$ & $2k$ \\
-%					\hline
-%					$2k+2 \le i \le 3k+1$ & $(i, 8k+3-i)$ & $4k-1, 4k-3,\ldots, 2k+1$ \\
-%					\hline
-%					$3k+2 \le i \le 4k$ & $(i, 8k+2-i)$ & $2k-2, \ldots, 2$ \\
-%					\hline
-%			\end{tabular}}
-%		\end{center}
-%		\begin{figure}[H]
-%%			\vspace*{-5pt}
-%			\centering
-%			\captionsetup{labelformat= empty, justification=centering}
-%			\begin{tikzpicture}[cackithi,scale = 0.95]
-%				\tkzSetUpPoint[size=4, fill= teal!50]
-%				\def\laenge{1}
-%				\def\n{16}
-%				\pgfmathtruncatemacro\w{360/\n}
-%				\draw
-%				(0:0) coordinate (A1)
-%				foreach \i in {2,...,\n}
-%				{--++(360+\w/2-\i*\w +\w:\laenge) coordinate (A\i)}
-%				--cycle;
-%				\tkzDrawPoints(A1,A...,A16)
-%				\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
-%				\tkzDrawPoints(A1,A...,A16)
-%				\tkzDrawSegment[red](A1,A16)
-%				\tkzDrawSegment[red](A2,A15)
-%				\tkzDrawSegment[red](A3,A11)
-%				\tkzDrawSegment[red](A4,A14)
-%				\tkzDrawSegment[red](A5,A9)
-%				\tkzDrawSegment[red](A6,A13)
-%				\tkzDrawSegment[red](A7,A12)
-%				\tkzDrawSegment[red](A8,A10)
-%			\end{tikzpicture}
-%			\caption{\small\textit{\color{cackithi}Hình $3$. Đa giác đều $16$ cạnh.}}
-%			\vspace*{-15pt}
-%		\end{figure}
-%		\underline{\textit{Trường hợp $n \equiv 1 \mod 4$.}} Đặt $n = 4k+1$. 
-%		\vskip 0.1cm
-%		$\bullet$ Với $k=1$ ta có thể tô màu như Hình $4$.
-%		\begin{figure}[H]
-%			\vspace*{-10pt}
-%			\centering
-%			\captionsetup{labelformat= empty, justification=centering}
-%			\begin{tikzpicture}[cackithi,scale = 0.95]
-%				\tkzSetUpPoint[size=4, fill= teal!50]
-%				\def\laenge{1.5}
-%				\def\n{10}
-%				\pgfmathtruncatemacro\w{360/\n}
-%				\draw
-%				(0:0) coordinate (A1)
-%				foreach \i in {2,...,\n}
-%				{--++(360+\w/2-\i*\w +\w:\laenge) coordinate (A\i)}
-%				--cycle;
-%				\tkzDrawPoints(A1,A...,A10)
-%				\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
-%				\tkzDrawPoints(A1,A...,A10)
-%				\tkzDrawSegment[red](A1,A10)
-%				\tkzDrawSegment[red](A2,A8)
-%				\tkzDrawSegment[red](A3,A6)
-%				\tkzDrawSegment[red](A4,A9)
-%				\tkzDrawSegment[red](A5,A7)
-%			\end{tikzpicture}
-%			\caption{\small\textit{\color{cackithi}Hình $4$. Đa giác đều $10$ cạnh.}}
-%			\vspace*{-15pt}
-%		\end{figure}
-%		$\bullet$  Với $k \ge 2$ thì danh sách các đoạn màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($5$) với $2n = 8k+2$) được cho trong bảng dưới đây:
-%		\begin{center}
-%			\resizebox{\linewidth}{!}{%
-%				\begin{tabular}{ |c|c|c| } 
-%					\hline
-%					Chỉ số & Cạnh & Khoảng cách \\ 
-%					\hline
-%					$1 \le i \le k$ & $(i, 8k+3-i)$ & $1,3, \ldots, 2k-1$ \\ 
-%					\hline
-%					$i = k+1$ & $(k+1, 5k+3)$ & $4k$ \\
-%					\hline
-%					$k+2 \le i \le 2k$ & $(i, 8k+4-i)$ & $2k+2, 2k+4, \ldots, 4k-2$ \\ 
-%					\hline
-%					$i = 2k+1$ & $(2k+1, 4k+2)$ & $2k+1$ \\
-%					\hline
-%					$2k+2 \le i \le 3k+1$ & $(i, 8k+5-i)$ & $4k+1, 4k-1,\ldots, 2k+3$ \\
-%					\hline
-%					$3k+2 \le i \le 4k+1$ & $(i,8k+4-i)$ & $2k, \ldots, 2$ \\
-%					\hline
-%			\end{tabular}}
-%		\end{center}
-%\end{multicols}
+				\centering
+				\captionsetup{labelformat= empty, justification=centering}
+				\begin{tikzpicture}[cackithi,scale = 0.75]
+					\tkzSetUpPoint[size=4, fill= teal!50]
+					\def\laenge{1.7}
+					\def\n{8}
+					\pgfmathtruncatemacro\w{360/\n}
+					\draw
+					(0:0) coordinate (A1)
+					foreach \i in {2,...,\n}
+					{--++(360+\w/2-\i*\w +\w:\laenge) coordinate (A\i)}
+					--cycle;
+					\tkzDrawPoints(A1,A...,A8)
+					\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
+					\tkzDrawSegment[red](A1,A8)
+					\tkzDrawSegment[red](A2,A6)
+					\tkzDrawSegment[red](A3,A5)
+					\tkzDrawSegment[red](A4,A7)
+				\end{tikzpicture}
+				\caption{\small\textit{\color{cackithi}Hình $2$. Đa giác đều $8$ cạnh.}}
+				\vspace*{-10pt}
+			\end{figure}
+			$\bullet$ Với $k \ge 2$ thì danh sách các đoạn màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($5$) với $2n = 8k$) được cho trong bảng dưới đây:
+		\begin{center}
+			\resizebox{\linewidth}{!}{%
+				\begin{tabular}{ |c|c|c| } 
+					\hline
+					Chỉ số & Cạnh & Khoảng cách \\ 
+					\hline
+					$1 \le i \le k$ & $(i, 8k+1-i)$ & $1,3, \ldots, 2k-1$ \\ 
+					\hline
+					$i = k+1$ & $(k+1, 5k+1)$ & $4k$ \\
+					\hline
+					$k+2 \le i \le 2k$ & $(i, 8k+2-i)$ & $2k+2, 2k+4, \ldots, 4k-2$ \\ 
+					\hline
+					$i = 2k+1$ & $(2k+1,4k+1)$ & $2k$ \\
+					\hline
+					$2k+2 \le i \le 3k+1$ & $(i, 8k+3-i)$ & $4k-1, 4k-3,\ldots, 2k+1$ \\
+					\hline
+					$3k+2 \le i \le 4k$ & $(i, 8k+2-i)$ & $2k-2, \ldots, 2$ \\
+					\hline
+			\end{tabular}}
+		\end{center}
+		\begin{figure}[H]
+%			\vspace*{-5pt}
+			\centering
+			\captionsetup{labelformat= empty, justification=centering}
+			\begin{tikzpicture}[cackithi,scale = 0.95]
+				\tkzSetUpPoint[size=4, fill= teal!50]
+				\def\laenge{1}
+				\def\n{16}
+				\pgfmathtruncatemacro\w{360/\n}
+				\draw
+				(0:0) coordinate (A1)
+				foreach \i in {2,...,\n}
+				{--++(360+\w/2-\i*\w +\w:\laenge) coordinate (A\i)}
+				--cycle;
+				\tkzDrawPoints(A1,A...,A16)
+				\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
+				\tkzDrawPoints(A1,A...,A16)
+				\tkzDrawSegment[red](A1,A16)
+				\tkzDrawSegment[red](A2,A15)
+				\tkzDrawSegment[red](A3,A11)
+				\tkzDrawSegment[red](A4,A14)
+				\tkzDrawSegment[red](A5,A9)
+				\tkzDrawSegment[red](A6,A13)
+				\tkzDrawSegment[red](A7,A12)
+				\tkzDrawSegment[red](A8,A10)
+			\end{tikzpicture}
+			\caption{\small\textit{\color{cackithi}Hình $3$. Đa giác đều $16$ cạnh.}}
+			\vspace*{-15pt}
+		\end{figure}
+		\underline{\textit{Trường hợp $n \equiv 1 \mod 4$.}} Đặt $n = 4k+1$. 
+		\vskip 0.1cm
+		$\bullet$ Với $k=1$ ta có thể tô màu như Hình $4$.
+		\begin{figure}[H]
+			\vspace*{-10pt}
+			\centering
+			\captionsetup{labelformat= empty, justification=centering}
+			\begin{tikzpicture}[cackithi,scale = 0.95]
+				\tkzSetUpPoint[size=4, fill= teal!50]
+				\def\laenge{1.5}
+				\def\n{10}
+				\pgfmathtruncatemacro\w{360/\n}
+				\draw
+				(0:0) coordinate (A1)
+				foreach \i in {2,...,\n}
+				{--++(360+\w/2-\i*\w +\w:\laenge) coordinate (A\i)}
+				--cycle;
+				\tkzDrawPoints(A1,A...,A10)
+				\foreach \i in {1,...,\n}\node[anchor={270-\i*\w +\w}, circle] at (A\i){$A_{\i}$};
+				\tkzDrawPoints(A1,A...,A10)
+				\tkzDrawSegment[red](A1,A10)
+				\tkzDrawSegment[red](A2,A8)
+				\tkzDrawSegment[red](A3,A6)
+				\tkzDrawSegment[red](A4,A9)
+				\tkzDrawSegment[red](A5,A7)
+			\end{tikzpicture}
+			\caption{\small\textit{\color{cackithi}Hình $4$. Đa giác đều $10$ cạnh.}}
+			\vspace*{-15pt}
+		\end{figure}
+		$\bullet$  Với $k \ge 2$ thì danh sách các đoạn màu đỏ cùng với khoảng cách giữa các đỉnh (phương trình ($5$) với $2n = 8k+2$) được cho trong bảng dưới đây:
+		\begin{center}
+			\resizebox{\linewidth}{!}{%
+				\begin{tabular}{ |c|c|c| } 
+					\hline
+					Chỉ số & Cạnh & Khoảng cách \\ 
+					\hline
+					$1 \le i \le k$ & $(i, 8k+3-i)$ & $1,3, \ldots, 2k-1$ \\ 
+					\hline
+					$i = k+1$ & $(k+1, 5k+3)$ & $4k$ \\
+					\hline
+					$k+2 \le i \le 2k$ & $(i, 8k+4-i)$ & $2k+2, 2k+4, \ldots, 4k-2$ \\ 
+					\hline
+					$i = 2k+1$ & $(2k+1, 4k+2)$ & $2k+1$ \\
+					\hline
+					$2k+2 \le i \le 3k+1$ & $(i, 8k+5-i)$ & $4k+1, 4k-1,\ldots, 2k+3$ \\
+					\hline
+					$3k+2 \le i \le 4k+1$ & $(i,8k+4-i)$ & $2k, \ldots, 2$ \\
+					\hline
+			\end{tabular}}
+		\end{center}
+\end{multicols}
 \newpage
 \begingroup
-\AddToShipoutPicture*{\put(82,527){\includegraphics[scale=1]{../tieude2.pdf}}}
+\AddToShipoutPicture*{\put(150,700){\includegraphics[scale=1]{../tieude1.pdf}}}
 \centering
 \endgroup
-\vspace*{10pt}
+\vspace*{3pt}
 
-\begin{multicols}{2
+\begin{multicols}{2}
 	Trong phần đầu chuyên mục, chúng tôi sẽ trình bày với các bạn lời giải các bài toán trong kỳ thi Olympic toán Tuymaada năm $2022$ của nước cộng hòa Sakha (Yakutia), thuộc Liên bang Nga đăng trong số tháng $5/2023$. 
-	\vskip 0.1cm
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{gocolympic}
+%		\caption{\small\textit{\color{}.}}
+		\vspace*{-15pt}
+	\end{figure}
 	{\bf\color{cackithi} OC$\pmb{46.}$} Arnim và Brentano có một chiếc bình nhỏ đựng $1500$ viên kẹo trên bàn và một túi lớn đựng kẹo dự phòng dưới gầm bàn. Họ thay phiên nhau chơi một trò chơi với Arnim bắt đầu trước. Ở mỗi lượt đi, người chơi có thể ăn $7$ viên kẹo trong bình hoặc lấy 6 viên kẹo từ túi bên dưới và thêm chúng vào bình. Người chơi không được lấy kẹo trong túi dưới gầm bàn hai lần liên tiếp. Người chơi được tuyên bố là người chiến thắng nếu làm cho chiếc bình rỗng sau lượt chơi của mình. Trong mọi trường hợp khác, nếu
 	một người chơi không thể thực hiện được nước đi trong lượt của mình, trò chơi được tuyên bố là hòa. Liệu người nào có chiến lược để luôn chiến thắng?
 	\vskip 0.1cm
-	\textit{Lời giải.} Ban đầu trong bình có 1500 viên kẹo. Brentano có chiến lược để luôn thắng bằng cánh đảm bảo rằng nếu trước lượt đi của Arnim trong bình có $15k$ viên kẹo, thì sau khi mỗi người đi 2 lượt, trong bình sẽ còn lại $15(k-1)$ viên kẹo. 
+	\textit{Lời giải.} Ban đầu trong bình có $1500$ viên kẹo. Brentano có chiến lược để luôn thắng bằng cánh đảm bảo rằng nếu trước lượt đi của Arnim trong bình có $15k$ viên kẹo, thì sau khi mỗi người đi $2$ lượt, trong bình sẽ còn lại $15(k-1)$ viên kẹo. 
 	\vskip 0.1cm
 	Cụ thể là nếu trong lượt đi thứ nhất của mình Arnim thêm $6$ viên kẹo vào bình thì ở lượt đi sau anh ta phải ăn $7$ viên. Do đó Brentano sẽ ăn $7$ viên kẹo trong cả $2$ lượt đi của mình và số kẹo trong bình sau đó là $15k+6-7-7-7=15(k-1).$ Nếu trong lượt đi thứ nhất của mình Arnim  ăn $7$ viên thì Brentano cũng ăn $7$ viên trong lượt thứ nhất. 
 	Đến lượt đi thứ $2$ nếu Arnim ăn $7$ viên thì sau đó Brentano thêm vào $6$ viên và số kẹo trong bình còn lại là $15k-7-7-7+6=15(k-1).$    Còn nếu đến lượt thứ $2$ Arnim thêm vào 6 viên thì sau đó Brentano sẽ ăn $7$ viên và số kẹo trong bình còn lại là $15k-7-7+6-7=15(k-1).$ Như vậy sao khi mỗi người đi $200$ lượt thì Brentano là người chiến thắng.
 	\vskip 0.1cm
 	{\bf\color{cackithi}OC$\pmb{47.}$}  Cho $M$ là trung điểm của cạnh $A$B trong tam giác đều $ABC.$ điểm $D$ thuộc cạnh $BC$ sao cho $BD : DC = 3 : 1.$ Giả sử $T$ là điểm trên đường thẳng đi qua $C$ và song song với $MD$ sao cho $\angle CTA = 150^\circ.$ Tìm số đo $\angle MTD.$
-	\vskip 0.1cm
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+		\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1.}
+		\begin{tikzpicture}[cackithi,scale=1.2,node font=\small]
+			\draw[color=uuuuuu] (1.8771681255350392,1.9481399025612232) -- (1.90851486019539,2.1110223138105475) -- (1.7456324489460657,2.1423690484708984) -- (1.7142857142857149,1.979486637221574) -- cycle; 
+			\draw [shift={(1.7142857142857149,1.979486637221574)},color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-130.8933946491309:0.23457748258628952) arc (-130.8933946491309:-10.893394649130876:0.23457748258628952) -- cycle;
+			\draw  (2.,0.) circle (2.cm);
+			\draw  (2.,3.4641016151377553)-- (2.5,2.5980762113533165);
+			\draw  (2.3109450177226596,3.0662755356334794) -- (2.1890549822773426,2.9959022908575927);
+			\draw  (3.,1.7320508075688776)-- (2.5,2.5980762113533165);
+			\draw  (2.689054982277343,2.129876887073154) -- (2.8109450177226605,2.2002501318490406);
+			\draw  (3.,1.7320508075688776)-- (3.5,0.8660254037844388);
+			\draw  (3.3109450177226583,1.3342247280646016) -- (3.1890549822773413,1.263851483288715);
+			\draw  (3.5,0.8660254037844388)-- (4.,0.);
+			\draw  (3.8109450177226587,0.4681993242801627) -- (3.6890549822773417,0.3978260795042762);
+			\draw  (0.,0.)-- (2.,0.);
+			\draw  (0.9706778146767137,0.07037324477588658) -- (0.9706778146767137,-0.07037324477588658);
+			\draw  (1.029322185323286,0.07037324477588658) -- (1.029322185323286,-0.07037324477588658);
+			\draw  (2.,0.)-- (4.,0.);
+			\draw  (2.9706778146767134,0.07037324477588658) -- (2.9706778146767134,-0.07037324477588658);
+			\draw  (3.0293221853232857,0.07037324477588658) -- (3.0293221853232857,-0.07037324477588658);
+			\draw  (2.5,2.5980762113533165)-- (2.,0.);
+			\draw  (3.,1.7320508075688776)-- (2.,0.);
+			\draw  (2.5756061103843018,0.8562325387809366) -- (2.453716074938985,0.9266057835568232);
+			\draw  (2.5462839250610156,0.8054450240120545) -- (2.4243938896156987,0.8758182687879411);
+			\draw  (1.7142857142857149,1.979486637221574)-- (3.,1.7320508075688776);
+			\draw  (2.,3.4641016151377553)-- (1.7142857142857149,1.979486637221574);
+			\draw  (1.7142857142857149,1.979486637221574)-- (0.,0.);
+			\draw  (2.,0.)-- (1.7142857142857149,1.979486637221574);
+			\draw  (1.7916802919345747,0.9506685609177279) -- (1.9309831895863658,0.9707752022822663);
+			\draw  (1.7833025246993495,1.0087114349393076) -- (1.9226054223511404,1.0288180763038461);
+			\draw  (1.7142857142857149,1.979486637221574)-- (2.5,2.5980762113533165);
+			\draw  (2.0636107016266734,2.3440746880399277) -- (2.1506750126590424,2.233488160534963);
+%			\begin{scriptsize}
+				\draw [fill=white] (0.,0.) circle (1.5pt);
+				\draw[color=ududff] (-0.17754689709133267,-0.15347137061022087) node {$A$};
+				\draw [fill=white] (4.,0.) circle (1.5pt);
+				\draw[color=ududff] (4.23250977553091,-0.16520024473953532) node {$B$};
+				\draw [fill=white] (2.,3.4641016151377553) circle (1.5pt);
+				\draw[color=uuuuuu] (2.086125809866361,3.6818704696755975) node {$C$};
+				\draw [fill=white] (2.,0.) circle (1.5pt);
+				\draw[color=uuuuuu] (2.0157525650904744,-0.21211574125679306) node {$M$};
+				\draw [fill=white] (3.,1.7320508075688776) circle (1.5pt);
+				\draw[color=uuuuuu] (3.1769111038926074,1.922539350278433) node {$R$};
+				\draw [fill=white] (2.5,2.5980762113533165) circle (1.5pt);
+				\draw[color=uuuuuu] (2.649111768073456,2.8022049099770157) node {$D$};
+				\draw [fill=white] (3.5,0.8660254037844388) circle (1.5pt);
+				\draw[color=uuuuuu] (3.3763019640909535,0.6558209443124747) node {$F$};
+				\draw [fill=white] (1.7142857142857149,1.979486637221574) circle (1.5pt);
+				\draw[color=uuuuuu] (1.5935130964351534,2.1688457069940363) node {$R'$};
+				\draw (2.2386011735474494,1.7700639865973455) node[below] {$120^{\circ}$};
+%			\end{small}
+		\end{tikzpicture}
+		\vspace*{-5pt}
+	\end{figure}
 	\textit{Lời giải.} Gọi $\ell$ là đường thẳng đi qua $C$ song song với $MD.$ Giả sử đường tròn đường kính $AB$ cắt $BC$ tại $R$ và cắt $\ell$ tại $R'.$  Ta sẽ chứng minh  $R'$ trùng với  $T.$ 
 	\vskip 0.1cm
 	Dễ thấy tam giác cân $MBR$ có góc $\angle MBR=60^\circ$ nên nó là tam giác đều. Do đó $R$ là trung điểm $BC$ và $D$ là trung điểm $RC.$ Trong tam giác $CRR',$ $MD$ đi qua trung điểm của $CR$ và song song $CR'$ nên nó phải đi qua trung điểm của $RR'.$ Do $MD$ là đường kính, ta suy ra $MD\perp RR'.$ Do $CR'$ song song với $MD,$ ta suy ra $\angle CR'R=90^\circ.$ 
 	\vskip 0.1cm
 	Mặt khác, do $\angle AR'R=180^\circ - \angle ABR= 180^\circ-60^\circ=120^\circ,$ ta có 
 	\begin{align*}
-		\angle AR'C=360^\circ-\angle AR'R - \angle CR'R = 360^\circ -120^\circ - 90^\circ=150^\circ.
+		\angle AR'C&=360^\circ-\angle AR'R - \angle CR'R \\
+		&= 360^\circ -120^\circ - 90^\circ=150^\circ.
 	\end{align*}
 	Như vậy $R'$ trùng với $T.$ Do $R$ và $R'$ đối xứng nhau qua $MD$ ta có $\angle MR'D=\angle MRD= 120^\circ.$  Như vậy $\angle MTD=120^\circ.$  
-%	\begin{figure}[h!] 
-%		\centering
-%		\includegraphics[scale=0.4]{OC46}
-%	\end{figure}
-	
-	
+	\vskip 0.1cm
 	{\bf\color{cackithi} OC$\pmb{48.}$} Cho các số nguyên $a, b, c$ và số nguyên tố lẻ $p.$ Chứng minh rằng tồn tại các số nguyên $x$ và $y$ sao cho $p$ là ước của $x^2 + y^2 + ax + by + c.$      
 	\vskip 0.1cm
 	\textit{Lời giải.}
@@ -516,7 +577,10 @@
 	$\bullet$ Tổng của hai số (không nhất thiết phân biệt) cùng màu bất kỳ  có màu xanh.
 	\vskip 0.1cm
 	{\bf\color{cackithi} OC$\pmb{56.}$} Octavio viết một số nguyên dương $n$ lên bảng  và sau đó anh bắt đầu một quá trình trong đó, ở mỗi bước, anh xóa số nguyên $k$ được viết trên bảng  và thay thế nó bằng một trong các số sau:
-	$$3k-1, \quad 2k+1, \quad \frac{k}{2},$$ với điều kiện số mới viết là số nguyên.
+	\begin{align*}
+		3k-1, \quad 2k+1, \quad \frac{k}{2},
+	\end{align*}
+	với điều kiện số mới viết là số nguyên.
 	\vskip 0.1cm
 	Chứng minh rằng với mọi số nguyên dương $n$, Octavio có thể viết lên bảng  số $3^{2023}$ sau hữu hạn bước.
 	\vskip 0.1cm
