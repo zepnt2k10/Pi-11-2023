@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  26 OCT 2023 15:23
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  26 OCT 2023 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2890,7 +2890,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 84.
 
-(../lichsutoanhoc/lichsutoanhoc.tex
+(../cackithi/cackithi.tex
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  5.
 
@@ -3048,55 +3048,40 @@ d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
-File: ../lichsutoanhoc/pic//1.jpg Graphic file (type bmp)
-<../lichsutoanhoc/pic//1.jpg>
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 20.
-Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
-um;mapping=tex-text;" at 10.95pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Regular.otf
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 20.
-Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
-m;mapping=tex-text;" at 10.95pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Italic.otf
-Package microtype Info: Character `156' is missing
-(microtype)             in font `\TU/EBGaramond(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Requested font "zptmcm7t" at 10.95pt
-Requested font "zptmcm7t" at 8.0pt
-Requested font "zptmcm7m" at 10.95pt
-Requested font "zptmcm7m" at 8.0pt
-Requested font "zptmcm7y" at 10.95pt
-Requested font "zptmcm7y" at 8.0pt
-Requested font "zptmcm7v" at 10.95pt
-Requested font "zptmcm7v" at 8.0pt
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
-Requested font "ptmb7t" at 10.95pt
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
-Requested font "ptmb7t" at 8.0pt
-Requested font "ptmri7t" at 10.95pt
-Requested font "ptmri7t" at 8.0pt
-Requested font "msam10" at 10.95pt
-Requested font "msam10" at 8.0pt
-Requested font "msbm10" at 10.95pt
-Requested font "msbm10" at 8.0pt
-Requested font "yhcmex10" at 10.95pt
-Requested font "yhcmex10" at 8.0pt
-Requested font "rsfs10" at 10.95pt
-Requested font "rsfs10" at 8.0pt
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 25.
+(Font)              scaled to size 12.0pt on input line 16.
 Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
 mapping=tex-text;" at 12.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
 d/EBGaramond-Bold.otf
-File: ../lichsutoanhoc/pic//2.jpg Graphic file (type bmp)
-<../lichsutoanhoc/pic//2.jpg>
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 18.
+Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
+m;mapping=tex-text;" at 12.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Italic.otf
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Underfull \hbox (badness 6204) in paragraph at lines 23--25
+\OT1/ztmcm/m/n/12 3) \OMS/ztmcm/m/n/12 ^^Q \OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/1
+2 p[] \OMS/ztmcm/m/n/12 ^^@ \OT1/ztmcm/m/n/12 1)(\OML/ztmcm/m/it/12 p[] \OMS/zt
+mcm/m/n/12 ^^@ \OT1/ztmcm/m/n/12 2)\OML/ztmcm/m/it/12 p[][]  \OT1/ztmcm/m/n/12 
+3 \OMS/ztmcm/m/n/12 ^^Q \OT1/ztmcm/m/n/12 0
+ []
+
+
+Overfull \hbox (5.82057pt too wide) detected at line 31
+[]
+ []
+
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 49.
+Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
+um;mapping=tex-text;" at 7.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Regular.otf
 
 Overfull \vbox (11.62634pt too high) has occurred while \output is active []
 
@@ -3116,219 +3101,161 @@ Package microtype Info: Loading generic protrusion settings for font family
 Requested font "[lmsans8-regular]:mapping=tex-text;" at 8.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsans
 8-regular.otf
-File: ../lichsutoanhoc/pic//../bannerlichsu.jpg Graphic file (type bmp)
-<../lichsutoanhoc/pic//../bannerlichsu.jpg>
-File: ../lichsutoanhoc/pic//../tieude.pdf Graphic file (type pdf)
-<use ../lichsutoanhoc/pic//../tieude.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
+File: ../cackithi/pic//../bannercackithi.jpg Graphic file (type bmp)
+<../cackithi/pic//../bannercackithi.jpg>
+File: ../cackithi/pic//../tieude2.pdf Graphic file (type pdf)
+<use ../cackithi/pic//../tieude2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
 [1
 
 ]
-File: ../lichsutoanhoc/pic//3.jpg Graphic file (type bmp)
-<../lichsutoanhoc/pic//3.jpg>
-File: ../lichsutoanhoc/pic//4.png Graphic file (type bmp)
-<../lichsutoanhoc/pic//4.png>
-File: lichsu1.pdf Graphic file (type pdf)
-<use lichsu1.pdf>
-File: flichsu1.pdf Graphic file (type pdf)
-<use flichsu1.pdf>
-File: lichsu1.pdf Graphic file (type pdf)
-<use lichsu1.pdf>
-File: flichsu1.pdf Graphic file (type pdf)
-<use flichsu1.pdf>
-File: lichsu1.pdf Graphic file (type pdf)
-<use lichsu1.pdf>
-File: flichsu1.pdf Graphic file (type pdf)
-<use flichsu1.pdf>
- [2]
-File: ../lichsutoanhoc/pic//5.jpg Graphic file (type bmp)
-<../lichsutoanhoc/pic//5.jpg>
+Overfull \hbox (2.16718pt too wide) detected at line 72
+[]
+ []
+
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 134.
+Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
+um;mapping=tex-text;" at 10.95pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Regular.otf
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 69.
+(Font)              scaled to size 10.95pt on input line 134.
 Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
-m;mapping=tex-text;" at 12.0pt
+m;mapping=tex-text;" at 10.95pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
 d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
-(microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
+(microtype)             in font `\TU/EBGaramond(0)/m/it/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-File: ../lichsutoanhoc/pic//6.png Graphic file (type bmp)
-<../lichsutoanhoc/pic//6.png>
-File: lichsu2.pdf Graphic file (type pdf)
-<use lichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
-File: lichsu2.pdf Graphic file (type pdf)
-<use lichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
-File: lichsu2.pdf Graphic file (type pdf)
-<use lichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
- [3]
-File: ../lichsutoanhoc/pic//7.png Graphic file (type bmp)
-<../lichsutoanhoc/pic//7.png>
-File: lichsu1.pdf Graphic file (type pdf)
-<use lichsu1.pdf>
-File: flichsu1.pdf Graphic file (type pdf)
-<use flichsu1.pdf>
-File: lichsu1.pdf Graphic file (type pdf)
-<use lichsu1.pdf>
-File: flichsu1.pdf Graphic file (type pdf)
-<use flichsu1.pdf>
-File: lichsu1.pdf Graphic file (type pdf)
-<use lichsu1.pdf>
-File: flichsu1.pdf Graphic file (type pdf)
-<use flichsu1.pdf>
+Requested font "zptmcm7t" at 10.95pt
+Requested font "zptmcm7t" at 8.0pt
+Requested font "zptmcm7m" at 10.95pt
+Requested font "zptmcm7m" at 8.0pt
+Requested font "zptmcm7y" at 10.95pt
+Requested font "zptmcm7y" at 8.0pt
+Requested font "zptmcm7v" at 10.95pt
+Requested font "zptmcm7v" at 8.0pt
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
+Requested font "ptmb7t" at 10.95pt
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
+Requested font "ptmb7t" at 8.0pt
+Requested font "ptmri7t" at 10.95pt
+Requested font "ptmri7t" at 8.0pt
+Requested font "msam10" at 10.95pt
+Requested font "msam10" at 8.0pt
+Requested font "msbm10" at 10.95pt
+Requested font "msbm10" at 8.0pt
+Requested font "yhcmex10" at 10.95pt
+Requested font "yhcmex10" at 8.0pt
+Requested font "rsfs10" at 10.95pt
+Requested font "rsfs10" at 8.0pt
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/it' will be
+(Font)              scaled to size 10.0pt on input line 148.
+Requested font "[EBGaramond-BoldItalic.otf]/OT:script=latn;language=dflt;+pnum;
++onum;mapping=tex-text;" at 10.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-BoldItalic.otf
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/b/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+File: cackithi1.pdf Graphic file (type pdf)
+<use cackithi1.pdf>
+File: fcackithi1.pdf Graphic file (type pdf)
+<use fcackithi1.pdf>
+File: cackithi1.pdf Graphic file (type pdf)
+<use cackithi1.pdf>
+File: fcackithi1.pdf Graphic file (type pdf)
+<use fcackithi1.pdf>
+File: cackithi1.pdf Graphic file (type pdf)
+<use cackithi1.pdf>
+File: fcackithi1.pdf Graphic file (type pdf)
+<use fcackithi1.pdf>
+[2]
+Overfull \hbox (5.08781pt too wide) detected at line 261
+[]
+ []
+
+
+Overfull \vbox (14.62634pt too high) has occurred while \output is active []
+
+File: cackithi2.pdf Graphic file (type pdf)
+<use cackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
+File: cackithi2.pdf Graphic file (type pdf)
+<use cackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
+File: cackithi2.pdf Graphic file (type pdf)
+<use cackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
+
+[3]
+File: cackithi1.pdf Graphic file (type pdf)
+<use cackithi1.pdf>
+File: fcackithi1.pdf Graphic file (type pdf)
+<use fcackithi1.pdf>
+File: cackithi1.pdf Graphic file (type pdf)
+<use cackithi1.pdf>
+File: fcackithi1.pdf Graphic file (type pdf)
+<use fcackithi1.pdf>
+File: cackithi1.pdf Graphic file (type pdf)
+<use cackithi1.pdf>
+File: fcackithi1.pdf Graphic file (type pdf)
+<use fcackithi1.pdf>
  [4]
-File: ../lichsutoanhoc/pic//8.png Graphic file (type bmp)
-<../lichsutoanhoc/pic//8.png>
-File: lichsu2.pdf Graphic file (type pdf)
-<use lichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
-File: lichsu2.pdf Graphic file (type pdf)
-<use lichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
-File: lichsu2.pdf Graphic file (type pdf)
-<use lichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
+File: cackithi2.pdf Graphic file (type pdf)
+<use cackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
+File: cackithi2.pdf Graphic file (type pdf)
+<use cackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
+File: cackithi2.pdf Graphic file (type pdf)
+<use cackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
  [5]
-File: ../lichsutoanhoc/pic//9.png Graphic file (type bmp)
-<../lichsutoanhoc/pic//9.png>
-File: ../lichsutoanhoc/pic//10.jpg Graphic file (type bmp)
-<../lichsutoanhoc/pic//10.jpg>
-File: ../lichsutoanhoc/pic//11.jpg Graphic file (type bmp)
-<../lichsutoanhoc/pic//11.jpg>
-File: lichsu1.pdf Graphic file (type pdf)
-<use lichsu1.pdf>
-File: flichsu1.pdf Graphic file (type pdf)
-<use flichsu1.pdf>
-File: lichsu1.pdf Graphic file (type pdf)
-<use lichsu1.pdf>
-File: flichsu1.pdf Graphic file (type pdf)
-<use flichsu1.pdf>
-File: lichsu1.pdf Graphic file (type pdf)
-<use lichsu1.pdf>
-File: flichsu1.pdf Graphic file (type pdf)
-<use flichsu1.pdf>
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-[][]\TU/EBGaramond(0)/m/n/12 Mặt khác, Cicero
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-\TU/EBGaramond(0)/m/n/12 thiết bị có chức
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-\TU/EBGaramond(0)/m/n/12 năng tương tự
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-\TU/EBGaramond(0)/m/n/12 khi ông ở đảo
- []
-
-
-Underfull \hbox (badness 5490) in paragraph at lines 135--136
-\TU/EBGaramond(0)/m/n/12 Rhodes. Nó được
- []
-
-
-Underfull \hbox (badness 6016) in paragraph at lines 135--136
-\TU/EBGaramond(0)/m/n/12 nhà toán học Hy
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-\TU/EBGaramond(0)/m/n/12 bị đắm khi đang
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-\TU/EBGaramond(0)/m/n/12 trên tuyến đường
- []
-
-
-Underfull \hbox (badness 5771) in paragraph at lines 135--136
-\TU/EBGaramond(0)/m/n/12 từ Rhodes về đất
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-\TU/EBGaramond(0)/m/n/12 liền, việc thiết bị
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-\TU/EBGaramond(0)/m/n/12 Posidonius là rất
- []
-
-File: ../lichsutoanhoc/pic//12.jpg Graphic file (type bmp)
-<../lichsutoanhoc/pic//12.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 1$[]\TU/EBGaramond(0)/m/n/12 ]
- Freeth, T. An Ancient Greek
- []
-
-
-Underfull \hbox (badness 7981) in paragraph at lines 152--153
-\TU/EBGaramond(0)/m/n/12 Seiradakis, J. H., Tselikas, A., Mangou,
- []
-
-
-Underfull \hbox (badness 7540) in paragraph at lines 152--153
-\TU/EBGaramond(0)/m/n/12 H., … Edmunds, M. G. Decoding the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
-\TU/EBGaramond(0)/m/n/12 ancient Greek astronomical calculator
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
-\TU/EBGaramond(0)/m/n/12 known as the Antikythera Mechanism.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
-\TU/EBGaramond(0)/m/it/12 Nature\TU/EBGaramond(0)/m/n/12 , $[]\OT1/ztmcm/m/n/12
- 444(7119)$[]\TU/EBGaramond(0)/m/n/12 , $[]\OT1/ztmcm/m/n/12 587 \OMS/ztmcm/m/n
-/12 ^^@ \OT1/ztmcm/m/n/12 591$[] \TU/EBGaramond(0)/m/n/12 ($[]\OT1/ztmcm/m/n/12
- 2006$[]\TU/EBGaramond(0)/m/n/12 ).
- []
-
-
-Underfull \hbox (badness 7151) in paragraph at lines 158--159
-\TU/EBGaramond(0)/m/it/12 Mechanisms of Antikythera Astronomical
- []
-
-File: lichsu2.pdf Graphic file (type pdf)
-<use lichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
-File: lichsu2.pdf Graphic file (type pdf)
-<use lichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
-File: lichsu2.pdf Graphic file (type pdf)
-<use lichsu2.pdf>
-File: flichsu2.pdf Graphic file (type pdf)
-<use flichsu2.pdf>
-[7]) (_main.aux)
+File: ../cackithi/pic//gocolympic.pdf Graphic file (type pdf)
+<use ../cackithi/pic//gocolympic.pdf>
+File: ../cackithi/pic//../tieude1.pdf Graphic file (type pdf)
+<use ../cackithi/pic//../tieude1.pdf>
+File: cackithi1.pdf Graphic file (type pdf)
+<use cackithi1.pdf>
+File: fcackithi1.pdf Graphic file (type pdf)
+<use fcackithi1.pdf>
+File: cackithi1.pdf Graphic file (type pdf)
+<use cackithi1.pdf>
+File: fcackithi1.pdf Graphic file (type pdf)
+<use fcackithi1.pdf>
+File: cackithi1.pdf Graphic file (type pdf)
+<use cackithi1.pdf>
+File: fcackithi1.pdf Graphic file (type pdf)
+<use fcackithi1.pdf>
+ [6])
+File: cackithi2.pdf Graphic file (type pdf)
+<use cackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
+File: cackithi2.pdf Graphic file (type pdf)
+<use cackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
+File: cackithi2.pdf Graphic file (type pdf)
+<use cackithi2.pdf>
+File: fcackithi2.pdf Graphic file (type pdf)
+<use fcackithi2.pdf>
+ [7] (_main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3339,12 +3266,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68893 strings out of 410939
- 1563775 string characters out of 2823530
- 2638513 words of memory out of 3000000
- 88403 multiletter control sequences out of 15000+600000
- 508078 words of font info for 139 fonts, out of 8000000 for 9000
+ 69430 strings out of 410939
+ 1575757 string characters out of 2823530
+ 2674447 words of memory out of 3000000
+ 88946 multiletter control sequences out of 15000+600000
+ 508094 words of font info for 141 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,12n,120p,1477b,700s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 104i,17n,120p,1132b,1345s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 Output written on _main.pdf (7 pages).
